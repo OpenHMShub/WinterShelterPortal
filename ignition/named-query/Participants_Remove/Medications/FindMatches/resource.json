@@ -1,0 +1,51 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "RITIOps",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "7fb4c82239a44a2cee914e79f156d77c192df5180fb52ebf295cbd03f12ffa83",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:46:31Z"
+    },
+    "syntaxProvider": "class com.adbs.syntax.OracleSyntaxProvider",
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "firstName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "lastName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "middleName",
+        "sqlType": 7
+      }
+    ]
+  }
+}

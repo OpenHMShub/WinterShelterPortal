@@ -1,0 +1,1868 @@
+{
+  "custom": {},
+  "events": {
+    "system": {
+      "onStartup": {
+        "config": {
+          "script": "\ttry:\n\t\tpayload \u003d{} #\u0027offset\u0027:0,\u0027fetch\u0027 :100 }\n\t\t\n\t\t\n\t\tsystem.perspective.sendMessage(\u0027mhByCondition\u0027, payload \u003d payload)\n\n\texcept:\n\t\timport traceback\n\t\tlogger \u003d system.util.getLogger(\"{}\".format(\u0027Providers_Table onStartUp\u0027))\n\t\tmsg \u003d traceback.format_exc()\n\t\tlogger.error(msg)\t\n\n"
+        },
+        "scope": "G",
+        "type": "script"
+      }
+    }
+  },
+  "params": {
+    "fetch": null,
+    "resultRowCount": 48
+  },
+  "propConfig": {
+    "params.fetch": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.resultRowCount": {
+      "paramDirection": "output",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 620,
+      "width": 1200
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "custom": {
+          "_devPulse": false,
+          "_devTxt": "",
+          "_isDev": false,
+          "jsonLastPayload": null,
+          "lastPayload": {}
+        },
+        "events": {
+          "component": {
+            "onRowClick": {
+              "config": {
+                "script": "\t\n\tsystem.perspective.print((\u0027onRcEmplo\u0027))\n\tselectedColumn \u003d self.props.selection.selectedColumn \n\n\ttrackID \u003d event.value.get(\u0027id\u0027)\n\t\n\tsystem.perspective.print((\u0027trackID : {} {}\u0027.format(trackID , type(trackID)) ))\n\t\n\tif trackID is None:\n\t\tsystem.perspective.print((\u0027trackID is None : {} {}\u0027.format(trackID , type(trackID)) ))\n\t\treturn\n\t\n\tsystem.perspective.print((\u0027selectedColumn: \u0027, selectedColumn ))\n\n\tif selectedColumn \u003d\u003d \"id\":\n\t\tid \u003d \"PreviewEmployer\" \n\t\tparams \u003d {\"trackID\": trackID}\n\t\tsystem.perspective.openDock(id\u003did,params\u003dparams)\n\n\telif selectedColumn \u003d\u003d \"employerName\" or selectedColumn is None: \n\t\ttab_id \u003d \"1\"\n\t\tsystem.perspective.navigate(view \u003d \u0027Employers/Detail/Employer_Detail\u0027, params \u003d {\u0027trackID\u0027:trackID, \u0027tab_id\u0027:tab_id})\n\n\telse:\n\t\tpass\n"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Table"
+        },
+        "position": {
+          "basis": "80%",
+          "grow": 1,
+          "shrink": 0
+        },
+        "propConfig": {
+          "custom._devPulse": {
+            "onChange": {
+              "enabled": null,
+              "script": "\tif self.custom._isDev:\n\t\tif currentValue.value is True:\n\t\t\tpayload \u003d {}\n\t\t\t#payload[\u0027qualifier\u0027] \u003d [1,2]\n\t\t\t#payload[\u0027businessDescriptionId\u0027] \u003d 23\n\t\t\t#payload[\u0027qualifier\u0027] \u003d [\u0027 Seasonal Positions,Felony Friendly\u0027, \u0027Felony Friendly, Part Time Positions, Full Time Positions, Requires Drug Screen, Requires Background Check\u0027]\n\t\t\t\n\t\t\t#payload[\u0027searchText\u0027] \u003d self.custom._devTxt\n\t\t\t#payload[\u0027fetch\u0027] \u003d 12\n\t\t\t\n\t\t\tsystem.perspective.sendMessage(\u0027mhByCondition\u0027, payload \u003d payload)\n\t\t\tself.custom.jsonLastPayload \u003d system.util.jsonEncode(payload)\n\n\t\telse:\n\t\t\t#self.props.data \u003d system.dataset.clearDataset(self.props.data)\n\t\t\tself.props.data \u003d [{key: None for key in self.props.data[0]}]\n\t\t\tself.custom.jsonLastPayload \u003d None\n\n\n"
+            }
+          },
+          "props.filter.text": {
+            "access": "PUBLIC"
+          }
+        },
+        "props": {
+          "cells": {
+            "style": {
+              "classes": "Table/Cell_Dashboard"
+            }
+          },
+          "columns": [
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "id",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": " "
+              },
+              "justify": "center",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "view",
+              "resizable": false,
+              "sort": "none",
+              "sortable": false,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "Employers/Dashboard/Components/Tables/Templates/TableOptions",
+              "visible": true,
+              "width": 40
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "employerName",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Employer Name"
+              },
+              "justify": "left",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 270
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "businessDescription",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Business"
+              },
+              "justify": "left",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 220
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "lastAction",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Last Action"
+              },
+              "justify": "left",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 120
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "phone",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Phone"
+              },
+              "justify": "left",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 100
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "street",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Address"
+              },
+              "justify": "left",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 200
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "city",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "City"
+              },
+              "justify": "left",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 130
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "zipCode",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Zip"
+              },
+              "justify": "left",
+              "number": "value",
+              "numberFormat": "none",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 50
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "website",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Website"
+              },
+              "justify": "left",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 320
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "qualifiers",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Qualifiers"
+              },
+              "justify": "left",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 2000
+            }
+          ],
+          "data": [
+            {
+              "businessDescription": "Business Management",
+              "city": "cA",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "aaa"
+              },
+              "id": 45,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1637233200000
+              },
+              "phone": "615-234-5678",
+              "qualifiers": null,
+              "street": "StA",
+              "website": "aaa@aaa.com",
+              "zipCode": 12345
+            },
+            {
+              "businessDescription": "Electric Utility",
+              "city": "Colomia",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "AABB"
+              },
+              "id": 46,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1637517600000
+              },
+              "phone": "412-123-4564",
+              "qualifiers": "Part Time Positions",
+              "street": "St Andrews St",
+              "website": "aaa@aaa.com",
+              "zipCode": 123456789
+            },
+            {
+              "businessDescription": "Business Management",
+              "city": "abcd",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "abcd"
+              },
+              "id": 59,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1637072492960
+              },
+              "phone": "",
+              "qualifiers": null,
+              "street": "abcd",
+              "website": "ww",
+              "zipCode": 2
+            },
+            {
+              "businessDescription": "Restaurant",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Band Box"
+              },
+              "id": 1,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1636628400000
+              },
+              "phone": "",
+              "qualifiers": "Felony Friendly,Part Time Positions,Requires NO Experience,Seasonal Positions,Sex Offender Friendly",
+              "street": "19 Junior Gilliam Way",
+              "website": "www.thebandboxnashville.com",
+              "zipCode": 37219
+            },
+            {
+              "businessDescription": "Staffing Placement",
+              "city": "Cordova",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Banquet Staffing LLC"
+              },
+              "id": 2,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1610136000000
+              },
+              "phone": "615-678-6861",
+              "qualifiers": "Felony Friendly,Requires Background Check,Requires Drivers Licence,Requires Drug Screen,Seasonal Positions,Sex Offender Friendly,Temporary Positions",
+              "street": "367 Meadow Trail Cv",
+              "website": "",
+              "zipCode": 38018
+            },
+            {
+              "businessDescription": "Dining Services",
+              "city": "Mount Juliet",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Big Bad Wolf Smokehouse"
+              },
+              "id": 42,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1634922000000
+              },
+              "phone": "6153334444",
+              "qualifiers": "Full Time Positions,Part Time Positions,Requires Background Check",
+              "street": "425 Mount Juliet Rd",
+              "website": "www.stageleftcatering.com/restaurant",
+              "zipCode": 37122
+            },
+            {
+              "businessDescription": "Airport",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "BNA"
+              },
+              "id": 33,
+              "lastAction": null,
+              "phone": "6151234567",
+              "qualifiers": "Seasonal Positions,Skilled Labor Positions",
+              "street": "1234 Airport Rd",
+              "website": "",
+              "zipCode": 37211
+            },
+            {
+              "businessDescription": "Restaurant",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Cava"
+              },
+              "id": 64,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1636218000000
+              },
+              "phone": "",
+              "qualifiers": "Full Time Positions,Part Time Positions,Requires Background Check",
+              "street": "1234 Belle Mead Rd",
+              "website": "",
+              "zipCode": 37211
+            },
+            {
+              "businessDescription": "Catering \u0026 Hospitality Services",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Center Plate"
+              },
+              "id": 3,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1624140000000
+              },
+              "phone": "615-515-1141",
+              "qualifiers": "Felony Friendly,Part Time Positions,Requires NO Experience,Seasonal Positions",
+              "street": "1 Titans Way",
+              "website": "www.centerplate.com",
+              "zipCode": 37213
+            },
+            {
+              "businessDescription": "Restaurant",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Chris\u0027 Shop"
+              },
+              "id": 61,
+              "lastAction": null,
+              "phone": "",
+              "qualifiers": "Full Time Positions,Requires Drivers Licence,Seasonal Positions",
+              "street": "1234 Main Street",
+              "website": "",
+              "zipCode": 37211
+            },
+            {
+              "businessDescription": "Test Business",
+              "city": "",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "cName1"
+              },
+              "id": 31,
+              "lastAction": null,
+              "phone": "",
+              "qualifiers": "Felony Friendly,Full Time Positions,Seasonal Positions",
+              "street": "cAddr11",
+              "website": "www.website.com",
+              "zipCode": 0
+            },
+            {
+              "businessDescription": "Restaurant",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Cracker Barrel"
+              },
+              "id": 67,
+              "lastAction": null,
+              "phone": "615-331-6733",
+              "qualifiers": null,
+              "street": "4323 Sidco Dr",
+              "website": "https://www.crackerbarrel.com",
+              "zipCode": 37204
+            },
+            {
+              "businessDescription": "Restaurant",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Delaware North"
+              },
+              "id": 4,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1631120400000
+              },
+              "phone": "615-770-2415",
+              "qualifiers": "Felony Friendly,Full Time Positions,Part Time Positions,Requires Background Check,Requires Drug Screen,Requires NO Experience,Requires Uniform to Start,Sex Offender Friendly",
+              "street": "One Terminal Drive, Ste 317",
+              "website": "www.delawarenorth.com",
+              "zipCode": 37214
+            },
+            {
+              "businessDescription": "Hotel",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Gaylord Opryland Hotel"
+              },
+              "id": 5,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1609545600000
+              },
+              "phone": "615-889-1000",
+              "qualifiers": "Felony Friendly,Full Time Positions,Requires Background Check,Requires Drug Screen,Requires NO Experience,Requires Uniform to Start",
+              "street": "2800 Opryland Dr",
+              "website": "www.marriott.com/hotels/tra ~ -center",
+              "zipCode": 37214
+            },
+            {
+              "businessDescription": "Outlet Store",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Goodwill - Berry Hill"
+              },
+              "id": 7,
+              "lastAction": null,
+              "phone": "615-627-9177",
+              "qualifiers": "Felony Friendly,Full Time Positions,Part Time Positions,PRN Positions,Requires Background Check,Requires Drug Screen,Sex Offender Friendly",
+              "street": "780 Berry Rd",
+              "website": "giveit2goodwill.org/tag/berry-hill",
+              "zipCode": 37204
+            },
+            {
+              "businessDescription": "Career Services",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Goodwill- Herman Street"
+              },
+              "id": 6,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1625522400000
+              },
+              "phone": "615-742-4151",
+              "qualifiers": "Felony Friendly,Full Time Positions,Part Time Positions,Requires Background Check,Requires Drivers Licence,Requires Drug Screen,Requires NO Experience",
+              "street": "937 Herman Street",
+              "website": "giveit2goodwill.org/center-locations",
+              "zipCode": 37208
+            },
+            {
+              "businessDescription": "Charter Bus Service",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Grand Ave"
+              },
+              "id": 8,
+              "lastAction": null,
+              "phone": "615-953-4225",
+              "qualifiers": "Full Time Positions,Requires Background Check,Requires Drivers Licence,Requires Drug Screen,Requires Prior Experience",
+              "street": "186 North First Street",
+              "website": "",
+              "zipCode": 37213
+            },
+            {
+              "businessDescription": "Recycling",
+              "city": "Hendersonville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Green Village Recycling Center"
+              },
+              "id": 9,
+              "lastAction": null,
+              "phone": "615-265-8599",
+              "qualifiers": "Felony Friendly,Part Time Positions,Requires NO Experience,Sex Offender Friendly",
+              "street": "173 Center Point Rd S",
+              "website": "www.greenvillagerecycling.com",
+              "zipCode": 37075
+            },
+            {
+              "businessDescription": "Hotel",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Hampton Inn"
+              },
+              "id": 10,
+              "lastAction": null,
+              "phone": "615-277-5000",
+              "qualifiers": null,
+              "street": "310 4th Avenue South",
+              "website": "www.hilton.com/en/hotels/bn ~ owntown",
+              "zipCode": 37201
+            },
+            {
+              "businessDescription": "Staffing Placement",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Industrial Staffing Agency"
+              },
+              "id": 11,
+              "lastAction": null,
+              "phone": "616-613-0232",
+              "qualifiers": "Felony Friendly,Requires Drivers Licence,Requires Drug Screen,Requires NO Experience,Sex Offender Friendly,Skilled Labor Positions,Temporary Positions",
+              "street": "1200 Dickerson Pike",
+              "website": "",
+              "zipCode": 37207
+            },
+            {
+              "businessDescription": "Driver License Program",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "JUMP"
+              },
+              "id": 12,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251719
+                ],
+                "$ts": 1632589200000
+              },
+              "phone": "615-256-8990",
+              "qualifiers": "Felony Friendly,Full Time Positions,Part Time Positions,Requires Background Check,Requires Drug Screen,Requires NO Experience,Sex Offender Friendly",
+              "street": "1215 9th Ave North, Suite. 200",
+              "website": "www.jumpnashville.com",
+              "zipCode": 37208
+            },
+            {
+              "businessDescription": "Business Solutions",
+              "city": "Brentwood",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Justice Industries"
+              },
+              "id": 13,
+              "lastAction": null,
+              "phone": "",
+              "qualifiers": "Felony Friendly,Requires Background Check,Requires Drug Screen,Sex Offender Friendly",
+              "street": "P.O. Box 1943",
+              "website": "www.justiceindustries.org",
+              "zipCode": 37024
+            },
+            {
+              "businessDescription": "Marketing",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Marketing Strategies International"
+              },
+              "id": 14,
+              "lastAction": null,
+              "phone": "615-886-4122",
+              "qualifiers": "Felony Friendly,Part Time Positions,Requires Background Check",
+              "street": "828 Royal Pkwy # 200",
+              "website": "escalent.co/marketstrategies",
+              "zipCode": 37214
+            },
+            {
+              "businessDescription": "Dining Services",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Mission BBQ"
+              },
+              "id": 40,
+              "lastAction": null,
+              "phone": "6159335226",
+              "qualifiers": "Part Time Positions,Requires Drug Screen,Seasonal Positions",
+              "street": "161 Opry Mills Dr",
+              "website": "www.mission-bbq.com",
+              "zipCode": 37214
+            },
+            {
+              "businessDescription": "Convention Center",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Music City Center"
+              },
+              "id": 15,
+              "lastAction": null,
+              "phone": "615-401-1401",
+              "qualifiers": "Felony Friendly,Full Time Positions,Part Time Positions,Requires Background Check,Requires Drug Screen",
+              "street": "201 5th Ave S",
+              "website": "www.nashvillemusiccitycenter.com",
+              "zipCode": 37203
+            },
+            {
+              "businessDescription": "Veteran Services",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Operation Stand Down Tennessee"
+              },
+              "id": 16,
+              "lastAction": null,
+              "phone": "615-248-1981",
+              "qualifiers": "Felony Friendly,Full Time Positions,Part Time Positions,Requires Background Check,Requires Drug Screen,Sex Offender Friendly",
+              "street": "1125 12th Ave S",
+              "website": "www.osdtn.org",
+              "zipCode": 37203
+            },
+            {
+              "businessDescription": "Dining Services",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Peg Leg Porker"
+              },
+              "id": 17,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251720
+                ],
+                "$ts": 1621634400000
+              },
+              "phone": "6158296023",
+              "qualifiers": "Felony Friendly,Part Time Positions,Requires Prior Experience,Sex Offender Friendly",
+              "street": "903 Gleaves St",
+              "website": "www.peglegporker.com",
+              "zipCode": 37203
+            },
+            {
+              "businessDescription": "Manufacturer",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Safe-T-Cover"
+              },
+              "id": 18,
+              "lastAction": null,
+              "phone": "615-259-4495",
+              "qualifiers": "Felony Friendly,Full Time Positions,Requires Background Check,Requires Drivers Licence,Requires Drug Screen,Skilled Labor Positions",
+              "street": "2710 Landers Ave #2205",
+              "website": "www.safe-t-cover.com",
+              "zipCode": 37211
+            },
+            {
+              "businessDescription": "Restaurant",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Sixty Vines"
+              },
+              "id": 66,
+              "lastAction": null,
+              "phone": "615-610-9330",
+              "qualifiers": null,
+              "street": "5055 Broadway Pl Suite 3200",
+              "website": "https://sixtyvines.com/",
+              "zipCode": 37203
+            },
+            {
+              "businessDescription": "Management Services",
+              "city": "Knoxville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "SMS Vanderbilt"
+              },
+              "id": 19,
+              "lastAction": null,
+              "phone": "615-343-9350",
+              "qualifiers": "Felony Friendly,Full Time Positions,Requires Drug Screen,Requires NO Experience,Sex Offender Friendly",
+              "street": "9202 S. Northshore Drive, Suite 202",
+              "website": "smsfacilities.com",
+              "zipCode": 37922
+            },
+            {
+              "businessDescription": "Housekeeping",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "SMS-Main Recrituing and Staffing"
+              },
+              "id": 20,
+              "lastAction": null,
+              "phone": "615-750-3766",
+              "qualifiers": "Felony Friendly,PRN Positions,Sex Offender Friendly,Temporary Positions",
+              "street": "7135 Charlotte Pike",
+              "website": "www.smsclean.com",
+              "zipCode": 37209
+            },
+            {
+              "businessDescription": "Staffing Placement",
+              "city": "Murfreesboro",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "SMX-Staff Management"
+              },
+              "id": 21,
+              "lastAction": null,
+              "phone": "615-439-0353",
+              "qualifiers": "Full Time Positions,Requires Background Check,Requires Drug Screen,Seasonal Positions",
+              "street": "202 N Thompson Ln Ste D",
+              "website": "apply.smjobs.com",
+              "zipCode": 37129
+            },
+            {
+              "businessDescription": "Restaurant",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Spaghetti Factory"
+              },
+              "id": 22,
+              "lastAction": null,
+              "phone": "615-254-9010",
+              "qualifiers": "Felony Friendly,Full Time Positions,Part Time Positions,Requires Background Check,Requires Drivers Licence,Requires NO Experience,Requires Uniform to Start",
+              "street": "160 2nd Ave N",
+              "website": "www.osf.com",
+              "zipCode": 37201
+            },
+            {
+              "businessDescription": "Staffing Placement",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Staff Zone"
+              },
+              "id": 23,
+              "lastAction": null,
+              "phone": "615-926-0462",
+              "qualifiers": "Part Time Positions,Requires Drivers Licence,Requires Drug Screen,Requires NO Experience,Skilled Labor Positions,Temporary Positions",
+              "street": "271 Hermitage Ave",
+              "website": "thestaffzone.com",
+              "zipCode": 37210
+            },
+            {
+              "businessDescription": "Electric Utility",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Stansell Electric"
+              },
+              "id": 24,
+              "lastAction": null,
+              "phone": "6153294944",
+              "qualifiers": "Seasonal Positions",
+              "street": "860 Visco Dr",
+              "website": "stansellelectric.com",
+              "zipCode": 37210
+            },
+            {
+              "businessDescription": "Dining Services",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Starbucks"
+              },
+              "id": 41,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251721
+                ],
+                "$ts": 1638554400000
+              },
+              "phone": "6157614825",
+              "qualifiers": "Part Time Positions,Requires Drug Screen,Seasonal Positions",
+              "street": "6836 Charlotte Pike",
+              "website": "",
+              "zipCode": 37211
+            },
+            {
+              "businessDescription": "Restaurant",
+              "city": "Brentwood",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Starbucks Brentwood"
+              },
+              "id": 60,
+              "lastAction": null,
+              "phone": "615-234-8899",
+              "qualifiers": "Full Time Positions,Part Time Positions,Requires Drug Screen",
+              "street": "4444 Brentwood Blvd.",
+              "website": "",
+              "zipCode": 37113
+            },
+            {
+              "businessDescription": "Restaurant",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Starbucks Downtown Nashville"
+              },
+              "id": 58,
+              "lastAction": null,
+              "phone": "615-990-9345",
+              "qualifiers": "Full Time Positions,Part Time Positions,Requires NO Experience",
+              "street": "2233 Broadway St",
+              "website": "",
+              "zipCode": 37211
+            },
+            {
+              "businessDescription": "Business Management",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Strategic Hospitality"
+              },
+              "id": 25,
+              "lastAction": null,
+              "phone": "",
+              "qualifiers": null,
+              "street": "411 Broadway",
+              "website": "www.strategichospitalityonline.com",
+              "zipCode": 37203
+            },
+            {
+              "businessDescription": "Restaurant",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Sunda Nashville"
+              },
+              "id": 62,
+              "lastAction": null,
+              "phone": "615-610-7566",
+              "qualifiers": "Felony Friendly,Requires Drivers Licence,Requires Prior Experience,Sex Offender Friendly",
+              "street": "592 12th Ave S",
+              "website": "https://sundanewasian.com/Nashville/",
+              "zipCode": 37203
+            },
+            {
+              "businessDescription": "Business Management",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Testing"
+              },
+              "id": 65,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251721
+                ],
+                "$ts": 1637172000000
+              },
+              "phone": "615-121-2341",
+              "qualifiers": null,
+              "street": "1234 Hart Lane",
+              "website": "",
+              "zipCode": 37203
+            },
+            {
+              "businessDescription": "Hotel Management",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "True Blue Hospitality"
+              },
+              "id": 26,
+              "lastAction": null,
+              "phone": "615-884-6112",
+              "qualifiers": "Felony Friendly,Full Time Positions,Part Time Positions,Requires Background Check,Requires Drug Screen,Seasonal Positions,Sex Offender Friendly",
+              "street": "2601 Elm Hill Pike",
+              "website": "www.vhghotels.com",
+              "zipCode": 37214
+            },
+            {
+              "businessDescription": "Dining Services",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Vanderbilt Dining Services"
+              },
+              "id": 27,
+              "lastAction": null,
+              "phone": "615-322-2915",
+              "qualifiers": "Full Time Positions,Part Time Positions,Requires Background Check,Requires Drivers Licence,Requires Drug Screen,Requires NO Experience,Seasonal Positions",
+              "street": "Baker Bldg, 110 21st Ave S #1120",
+              "website": "campusdining.vanderbilt.edu",
+              "zipCode": 37203
+            },
+            {
+              "businessDescription": "Systems Integrator",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Vertech"
+              },
+              "id": 38,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251721
+                ],
+                "$ts": 1610816400000
+              },
+              "phone": "7147283074",
+              "qualifiers": "Full Time Positions,Requires Drug Screen,Requires Prior Experience,Skilled Labor Positions",
+              "street": "5217 Linbar Drive, Suite 308",
+              "website": "www.vertech.com",
+              "zipCode": 37211
+            },
+            {
+              "businessDescription": "Restaurant",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Waffle House"
+              },
+              "id": 43,
+              "lastAction": {
+                "$": [
+                  "ts",
+                  192,
+                  1648882251721
+                ],
+                "$ts": 1625176800000
+              },
+              "phone": "6158337388",
+              "qualifiers": "Full Time Positions,Part Time Positions,Requires Background Check",
+              "street": "318 Harding Pl",
+              "website": "wafflehouse.com",
+              "zipCode": 37211
+            },
+            {
+              "businessDescription": "Janitorial Services",
+              "city": "",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Wall 2 wall Janitorial Services"
+              },
+              "id": 28,
+              "lastAction": null,
+              "phone": "615-586-7122",
+              "qualifiers": "Felony Friendly,Full Time Positions,Part Time Positions,Requires Drug Screen,Requires NO Experience,Sex Offender Friendly,Temporary Positions",
+              "street": "",
+              "website": "",
+              "zipCode": null
+            },
+            {
+              "businessDescription": "Religious Services",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Welcome Home Ministries"
+              },
+              "id": 29,
+              "lastAction": null,
+              "phone": "615-309-7087",
+              "qualifiers": "Felony Friendly,Sex Offender Friendly",
+              "street": "P.O. Box 100183",
+              "website": "www.welcomehomemin.org",
+              "zipCode": 37224
+            },
+            {
+              "businessDescription": "Printing Services",
+              "city": "Nashville",
+              "employerName": {
+                "style": {
+                  "color": "#0c4e85",
+                  "cursor": "pointer",
+                  "fontFamily": "Proxima Nova ExCn Medium",
+                  "text-align": "left"
+                },
+                "value": "Williams and Associates"
+              },
+              "id": 30,
+              "lastAction": null,
+              "phone": "615-390-4824",
+              "qualifiers": "Felony Friendly,Part Time Positions,Seasonal Positions,Sex Offender Friendly",
+              "street": "470 Allied Dr",
+              "website": "www.williamsassociates.net",
+              "zipCode": 37211
+            }
+          ],
+          "pager": {
+            "initialOption": 100
+          },
+          "rows": {
+            "striped": {
+              "enabled": false
+            }
+          },
+          "style": {
+            "classes": "Background/Default",
+            "overflowX": "hidden"
+          }
+        },
+        "scripts": {
+          "customMethods": [
+            {
+              "name": "getDataDb",
+              "params": [
+                "payload"
+              ],
+              "script": "\timport extend.query\n\t\n\tdeclaration, queryCte, query, orderBy, fetchOffset \u003d self.getQuery()\n\n\targs \u003d []\t\n\t###############################################\n\tactivityStart\u003d payload.get(\u0027activityStart\u0027)\n\targs +\u003d [activityStart]\n\n\t###############################################\n\tbusinessDescriptionId\u003d payload.get(\u0027businessDescriptionId\u0027)\n\targs +\u003d [businessDescriptionId]\n\tsystem.perspective.print((\"payload.get(\u0027businessDescriptionId\u0027): \",payload.get(\u0027businessDescriptionId\u0027)))\n\t###############################################\n\tcity\u003d payload.get(\u0027city\u0027)\n\targs +\u003d [city]\n\n\t###############################################\n\tsearchText\u003d payload.get(\u0027searchText\u0027)\n\targs +\u003d [searchText]\n\n\t################################################\n\t# raceIds should be list [0,2]. If it is None return from function is whereInFix always true: 1 \u003d 1 and raceIdFix \u003d []. \n\t# If it is single value val then function return whereInFix as *** in (?),  raceIdFix \u003d [val]. \n\tqualifier \u003d payload.get(\u0027qualifier\u0027)\n\t\n\n\t# whereIn will be changed in query with whereInFix\n\twhereIn \u003d \u0027[EmployerNewQualifier].[QualifierId] IN (*?)\u0027 \n\twhereInFix, qualifierFix \u003d extend.query.getWhereInParamFix(whereIn, qualifier)\n\n\tqueryCte \u003d queryCte.replace(whereIn, whereInFix)\n\t# number of Qualifiers, @qtyQualifiers\n\targs +\u003d [len(qualifierFix)]\n\t\n\t# Warning: this (qualifierFix) is always list, don\u0027t use brackets !!!!!!!!!!!!\n\targs +\u003d qualifierFix\t\t\n\n\t###############################################\n\toffset \u003d payload.get(\u0027offset\u0027)\n\tfetch \u003d payload.get(\u0027fetch\u0027)\n\tif offset is not None and fetch is not None:\n\t\t#counterQuery \u003d \u0027{}; WITH cte AS ({}) SELECT COUNT(1) cnt FROM cte\u0027.format(declaration, query)\n\t\t# declaration, queryCte, query, orderBy, fetchOffset\n\t\tcounterQuery \u003d \u0027{} {} ,cte AS ({}) SELECT COUNT(1) cnt FROM cte\u0027.format(declaration, queryCte, query)\n\t\tresultRowCount \u003d system.db.runScalarPrepQuery(counterQuery, args, \u0027RITIOps\u0027)\n\t\targs +\u003d [offset]\n\t\targs +\u003d [fetch]\t\n\t\n\t\tquery \u003d \u0027{} {} {} {} {}\u0027.format(declaration, queryCte, query, orderBy, fetchOffset)\n\t\tresult \u003d system.db.runPrepQuery(query, args, \u0027RITIOps\u0027)\n\t\n\telse:\n\t\tquery \u003d \u0027{} {} {} {}\u0027.format(declaration, queryCte, query, orderBy)\n\t\tresult \u003d system.db.runPrepQuery(query, args, \u0027RITIOps\u0027)\t\n\t\tresultRowCount \u003d result.rowCount\n\t\n\t#ystem.perspective.print((\u0027Exec: args\u0027,args)) \n\t\n\treturn result, resultRowCount\n"
+            },
+            {
+              "name": "getPropsColumns",
+              "params": [
+                "dataset"
+              ],
+              "script": "\tjsonDefaultColumn \u003d \"\"\"\n  {\n\t    \"field\": \"\",\n\t    \"visible\": true,\n\t    \"editable\": false,\n\t    \"render\": \"auto\",\n\t    \"justify\": \"left\",\n\t    \"align\": \"center\",\n\t    \"resizable\": true,\n\t    \"sortable\": true,\n\t    \"sort\": \"none\",\n\t    \"viewPath\": \"\",\n\t    \"viewParams\": {},\n\t    \"boolean\": \"checkbox\",\n\t    \"number\": \"value\",\n\t    \"progressBar\": {\n\t      \"max\": 100,\n\t      \"bar\": {\n\t        \"color\": \"#62A3F6\",\n\t        \"linecap\": \"round\",\n\t        \"width\": 5\n\t      },\n\t      \"track\": {\n\t        \"color\": \"#DADADA\",\n\t        \"linecap\": \"round\",\n\t        \"width\": 2\n\t      },\n\t      \"value\": {\n\t        \"color\": \"#7D7D7D\",\n\t        \"show\": true\n\t      }\n\t    },\n\t    \"toggleSwitch\": {\n\t      \"color\": {\n\t        \"selected\": \"#2196F3\",\n\t        \"unselected\": \"#FFFFFF\"\n\t      }\n\t    },\n\t    \"numberFormat\": \"0,0.##\",\n\t    \"dateFormat\": \"MM/DD/YYYY\",\n\t    \"width\": \"\",\n\t    \"strictWidth\": false,\n\t    \"header\": {\n\t      \"title\": \"\",\n\t      \"justify\": \"left\",\n\t      \"align\": \"center\",\n\t      \"style\": {\n\t        \"classes\": \"Table/Column_Header\"\n\t      }\n\t    },\n\t    \"footer\": {\n\t      \"title\": \"\",\n\t      \"justify\": \"left\",\n\t      \"align\": \"center\",\n\t      \"style\": {\n\t        \"classes\": \"\"\n\t      }\n\t    },\n\t    \"style\": {\n\t      \"classes\": \"Table/Column_Normal\"\n\t    }\n\t  },\t\n\t\"\"\"\n\n\tcolumnsForced \u003d [\n\t  {\n\t    \"field\": \"id\",\n\t    \"width\": 40,\n\t    \"title\": \"\"\n\t  },\n\t  {\n\t    \"field\": \"employerName\",\n\t    \"width\": 270,\n\t    \"title\": \"Employer Name\"\n\t  },\n\t  {\n\t    \"field\": \"businessDescription\",\n\t    \"width\": 220,\n\t    \"title\": \"Business\"\n\t  },\t  \n\t  {\n\t    \"field\": \"lastAction\",\n\t    \"width\": 120,\n\t    \"title\": \"Last Action\"\n\t  },\n\t  {\n\t    \"field\": \"phone\",\n\t    \"width\": 100,\n\t    \"title\": \"Phone\"\n\t  },\n\t  {\n\t    \"field\": \"city\",\n\t    \"width\": 130,\n\t    \"title\": \"City\"\n\t  },\n\t  {\n\t    \"field\": \"street\",\n\t    \"width\": 200,\n\t    \"title\": \"Address\"\n\t  },\n\t  {\n\t    \"field\": \"zipCode\",\n\t    \"width\": 50,\n\t    \"title\": \"Zip\"\n\t  },\n\t  {\n\t    \"field\": \"website\",\n\t    \"width\": 320,\n\t    \"title\": \"Website\"\n\t  },\n\t  {\n\t    \"field\": \"qualifiers\",\n\t    \"width\": 2000,\n\t    \"title\": \"Qualifiers\"\n\t  }\n\t]\n\n\tcolNames \u003d system.dataset.getColumnHeaders(dataset)\n\n\t_columns \u003d []\n\tfor col in colNames:\n\t\t# This conversion json_\u003edict create actually deepcopy\n\t\tpyColumn \u003d system.util.jsonDecode(jsonDefaultColumn)\n\t\t\n\t\t# Note: Field must contain only letters and numbers.\n\t\tpyColumn[\u0027field\u0027] \u003d col\n\t\t\n\t\t_dictCol \u003d None\n\t\tfor item in columnsForced:\n\t\t\tif item[\u0027field\u0027] \u003d\u003d pyColumn[\u0027field\u0027]:\n\t\t\t\t_dictCol \u003d item.copy() \n\t\t\t\n\t\t\n\t\t#ystem.perspective.print((_dictCol))\n\t\t\n\t\tpyColumn[\u0027header\u0027][\u0027title\u0027] \u003d _dictCol[\u0027title\u0027] if _dictCol else \u0027\u0027\n\t\t\n\t\tif _dictCol and _dictCol.get(\u0027width\u0027):\n\t\t\tpyColumn[\u0027width\u0027] \u003d _dictCol[\u0027width\u0027]\n\t\t\tpyColumn[\u0027strictWidth\u0027] \u003d True\n\n\t\tif col \u003d\u003d \u0027id\u0027:\n\t\t\tpyColumn[\u0027header\u0027][\u0027title\u0027] \u003d \u0027 \u0027\n\t\t\tpyColumn[\"render\"] \u003d \"view\"\n\t\t\tpyColumn[\"justify\"] \u003d \"center\"\n\t\t\tpyColumn[\"resizable\"] \u003d False\n\t\t\tpyColumn[\"sortable\"] \u003d False\n\t\t\tpyColumn[\"viewPath\"] \u003d \"Employers/Dashboard/Components/Tables/Templates/TableOptions\"\t\n\t\t\t\t\n\t\t#if col \u003d\u003d \u0027employerName\u0027:\n\t\t\t#pyColumn[\"render\"] \u003d \"view\"\n\t\t\t#pyColumn[\"viewPath\"] \u003d \"Employers/Dashboard/Components/Tables/Templates/NameLink\"\t\n\t\t\n\t\tif col \u003d\u003d \u0027zipCode\u0027:\n\t\t\tpyColumn[\u0027numberFormat\u0027] \u003d \"none\"\t\n\t\n\t\t#if col \u003d\u003d \u0027zipCode\u0027:\n\t\t\t#pyColumn[\u0027numberFormat\u0027] \u003d \"none\"\t\n\t\t\t\t\t\n\t\t_columns.append(pyColumn)\n\t\n\t#ystem.perspective.print((\"_columns: \",_columns))\n\t\n\treturn _columns"
+            },
+            {
+              "name": "correctTimeForClient",
+              "params": [
+                "pyds",
+                "columnsToCorrect"
+              ],
+              "script": "\t\n\t# !!!!!!!!!!!  NOT TESTED !!!!!!!!!!!!!!!!!!!!!!!\n\t\n\t# Table automaticaly change datetime according to client timezone, \n\t# For this table we don\u0027t need automatic conversion, we must recorrect datetimes, according client timezone.\n\t# Actually to see same values like in db.\n\t\n\t# This is correction client against ignition server\n\t# TODO add correction to SQL server\n\tcorrectionTime \u003d int(60*(system.date.getTimezoneOffset() - self.session.props.device.timezone.utcOffset)) \n\t\n\tlistDateFix \u003d [[]*len(columnsToCorrect)]\n\tfor rowIndex, row in enumerate(pyds):\n\t\tfor colIndex, col in enumerate(columnsToCorrect):\n\t\t\tlistDateFix[colIndex].append(system.date.addMinutes(row[col], correctionTime))\n\t\n\n\tfor index, item in enumerate(listDateFix):\n\t\tcolNames \u003d system.dataset.getColumnHeaders(pyds)\n\t\tcolPosition \u003d colNames.index(columnsToCorrect[index])\n\t\tpyds \u003d system.dataset.filterColumns(pyds, [ x for x in colNames if x !\u003d columnsToCorrect[index]])\n\t\tpyds \u003d system.dataset.addColumn(pyds,colPosition,item,columnsToCorrect[index])\n\t\n\treturn pyds\n"
+            },
+            {
+              "name": "setMisc",
+              "params": [],
+              "script": "\t\n\tself.props.cells.style\u003d {\n\t    \"classes\": \"Table/Cell_Dashboard\"\n\t}\n\t\n\tself.props.style \u003d {\n\t  \"classes\": \"Background/Default\",\n\t  \"overflowX\": \"hidden\"\n\t}\n"
+            },
+            {
+              "name": "doByCondition",
+              "params": [
+                "payload"
+              ],
+              "script": "\timport java.lang\n\n\t# 1. Add fetch to payload if not exist. We can send from pager or use value self.view.params.fetch.\n\t# This should be step before offset\n\tfetch \u003d payload.get(\u0027fetch\u0027)\n\t\n\tif not(fetch):\n\t\tfetch \u003d self.view.params.fetch\n\t\n\t# If fetch value is integer greater then 0, pager exist\n\tif fetch and fetch \u003e 1:\n\t\tpayload[\u0027fetch\u0027] \u003d fetch\n\n\t\t#  2. If payload has \u0027offset\u0027, it means that comming from pager. Then take lastPayload \n\t\t# stored as json string, deserialize to python dict and  add node\u0027 offset\u0027\n\t\t# Else means payload is comming from conditions. Don\u0027t do anything just continue\n\t\tif payload.get(\u0027offset\u0027) is not None:\n\t\t\toffset \u003d payload[\u0027offset\u0027]\n\t\t\tpayload \u003d {}\n\t\t\tfor key in self.custom.lastPayload:\n\t\t\t\tpayload[key] \u003d self.custom.lastPayload[key]\n\t\t\t\n\t\t\t\n\t\t\tpayload[\u0027offset\u0027] \u003d offset\n\t\t\tpayload[\u0027fetch\u0027] \u003d fetch\n\t\telse:\n\t\t\tpayload[\u0027offset\u0027] \u003d 0\n\t\n\t# 3. Get data from DB. Data is dataset which contain only fetch number of rows. \n\t# _resultRowCount is scalar value which represent number of rows in case the that query is executed without  OFFSET ... FETCH...\n\t_data, _resultRowCount \u003d self.getDataDb(payload)\n\t\n\tself.view.params.resultRowCount \u003d _resultRowCount\n\n\t# 4. Set some misc props if necessary (explicit)\n\tself.setMisc()\n\n\n\t\n\t# 5. Step get columns props (explicit adjustment)\n\tself.props.columns \u003d self.getPropsColumns(_data)\n\n\t# 6. Correct values in datetime column according client timezone. (check comments inside function)\n\t#_data \u003d self.correctTimeForClient(_data, [\u0027dob\u0027])\n\t\n\t# Set Kpis\n\tself.sendMessageToKpis(_data)\n\n\n\t# 7. Add dummy empty raw if result is empty dataset. Reason to do that is to avoid loosing foqus on search cell in filters.\n\t\n\t_colNames \u003d system.dataset.getColumnHeaders(_data)\n\t\n\tif _data.rowCount \u003d\u003d 0:\n\t\t_lstData \u003d [{col: None for col in _colNames}]\n\telse:\n\t\t_pyds \u003d system.dataset.toPyDataSet(_data)\n\t\t_lstData \u003d [{col: row[col] for col in _colNames} for row in _pyds]\n\n\t#ystem.perspective.print((\u0027_lstData: \u0027,_lstData))\n\n\t_makeUped \u003d self.getMakeUpData(_lstData)\n\n\tself.props.data \u003d _makeUped\n\t\n\t#self.custom.jsonLastPayload \u003d system.util.jsonEncode(payload)\n\t\n\t# Remove fetch and offset, it is not necessary to store.\n\t#payload.pop(\u0027offset\u0027,None)\n\t#payload.pop(\u0027fetch\u0027,None)\n\t#self.custom.lastPayload \u003d payload\n\n\n"
+            },
+            {
+              "name": "getQuery",
+              "params": [],
+              "script": "\t\n\tdeclaration \u003d \t\"\"\"\nDECLARE  \n\t @activityStart datetime \u003d ?\n\t,@businessDescriptionId int \u003d ?\n\t,@city VARCHAR(100) \u003d ?\n\t,@searchText VARCHAR(max) \u003d ?\n\t,@qtyQualifiers int \u003d ?\n\t\"\"\"\n\t\n\tqueryCte \u003d \"\"\"\n;WITH cteLastAction AS (\nSELECT [employerId]\n\t,MAX(CASE WHEN ISNULL([appliedDate],\u00271900-01-01\u0027) \u003e ISNULL([interviewedDate],\u00271900-01-01\u0027) THEN\n\t\tCASE WHEN ISNULL([appliedDate],\u00271900-01-01\u0027) \u003e ISNULL([hiredDate],\u00271900-01-01\u0027) THEN\n\t\t\t[appliedDate]\n\t\tELSE\n\t\t\tCASE WHEN ISNULL([interviewedDate],\u00271900-01-01\u0027) \u003e ISNULL([hiredDate],\u00271900-01-01\u0027) THEN\n\t\t\t\t[interviewedDate]\n\t\t\tELSE\n\t\t\t\t[hiredDate]\n\t\t\tEND\n\t\tEND\n\tELSE\n\t\tCASE WHEN ISNULL([interviewedDate],\u00271900-01-01\u0027) \u003e ISNULL([hiredDate],\u00271900-01-01\u0027) THEN\n\t\t\t[interviewedDate]\n\t\tELSE\n\t\t\t[hiredDate]\n\t\tEND\n\tEND ) lastAction\nFROM [RITIOps].[organization].[ApplicantStatus]\nGROUP BY employerId\n)\n\n,cteQ AS(\nSELECT DISTINCT [EmployerNew].[id] AS [employerId], [EmployerNewQualifier].[QualifierId]\nFROM [RITIOps].[organization].[EmployerNew]\n\tLEFT JOIN [organization].[EmployerNewQualifier] ON [EmployerNewQualifier].[EmployerNewId] \u003d [EmployerNew].[id]\nWHERE  (ISNULL(@qtyQualifiers,0) \u003d 0 OR [EmployerNewQualifier].[QualifierId] IN (*?))\n)\n\n,cteUniqueEmpByQua AS (\nSELECT \n\t [employerId]\n\t,COUNT(QualifierId) cnt\nFROM cteQ\nGROUP BY [employerId]\nHAVING COUNT(QualifierId) \u003d @qtyQualifiers  OR ISNULL(@qtyQualifiers,0) \u003d 0\n)\n\n,cteEmp AS (\nSELECT \n\t cteUniqueEmpByQua.[employerId]\n\t,STRING_AGG([Qualifier].[Qualifier_Description],\u0027,\u0027) AS [qualifiers]\nFROM cteUniqueEmpByQua\n\tLEFT JOIN [organization].[EmployerNewQualifier] ON [EmployerNewQualifier].[EmployerNewId] \u003dcteUniqueEmpByQua.[employerId]\n\tLEFT JOIN [organization].[Qualifier] ON [Qualifier].[ID] \u003d [EmployerNewQualifier].[QualifierId]\nGROUP BY cteUniqueEmpByQua.[employerId]\n)\n\"\"\"\n\n\tquery \u003d \"\"\"\nSELECT \n\t [EmployerNew].[id]\n\t,[EmployerNew].[Employer Name] AS [employerName]\n\t,[BusinessDescription].[BusinessDescription] AS [businessDescription]\n\t,cteLastAction.[lastAction]\n\t,[EmployerNew].[phone]\n\t,[EmployerNew].[street]\n\t,[EmployerNew].[city]\n\t,[EmployerNew].[zipCode]\n\t,[EmployerNew].[website]\n\t,cteEmp.[qualifiers]\nFROM cteEmp\n\tLEFT JOIN cteLastAction ON cteLastAction.[employerId] \u003d cteEmp.[employerId]\n\tLEFT JOIN [organization].[EmployerNew] ON [EmployerNew].[id] \u003d cteEmp.[employerId]\n\tLEFT JOIN [organization].[BusinessDescription] ON [BusinessDescription].[BusinessDescriptionID] \u003d [EmployerNew].[BusinessDescriptionID]\nWHERE 1\u003d1\n\tAND ([EmployerNew].[timeRetired] IS NULL)\n\tAND (cteLastAction.[lastAction] \u003e\u003d ISNULL(@activityStart,\u00271900-01-01\u0027) OR @activityStart IS NULL)\n\tAND ([EmployerNew].[BusinessDescriptionID] \u003d @businessDescriptionId OR @businessDescriptionId IS NULL)\n\tAND ([EmployerNew].[city] \u003d @city OR ISNULL(@city, \u0027\u0027) \u003d \u0027\u0027)\n\tAND (\n\t\t@searchText \u003d \u0027\u0027 \n\t\tOR @searchText IS NULL \n\t\tOR [EmployerNew].[Employer Name] LIKE CONCAT(\u0027%\u0027,@searchText,\u0027%\u0027) \n\t\tOR [BusinessDescription].[BusinessDescription] LIKE CONCAT(\u0027%\u0027,@searchText,\u0027%\u0027) \n\t\tOR CONVERT(VARCHAR(10), cteLastAction.[lastAction],101) LIKE CONCAT(\u0027%\u0027,@searchText,\u0027%\u0027) \n\t\tOR [EmployerNew].[phone] LIKE CONCAT(\u0027%\u0027,@searchText,\u0027%\u0027)\n\t\tOR [EmployerNew].[street] LIKE CONCAT(\u0027%\u0027,@searchText,\u0027%\u0027)\n\t\tOR [EmployerNew].[city] LIKE CONCAT(\u0027%\u0027,@searchText,\u0027%\u0027)\n\t\tOR CAST([EmployerNew].[zipCode] AS VARCHAR(20))  LIKE CONCAT(\u0027%\u0027,@searchText,\u0027%\u0027) \n\t\tOR [EmployerNew].[website] LIKE CONCAT(\u0027%\u0027,@searchText,\u0027%\u0027)\n\t\tOR cteEmp.[qualifiers] LIKE CONCAT(\u0027%\u0027,@searchText,\u0027%\u0027)\n\t)\n\t\"\"\"\n\torderBy \u003d \"\"\"\nORDER BY [EmployerNew].[Employer Name]\n\"\"\"\n\n\n\tfetchOffset \u003d \"\"\"\nOFFSET ? ROWS \nFETCH NEXT ? ROWS ONLY;  \n\t\"\"\"\t\n\treturn declaration, queryCte, query, orderBy, fetchOffset"
+            },
+            {
+              "name": "sendMessageToKpis",
+              "params": [
+                "data"
+              ],
+              "script": "\t# Send message to KPIs\n\tpayload \u003d {}\n\t\n\t\n\tif data.rowCount \u003e 0:\n\t\tpayload[\u0027employerId\u0027] \u003d []\n\t\t#payload[\u0027totalReferralsYtd\u0027] \u003d 0\t\n\t\tfor rowIndex, row in enumerate(system.dataset.toPyDataSet(data)):\n\t\t\tpayload[\u0027employerId\u0027].append(row[\u0027id\u0027])\n\t\n\tsystem.perspective.sendMessage(\u0027mhEmployerDashboardKpiHeader\u0027,payload)\n\t\n\t"
+            },
+            {
+              "name": "getMakeUpData",
+              "params": [
+                "lstData"
+              ],
+              "script": "\t\n\n\t_style \u003d {\t\"color\": \"#0c4e85\",\n\t\t\t\t\"cursor\": \"pointer\",\n\t\t\t\t\"fontFamily\": \"Proxima Nova ExCn Medium\",\n\t\t\t\t\"text-align\": \"left\"}\n\t\t\t\t\t\n\n\n\tfor row in lstData:\n\t\tfor key in row:\n\t\t\tif key \u003d\u003d \u0027employerName\u0027:\n\t\t\t\trow[key] \u003d {\u0027value\u0027: row[key] if row[key] is not None else \u0027\u0027, \"style\": _style}\n\t\t\tif key \u003d\u003d \u0027website\u0027:\n\t\t\t\trow[key] \u003d row[key][:27] + \u0027 ~ \u0027 + row[key][-7:] if row[key] and len(row[key]) \u003e 40 else row[key]\n\treturn lstData"
+            }
+          ],
+          "extensionFunctions": null,
+          "messageHandlers": [
+            {
+              "messageType": "mhByCondition",
+              "pageScope": true,
+              "script": "\t#ystem.perspective.print((\u0027Msgstep1\u0027))\n\tself.doByCondition(payload)",
+              "sessionScope": false,
+              "viewScope": false
+            }
+          ]
+        },
+        "type": "ia.display.table"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "justify": "space-around",
+      "style": {
+        "overflow": "visible"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

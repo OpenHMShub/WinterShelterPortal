@@ -1,0 +1,34 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "-1",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "description": "Select a list of providers",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "RITIOps",
+    "fallbackEnabled": true,
+    "lastModificationSignature": "d4744a9b51348346c2a63a8cafd97f8823f0a91abe6b3b5d32f2a7c2f82a8c63",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:47:00Z"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 776,
+      "width": 1109
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "IFrame"
+        },
+        "position": {
+          "height": 642,
+          "width": 604,
+          "x": 7
+        },
+        "props": {
+          "allowFullScreen": true,
+          "referrerPolicy": "origin",
+          "src": "https://riti.breezechms.com/embed/calendar/grid?size\u003dmedium\u0026color\u003ddefined\u0026calendars\u003deyJpdiI6InVpcnVqc3BrNU5jbmw0QXZxMSsrcnc9PSIsInZhbHVlIjoiUXc2SCtnbjRnai9NM3JUdENWZjZOaXJic2hEMEtYckd2RGU1NGYvU0ZZQmhRRVROVkk3NHNBZTJZUXFSVU5xTmNJUjVyZE55R09XNFpoemE2TnZaN2c9PSIsIm1hYyI6IjYzZDQwODg2ODhlN2E0MzQ4Njk3NzU3M2I0NzU4ZjVhYjM0NmVmNTdmNTIzNmEwMGUyYmViZDNkNDVkZDVhZGYifQ%3D%3D"
+        },
+        "type": "ia.display.iframe"
+      },
+      {
+        "meta": {
+          "name": "IFrame_0"
+        },
+        "position": {
+          "height": 556,
+          "width": 568,
+          "x": 611
+        },
+        "props": {
+          "referrerPolicy": "origin",
+          "src": "https://riti.breezechms.com/people"
+        },
+        "type": "ia.display.iframe"
+      },
+      {
+        "meta": {
+          "name": "Link"
+        },
+        "position": {
+          "height": 24,
+          "width": 456,
+          "x": 611,
+          "y": 609
+        },
+        "props": {
+          "style": {
+            "backgroundColor": "#FFFFCC"
+          },
+          "target": "tab",
+          "text": "Link: Breeze",
+          "url": "https://riti.breezechms.com/people"
+        },
+        "type": "ia.navigation.link"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "style": {
+        "classes": "Background/Default"
+      }
+    },
+    "type": "ia.container.coord"
+  }
+}

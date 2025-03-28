@@ -1,0 +1,16 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "style.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "vAHunt",
+      "timestamp": "2021-05-26T23:31:47Z"
+    },
+    "lastModificationSignature": "ffaf155a4463db215f8318910741bf20e328188cdc0308211d37bda6101ba8dc"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "description": "Gets a list of medications matching the filter. Don\u0027t forget to include the % wildcards!\nA full list will not be returned since there are way too many options.",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "c69ee0560841e16891ab15e90fda145e489ac593ca98a73d9a645f96287d944d",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:46:31Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "filter",
+        "sqlType": 7
+      }
+    ]
+  }
+}

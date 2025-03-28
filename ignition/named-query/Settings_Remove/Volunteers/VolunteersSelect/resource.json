@@ -1,0 +1,70 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "RITIOps",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "f8daf3df244c6c3c818b5e593345f1107ee084c139e66e19972e2d134d8d106f",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:47:00Z"
+    },
+    "parameters": [
+      {
+        "type": "QueryString",
+        "identifier": "firstName",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "middleName",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "lastName",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "nickName",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "search",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "organization",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "active",
+        "sqlType": 7
+      }
+    ]
+  }
+}

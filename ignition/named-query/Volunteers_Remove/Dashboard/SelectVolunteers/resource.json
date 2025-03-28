@@ -1,0 +1,41 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 5,
+    "cacheUnit": "SEC",
+    "description": "Select the Volunteers for the volunteers dashboard.",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "RITIOps",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "a55ef6d4df0d9598feb19892d3c73398e33ac75ddb070a0918e0d78e31006855",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:47:19Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "dayRange",
+        "sqlType": 2
+      }
+    ]
+  }
+}

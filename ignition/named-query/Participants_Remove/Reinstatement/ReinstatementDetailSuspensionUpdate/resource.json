@@ -1,0 +1,55 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "RITIOps",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "aa2701e6a63cad85604da8961d1ff45f313c39369ad3afc232d4225814e162f8",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:46:31Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "suspension_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "duration",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "suspension_type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "time_end",
+        "sqlType": 8
+      }
+    ]
+  }
+}

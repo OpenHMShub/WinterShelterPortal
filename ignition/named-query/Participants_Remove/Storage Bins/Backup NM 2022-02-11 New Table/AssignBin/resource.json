@@ -1,0 +1,66 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "description": "Inserts a row into the StorageBinLog table for the given participant.",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "40bcf9df2c5412737bb3cd8754f71573fc6429029e61a49318745c8770d5847b",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:46:31Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "participantId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "employeeId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "col",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "bin",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "startOn",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "expireOn",
+        "sqlType": 8
+      }
+    ]
+  }
+}

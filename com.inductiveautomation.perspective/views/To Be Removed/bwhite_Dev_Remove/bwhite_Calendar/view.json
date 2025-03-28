@@ -1,0 +1,59 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "calendar"
+        },
+        "position": {
+          "basis": "674px"
+        },
+        "props": {
+          "currentCalendarDate": {
+            "currentDateEnd": "2020-12-01 00:00:00",
+            "currentDateStart": "2020-11-01 00:00:00",
+            "displayDateEnd": "2020-12-13 00:00:00",
+            "displayDateStart": "2020-11-01 00:00:00",
+            "month": 10,
+            "title": "November 2020",
+            "week": 44
+          },
+          "editable": true,
+          "eventDisplay": {
+            "backgroundColor": "#2C1818",
+            "color": "#370D0D",
+            "font": {
+              "textColor": "#000000"
+            }
+          },
+          "eventPopUp": {
+            "canEditEventOnPopUp": true,
+            "useEventPopUp": true
+          },
+          "selectable": true,
+          "selectedDate": {
+            "end": "2020-11-01 05:00:00",
+            "start": "2020-11-01 04:30:00"
+          },
+          "style": {
+            "classes": "Text/About_Title"
+          }
+        },
+        "type": "bijc.display.calendar"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "Background/Default"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

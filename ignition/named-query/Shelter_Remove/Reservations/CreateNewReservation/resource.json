@@ -1,0 +1,90 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "RITIOps",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "678c501c08f66d329434ea61d342da3357a02fdd673af30ba3526677622394e2",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:47:07Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "bedId",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "participantId",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "reservationStart",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "reservationEnd",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "notes",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "providerTypeId",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "providerId",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "programId",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "waitingListName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "reservationType",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "referralStatus",
+        "sqlType": 7
+      }
+    ]
+  }
+}

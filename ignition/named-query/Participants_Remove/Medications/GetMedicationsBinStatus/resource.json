@@ -1,0 +1,51 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "description": "Gets historical storage bin allocations from the StorageBinLog table.\nAllows filtering with a search term on the participant name and the storage bin (col + bin). Filter passed in should generally be surrounded by % as search term uses a LIKE clause.",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "293f21f9b95371fdb46dc1a2a9e6e00c14bd00194da51c31e3a81f9c62c48591",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:46:31Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "activityStatus",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "searchFilter",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "daysAgoFilter",
+        "sqlType": 2
+      }
+    ]
+  }
+}

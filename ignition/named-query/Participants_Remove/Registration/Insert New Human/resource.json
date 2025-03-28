@@ -1,0 +1,150 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "RITIOps",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "b39c36dc8deb54aa6dc6a9d3c2d5005c385c402f60aab58641489dc41e4347c6",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:46:31Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "dob",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "first_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "middle_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "last_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "nick_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dob_quality",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ssn",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ssn_quality",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "gender_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "race_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ethnicity_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "veteran_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "disability_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "alt_phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "email",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "communication_type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_email",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "family_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "hoh_relationship_id",
+        "sqlType": 2
+      }
+    ]
+  }
+}

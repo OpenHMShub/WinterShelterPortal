@@ -1,0 +1,982 @@
+{
+  "custom": {},
+  "params": {
+    "activity_range": 365
+  },
+  "propConfig": {
+    "params.activity_range": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 713,
+      "width": 1095
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "basis": "32px",
+          "display": false
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "../Table.props.data"
+              },
+              "transforms": [
+                {
+                  "code": "\tif value \u003d\u003d None:\n\t\t\toutput \u003d \u0027No Rows\u0027\n\telif value.getRowCount() \u003d\u003d 0:\n\t\toutput \u003d \u0027No Rows\u0027\n\telse:\n\t\toutput \u003d str(value.getRowCount()) + \u0027 Rows\u0027\n\treturn output",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "classes": "Background/Alternative Text/Error_Message"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "events": {
+          "component": {
+            "onRowClick": {
+              "config": {
+                "script": "\timport traceback\n\ttry:\n\t\tselectedColumn \u003d self.props.selection.selectedColumn\n\t\tparticipantID \u003d self.props.data.getValueAt(event.row,\u0027participantId\u0027)\n\t\tsystem.perspective.print(selectedColumn)\n\t\t#system.perspective.print(participantID)\n\t\tif selectedColumn \u003d\u003d \"participantId\": \n\t\t\t#Display the detail screen\n\t\t\t#system.perspective.print(\u0027Participant Detail\u0027)\n\t\t\ttab_id \u003d 70\n\t\t\tsystem.perspective.navigate(\"Participants/Detail/\" + str(participantID) + \"/\" + str(tab_id))\n\t\t#elif selectedColumn \u003d\u003d \"Options\":\n\t\telif selectedColumn \u003d\u003d \"id\":\n\t\t\tid \u003d \"PreviewParticipant\" \n\t\t\tparams \u003d {\"participantID\":participantID}\n\t\t\tsystem.perspective.openDock(id\u003did,params\u003dparams)\n\t\telse:\n\t\t\tpass\n\texcept:\n\t\tlogger \u003d system.util.getLogger(\"Participants DrugScreen Dashboard Table OnRowClick\")\n\t\tmsg \u003d traceback.format_exc()\n\t\tlogger.error(msg)"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Table"
+        },
+        "position": {
+          "basis": "100%"
+        },
+        "propConfig": {
+          "custom.sqlData": {
+            "access": "PRIVATE",
+            "binding": {
+              "config": {
+                "parameters": {
+                  "activity_range": "{view.params.activity_range}",
+                  "administeredById": "{session.custom.filters.drugScreenDashboard.administeredById.where}",
+                  "drugScreenResonId": "{session.custom.filters.drugScreenDashboard.drugScreenReasonId.where}",
+                  "drugScreenTypeId": "{session.custom.filters.drugScreenDashboard.drugScreenTypeId.where}",
+                  "firstname": "{session.custom.filters.drugScreenDashboard.FirstName.where}",
+                  "lastname": "{session.custom.filters.drugScreenDashboard.LastName.where}",
+                  "middlename": "{session.custom.filters.drugScreenDashboard.MiddleName.where}",
+                  "nickname": "{session.custom.filters.drugScreenDashboard.NickName.where}",
+                  "passed": "{session.custom.filters.drugScreenDashboard.passed.where}",
+                  "search": "{session.custom.filters.drugScreenDashboard.Search.where}",
+                  "testDate": "{session.custom.filters.drugScreenDashboard.testDate.where}"
+                },
+                "queryPath": "Participants/DrugScreen/DrugScreenDashboardSelect"
+              },
+              "type": "query"
+            }
+          },
+          "props.data": {
+            "binding": {
+              "config": {
+                "path": "this.custom.sqlData"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "cells": {
+            "style": {
+              "classes": "Table/Cell_Dashboard"
+            }
+          },
+          "columns": [
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "id",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": " "
+              },
+              "justify": "center",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "view",
+              "resizable": false,
+              "sort": "none",
+              "sortable": false,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {
+                "rowData": {
+                  "ID": "value"
+                }
+              },
+              "viewPath": "1_TEMPLATES/Tables/TableOptions",
+              "visible": true,
+              "width": 35
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "participantId",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": " "
+              },
+              "justify": "center",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "view",
+              "resizable": false,
+              "sort": "none",
+              "sortable": false,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {
+                "rowData": {
+                  "ID": "value"
+                }
+              },
+              "viewPath": "1_TEMPLATES/Tables/TableDetail",
+              "visible": true,
+              "width": 25
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "name",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Name"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 240
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "nickName",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Nickname"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 240
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "ssn",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "SSN"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "00.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 120
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "testDate",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Test Date"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 120
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "administeredByName",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Administered By"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 160
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "DrugScreenReasonName",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Reason"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 160
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "drugScreenTypeName",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Test Type"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 120
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "passed",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Pass"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "view",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": ""
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "1_TEMPLATES/Tables/TableBoolean",
+              "visible": true,
+              "width": 100
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "comments",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Comments"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "max": 100,
+                "min": 0,
+                "track": {
+                  "color": "",
+                  "style": {
+                    "classes": ""
+                  }
+                },
+                "value": {
+                  "enabled": true,
+                  "format": "0,0.##",
+                  "justify": "center",
+                  "style": {
+                    "classes": ""
+                  }
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "",
+                  "unselected": ""
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 240
+            }
+          ],
+          "headerGroups": [
+            [
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "background-origin": "content-box",
+                  "background-size": "15px",
+                  "backgroundImage": "url(\"/system/images/SVGs/Arrow (Menu).svg\")",
+                  "backgroundPosition": "right center",
+                  "backgroundRepeat": "no-repeat",
+                  "classes": "",
+                  "color": "#0d80e3",
+                  "wordWrap": "break-word"
+                },
+                "title": "Name"
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "background-origin": "content-box",
+                  "background-size": "15px",
+                  "backgroundImage": "url(\"/system/images/SVGs/Arrow (Menu).svg\")",
+                  "backgroundPosition": "right center",
+                  "backgroundRepeat": "no-repeat",
+                  "classes": "",
+                  "color": "#0d80e3",
+                  "wordWrap": "break-word"
+                },
+                "title": "ID"
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "background-origin": "content-box",
+                  "background-size": "15px",
+                  "backgroundImage": "url(\"/system/images/SVGs/Arrow (Menu).svg\")",
+                  "backgroundPosition": "right center",
+                  "backgroundRepeat": "no-repeat",
+                  "classes": "",
+                  "color": "#0d80e3",
+                  "wordWrap": "break-word"
+                },
+                "title": "Birth Date"
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "background-origin": "content-box",
+                  "background-size": "15px",
+                  "backgroundImage": "url(\"/system/images/SVGs/Arrow (Menu).svg\")",
+                  "backgroundPosition": "right center",
+                  "backgroundRepeat": "no-repeat",
+                  "classes": "",
+                  "color": "#0d80e3",
+                  "wordWrap": "break-word"
+                },
+                "title": "Gender"
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "background-origin": "content-box",
+                  "background-size": "15px",
+                  "backgroundImage": "url(\"/system/images/SVGs/Arrow (Menu).svg\")",
+                  "backgroundPosition": "right center",
+                  "backgroundRepeat": "no-repeat",
+                  "classes": "",
+                  "color": "#0d80e3",
+                  "wordWrap": "break-word"
+                },
+                "title": "Intake Date"
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "background-origin": "content-box",
+                  "background-size": "15px",
+                  "backgroundImage": "url(\"/system/images/SVGs/Arrow (Menu).svg\")",
+                  "backgroundPosition": "right center",
+                  "backgroundRepeat": "no-repeat",
+                  "classes": "",
+                  "color": "#0d80e3",
+                  "wordWrap": "break-word"
+                },
+                "title": "Last Action"
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "background-origin": "content-box",
+                  "background-size": "15px",
+                  "backgroundImage": "url(\"/system/images/SVGs/Arrow (Menu).svg\")",
+                  "backgroundPosition": "right center",
+                  "backgroundRepeat": "no-repeat",
+                  "classes": "",
+                  "color": "#0d80e3",
+                  "wordWrap": "break-word"
+                },
+                "title": "Suspension"
+              },
+              {
+                "align": "center",
+                "justify": "left",
+                "span": 1,
+                "style": {
+                  "background-origin": "content-box",
+                  "background-size": "15px",
+                  "backgroundImage": "url(\"/system/images/SVGs/Arrow (Menu).svg\")",
+                  "backgroundPosition": "right center",
+                  "backgroundRepeat": "no-repeat",
+                  "classes": "",
+                  "color": "#0d80e3",
+                  "wordWrap": "break-word"
+                },
+                "title": "Shelter"
+              }
+            ]
+          ],
+          "pager": {
+            "initialOption": 10
+          },
+          "rows": {
+            "striped": {
+              "enabled": false
+            }
+          },
+          "selection": {
+            "enableColumnSelection": true
+          },
+          "style": {
+            "classes": "Background/Default"
+          }
+        },
+        "scripts": {
+          "customMethods": [],
+          "extensionFunctions": null,
+          "messageHandlers": [
+            {
+              "messageType": "filterHandler",
+              "pageScope": true,
+              "script": "\tfrom datetime import datetime, date\n\t\n\tif(payload[\u0027key\u0027] \u003d\u003d \u0027gender\u0027):\n\t\tcurFilter \u003d str(self.view.params.gender)\n\t\t#If checkbox is checked, we\u0027re adding the payload\n\t\tif(payload[\u0027state\u0027]):\n\t\t\t#If not default, need to do on-purpose SQL injection\n\t\t\tif(curFilter !\u003d \u0027%\u0027):\n\t\t\t\tself.view.params.gender \u003d curFilter + \"%\u0027 OR [humans].[Human].[gender] LIKE \u0027\" + str(payload[\u0027val\u0027]) \n\t\t\t#Else, it\u0027s default, just set the value\n\t\t\telse:\n\t\t\t\tself.view.params.gender \u003d str(payload[\u0027val\u0027])\n\t\t#If checkbox isn\u0027t checked, we\u0027re removing the payload\n\t\telse:\n\t\t\t#If we already have a SQL injection, we need to remove the selected query\n\t\t\tif(\u0027LIKE\u0027 in curFilter):\n\t\t\t\tself.view.params.gender \u003d curFilter.replace(\"%\u0027 OR [humans].[Human].[gender] LIKE \u0027\" + str(payload[\u0027val\u0027]), \u0027\u0027)\n\t\t\t#If no SQL injection, set to default\n\t\t\telse:\n\t\t\t\tself.view.params.gender \u003d \u0027%\u0027\n\telif(payload[\u0027key\u0027] \u003d\u003d \u0027dobRange\u0027):\n\t\tcurStartDate \u003d str(self.view.params.startDOB)\n\t\tcurEndDate \u003d str(self.view.params.endDOB)\n\t\t\n\t\ttoday \u003d datetime.now()\n\t\t#If 55+ is selected, force it to 55-120\n\t\tageRange \u003d payload[\u0027val\u0027].replace(\u0027+\u0027,\u0027-120\u0027)\n\t\tdashPtr \u003d str(ageRange).find(\u0027-\u0027)\n\t\t\n\t\tstartAge \u003d int(ageRange[0:dashPtr])\n\t\tendAge \u003d int(ageRange[dashPtr + 1:])\n\t\t#Start date is now minus end age. End date is now minus start age\n\t\t#I would like to confess I spent 3 entire minutes remembering how dates worked on this part\n\t\tnewStartDOB \u003d today.replace(year \u003d datetime.now().year - endAge)\n\t\tnewEndDOB \u003d today.replace(year \u003d datetime.now().year - startAge)\n\t\t\n\t\t#If checkbox is checked, we\u0027re adding the payload\n\t\tif(payload[\u0027state\u0027]):\n\t\t\t#If not default, need to do on-purpose SQL injection\n\t\t\t#Note, added if not self check because saw weird instance where this happened from clicking too fast\n\t\t\tif(curEndDate !\u003d \"2110-01-01\" and  curEndDate !\u003d newEndDOB.strftime(\"%Y-%m-%d\")):\n\t\t\t\tnewEndQueryStr \u003d curEndDate + \"\u0027 OR [humans].[Human].[dob] BETWEEN \u0027\" + newStartDOB.strftime(\"%Y-%m-%d\") + \"\u0027 AND \u0027\" + newEndDOB.strftime(\"%Y-%m-%d\")\n\t\t\t\tself.view.params.startDOB \u003d curStartDate\n\t\t\t\tself.view.params.endDOB \u003d newEndQueryStr\n\t\t\t#Else, it\u0027s default, just add the range\n\t\t\telse:\n\t\t\t\tself.view.params.startDOB \u003d newStartDOB.strftime(\"%Y-%m-%d\")\n\t\t\t\tself.view.params.endDOB \u003d newEndDOB.strftime(\"%Y-%m-%d\")\n\t\t#If checkbox isn\u0027t checked, we\u0027re removing the payload\n\t\telse:\n\t\t\t#If we already have a SQL injection, we need to remove the selected query\n\t\t\tif(\u0027OR [humans]\u0027 in curEndDate):\n\t\t\t\tself.view.params.endDOB \u003d curEndDate.replace(\"\u0027 OR [humans].[Human].[dob] BETWEEN \u0027\" + newStartDOB.strftime(\"%Y-%m-%d\") + \"\u0027 AND \u0027\" + newEndDOB.strftime(\"%Y-%m-%d\"), \u0027\u0027)\n\t\t\t#If no SQL injection, set to default\n\t\t\telse:\n\t\t\t\tself.view.params.startDOB \u003d \u00271910-01-01\u0027\n\t\t\t\tself.view.params.endDOB \u003d \u00272110-01-01\u0027\n\t#Have to refresh the binding for the query to run again with the new query strings in the view params\n\tself.refreshBinding(\"props.data\")",
+              "sessionScope": true,
+              "viewScope": true
+            }
+          ]
+        },
+        "type": "ia.display.table"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "type": "ia.container.flex"
+  }
+}

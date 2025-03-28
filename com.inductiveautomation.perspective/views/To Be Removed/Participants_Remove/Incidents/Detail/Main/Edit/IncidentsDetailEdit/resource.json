@@ -1,0 +1,17 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "view.json",
+    "thumbnail.png"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-14T04:17:00Z"
+    },
+    "lastModificationSignature": "ccc8eb13403ccac8a4fb030efb22276cd9ba130c7c0a52777df3531c6b68ad0c"
+  }
+}

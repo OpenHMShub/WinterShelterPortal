@@ -1,0 +1,138 @@
+{
+  "custom": {},
+  "params": {
+    "tabId": 0
+  },
+  "propConfig": {
+    "params.tabId": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 974,
+      "width": 1273
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Header"
+        },
+        "position": {
+          "basis": "70px",
+          "shrink": 0
+        },
+        "props": {
+          "path": "Volunteers/Reports/Cards/Report_Header"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "ReportFilter"
+            },
+            "position": {
+              "basis": "25%",
+              "shrink": 0
+            },
+            "props": {
+              "params": {
+                "EndDate": {
+                  "$": [
+                    "ts",
+                    192,
+                    1650995664160
+                  ],
+                  "$ts": 1650995662918
+                },
+                "SelectedID": -1,
+                "StartDate": {
+                  "$": [
+                    "ts",
+                    192,
+                    1650995664160
+                  ],
+                  "$ts": 1648317262918
+                }
+              },
+              "path": "Volunteers/Reports/Cards/Filter/ReportFilter"
+            },
+            "type": "ia.display.view"
+          },
+          {
+            "meta": {
+              "name": "ReportViewer"
+            },
+            "position": {
+              "basis": "70%"
+            },
+            "propConfig": {
+              "props.params.EndDate": {
+                "binding": {
+                  "config": {
+                    "path": "../ReportFilter.props.params.EndDate"
+                  },
+                  "type": "property"
+                }
+              },
+              "props.params.StartDate": {
+                "binding": {
+                  "config": {
+                    "path": "../ReportFilter.props.params.StartDate"
+                  },
+                  "type": "property"
+                }
+              },
+              "props.params.VolunteerID": {
+                "binding": {
+                  "config": {
+                    "path": "../ReportFilter.props.params.SelectedID"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "page": 1,
+              "pageCount": 1,
+              "source": "Volunteers/Volunteer Report",
+              "style": {
+                "marginLeft": "20px"
+              }
+            },
+            "type": "ia.reporting.report-viewer"
+          }
+        ],
+        "meta": {
+          "name": "Body"
+        },
+        "position": {
+          "basis": "100%",
+          "grow": 1
+        },
+        "props": {
+          "style": {
+            "marginLeft": "20px"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "Background/Alternative",
+        "overflow": "hidden"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

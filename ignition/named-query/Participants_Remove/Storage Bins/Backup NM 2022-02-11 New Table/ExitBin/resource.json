@@ -1,0 +1,56 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "description": "Updates an existing Bin by assigning an exit action to it.",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "48eab38772c7c329903a38cfa03643b38e8db13bfa5bc1d141e2793ad1ca47b8",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:46:31Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "exitAction",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "exitedOn",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "employeeId",
+        "sqlType": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "RITIOps",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "b21a67f4a57f6db4ba6805c3fe89c2c4e66875837cbdbde0bba42f4bc2f7cb5a",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:47:00Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "programId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "providerTypeId",
+        "sqlType": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "custom": {},
+  "params": {
+    "congregation": "",
+    "employer": "",
+    "family_id": "",
+    "hoh_relationship_id": "",
+    "school": ""
+  },
+  "propConfig": {
+    "params.congregation": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.employer": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.family_id": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.hoh_relationship_id": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.school": {
+      "paramDirection": "inout",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 76,
+      "width": 1416
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Embed_Family"
+        },
+        "position": {
+          "basis": "300px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.options": {
+            "binding": {
+              "config": {
+                "queryPath": "Participants/Registration/GetFamilies"
+              },
+              "type": "query"
+            }
+          },
+          "props.params.selection": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.family_id"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "text": "Family"
+          },
+          "path": "Participants/Templates/Input_DropDownSingle",
+          "style": {
+            "classes": "InputCards/InputCard"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_FamilyRelationship"
+        },
+        "position": {
+          "basis": "180px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.options": {
+            "binding": {
+              "config": {
+                "queryPath": "Participants/Registration/GetRHOH"
+              },
+              "type": "query"
+            }
+          },
+          "props.params.selection": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.hoh_relationship_id"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "text": "Family Relationship"
+          },
+          "path": "Participants/Templates/Input_DropDownSingle",
+          "style": {
+            "classes": "InputCards/InputCard"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_Employer"
+        },
+        "position": {
+          "basis": "240px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.employer"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "label": "Employer",
+            "placeholder": "Enter Employer"
+          },
+          "path": "Participants/Templates/Input_Text",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_School"
+        },
+        "position": {
+          "basis": "240px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.school"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "label": "School",
+            "placeholder": "Enter School"
+          },
+          "path": "Participants/Templates/Input_Text",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_Congregation"
+        },
+        "position": {
+          "basis": "240px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.congregation"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "label": "Congregation",
+            "placeholder": "Enter Congregation"
+          },
+          "path": "Participants/Templates/Input_Text",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_Placeholder"
+        },
+        "position": {
+          "basis": "1px",
+          "grow": 1
+        },
+        "props": {
+          "path": "Participants/Templates/Placeholder",
+          "style": {
+            "classes": "InputCards/InputCard"
+          }
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "style": {
+        "classes": "Background/Default"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

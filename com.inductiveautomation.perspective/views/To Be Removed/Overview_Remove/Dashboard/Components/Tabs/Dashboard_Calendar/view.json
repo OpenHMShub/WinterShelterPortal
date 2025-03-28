@@ -1,0 +1,154 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "Label"
+            },
+            "position": {
+              "basis": "32px"
+            },
+            "props": {
+              "style": {
+                "color": "#000000",
+                "textAlign": "center"
+              }
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "component": {
+                "onEventClick": {
+                  "config": {
+                    "script": "\tsystem.perspective.print(event)\n\t\n\t\"\"\"\n\tparamDict \u003d {\n\t\u0027isUpdateEvent\u0027: True,\n\t\u0027eventId\u0027: event.id\n\t}\n\tsystem.perspective.openDock(\"AddEvent\", params \u003d paramDict)"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "calendar"
+            },
+            "position": {
+              "basis": "800px"
+            },
+            "propConfig": {
+              "custom.events": {
+                "binding": {
+                  "config": {
+                    "queryPath": "Calendar/GetEvents"
+                  },
+                  "transforms": [
+                    {
+                      "code": "\t#\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\t#Written by Benjamin Sperl on 13Feb2021. Benjamin.sperl@rovisys.com\n\t#\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\t\n\t\n\t#\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\t#This function adds an item to a dictionary if the value is not none\n\t#\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\tdef addIfNotNone(dict, value, key):\n\t\tif not value is None:\n\t\t\tdict[key] \u003d value\n\t\treturn dict\n\t\n\t\n\t#\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\t#This function transforms boolean values for every day of week into the array format used by the calendar\n\t#\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\tdef getByWeekDay(rrule, row):\n\t\tweekDayDict \u003d {}\n\t\tweekDayDict[\u0027mo\u0027] \u003d value.getValueAt(row, \"monday\")\n\t\tweekDayDict[\u0027tu\u0027] \u003d value.getValueAt(row, \"tuesday\")\n\t\tweekDayDict[\u0027we\u0027] \u003d value.getValueAt(row, \"wednesday\")\n\t\tweekDayDict[\u0027th\u0027] \u003d value.getValueAt(row, \"thursday\")\n\t\tweekDayDict[\u0027fr\u0027] \u003d value.getValueAt(row, \"friday\")\n\t\tweekDayDict[\u0027sa\u0027] \u003d value.getValueAt(row, \"saturday\")\n\t\tweekDayDict[\u0027su\u0027] \u003d value.getValueAt(row, \"sunday\")\n\t\t\n\t\tbyweekday \u003d []\n\t\tfor key in weekDayDict:\n\t\t\tif weekDayDict[key]:\n\t\t\t\tbyweekday.append(key)\n\t\t\n\t\tif len(byweekday) !\u003d 0:\n\t\t\trrule[\u0027byweekday\u0027] \u003d byweekday\n\t\t\n\t\treturn rrule\n\t\n\t#\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\t#Main Function\n\t#\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\t\n\t#define an empty array which will contain all the events and be returned at the end\n\tarray \u003d []\n\t\n\t#define an idCounter which will give a unique id number to every event. We don\u0027t use the eventId or instanceId because an eventId and an instanceId could be the same. \n\tidCounter \u003d 0\n\t\n\t#loop through every row in the event table\n\tfor row in range(value.getRowCount()):\n\t\t#define an empty dictionary for the event\n\t\tevt \u003d {}\n\t\t\n\t\t#get values which control flow or are used in all program paths but may be used differently\n\t\tfreq \u003d value.getValueAt(row, \"freq\")\n\t\tstartDate \u003d value.getValueAt(row, \"startDate\")\n\t\tendDate \u003d value.getValueAt(row, \"endDate\")\n\t\t\n\t\t#add the values to the event which are independent of the rest of the flow of the program\n\t\tevt[\"allDay\"] \u003d value.getValueAt(row, \"allDay\")\n\t\tevt[\"backgroundColor\"] \u003d \"#d41800\"\n\t\tevt[\"textColor\"] \u003d \"#ffffff\"\n\t\tevt[\"title\"] \u003d value.getValueAt(row, \"title\")\n\t\tevt[\"eventID\"] \u003d eventID \u003d value.getValueAt(row, \"eventID\")\n\t\tevt[\"instanceID\"] \u003d None\n\t\t\n\t\t#copy the values from the event dictionary to a new dictionary which will be used if the event has any instances\n\t\tinstanceEvt \u003d evt.copy()\n\t\t\n\t\t#update the id number in the event dictionary. Don\u0027t update yet in the instanceEvt dictionary\n\t\tevt[\"id\"] \u003d idCounter\n\t\t\n\t\t#query for all the instances for the current event\n\t\tinstances \u003d system.db.runNamedQuery(\u0027Calendar/EventInstance/GetEventInstances\u0027, {\u0027eventID\u0027: eventID})\n\t\t\n\t\t#if the event does not recur at all\n\t\tif freq \u003d\u003d \"once\":\n\t\t\tinstancesCount \u003d instances.getRowCount()\n\t\t\t\n\t\t\t#if there are no instances associated with the event\n\t\t\tif instancesCount is None or instancesCount \u003d\u003d 0:\n\t\t\t\t#set the event start and end properties\n\t\t\t\tevt[\"start\"] \u003d system.date.format(startDate, \u0027yyyy-MM-dd HH:mm:ss\u0027)\n\t\t\t\tevt[\"end\"] \u003d system.date.format(endDate, \u0027yyyy-MM-dd HH:mm:ss\u0027)\n\t\t\t\t\n\t\t\t#if there is an instance associated with the event. A \"once\" event cannot / should not have more than one instance so it only looks at the first row\n\t\t\telse:\n\t\t\t\t#set the start and end properties with the instance values\n\t\t\t\tevt[\u0027start\u0027] \u003d system.date.format(instances.getValueAt(0, \"startDate\"), \u0027yyyy-MM-dd HH:mm:ss\u0027)\n\t\t\t\tevt[\"end\"] \u003d system.date.format(instances.getValueAt(0, \"endDate\"), \u0027yyyy-MM-dd HH:mm:ss\u0027)\n\t\t\t\tevt[\"instanceID\"] \u003d instances.getValueAt(0, \"instanceID\")\n\t\t\t\t\n\t\t#if the event does recur\n\t\telse:\n\t\t\t#define a new dictionary for the rrule object in the event.\n\t\t\trrule \u003d {}\n\t\t\trrule[\u0027dtstart\u0027] \u003d system.date.format(startDate, \u0027yyyy-MM-dd\u0027) + \u0027T\u0027 + system.date.format(startDate, \u0027HH:mm:ss\u0027)\n\t\t\trrule[\u0027until\u0027] \u003d system.date.format(endDate, \u0027yyyy-MM-dd\u0027) + \u0027T\u0027 + system.date.format(endDate, \u0027HH:mm:ss\u0027)\n\t\t\trrule[\u0027freq\u0027] \u003d freq\n\t\t\trrule \u003d addIfNotNone(rrule, value.getValueAt(row, \"interval\"), \"interval\")\n\t\t\trrule \u003d getByWeekDay(rrule, row)\n\t\t\trrule \u003d addIfNotNone(rrule, value.getValueAt(row, \"bymonth\"), \"bymonth\")\n\t\t\trrule \u003d addIfNotNone(rrule, value.getValueAt(row, \"bysetpos\"), \"bysetpos\")\n\t\t\t\n\t\t\t#loop through all the instances for the event\n\t\t\tfor row in range(instances.getRowCount()):\n\t\t\t\t#get instance values and increment idCounter\n\t\t\t\tinstanceStartDateString \u003d system.date.format(instances.getValueAt(row, \"startDate\"), \u0027yyyy-MM-dd HH:mm:ss\u0027)\n\t\t\t\tinstanceEndDateString \u003d system.date.format(instances.getValueAt(row, \"endDate\"), \u0027yyyy-MM-dd HH:mm:ss\u0027)\n\t\t\t\tinstanceID \u003d instances.getValueAt(row, \"instanceID\")\n\t\t\t\tidCounter \u003d idCounter + 1\n\t\t\t\t\n\t\t\t\t#set the exdate property to be a comma separated string with all of the instance start dates. This keeps the recurring event from showing these dates\n\t\t\t\t#the instances will have have a separate object instead\n\t\t\t\tif row \u003d\u003d 0:\n\t\t\t\t\trrule[\u0027exdate\u0027] \u003d instanceStartDateString\n\t\t\t\telse:\n\t\t\t\t\trrule[\u0027exdate\u0027] \u003d rrule[\u0027exdate\u0027] + \u0027,\u0027 + instanceStartDateString\n\t\t\t\t\n\t\t\t\t#update the values in the instance event object and add to the array\n\t\t\t\tinstanceEvt[\"id\"] \u003d idCounter\n\t\t\t\tinstanceEvt[\u0027start\u0027] \u003d instanceStartDateString\n\t\t\t\tinstanceEvt[\"end\"] \u003d instanceEndDateString\n\t\t\t\tinstanceEvt[\"instanceID\"] \u003d instanceID\n\t\t\t\tarray.append(instanceEvt)\n\t\t\t\n\t\t\t#add the rrule object to the event dictionary and increment id counter\n\t\t\tevt[\"rrule\"] \u003d rrule\n\t\t\tidCounter \u003d idCounter + 1\n\t\t\n\t\t#add the vent dictionary to the array which will be returned\n\t\tarray.append(evt)\n\t\n\treturn array",
+                      "type": "script"
+                    }
+                  ],
+                  "type": "query"
+                }
+              },
+              "props.events": {
+                "binding": {
+                  "config": {
+                    "queryPath": "Calendar/GetEvents"
+                  },
+                  "transforms": [
+                    {
+                      "code": "\tdef addIfNotNone(dict, value, key):\n\t\tif not value is None:\n\t\t\tdict[key] \u003d value\n\t\treturn dict\n\t\n\tdef getByWeekDay(rrule, row):\n\t\tweekDayDict \u003d {}\n\t\tweekDayDict[\u0027mo\u0027] \u003d value.getValueAt(row, \"monday\")\n\t\tweekDayDict[\u0027tu\u0027] \u003d value.getValueAt(row, \"tuesday\")\n\t\tweekDayDict[\u0027we\u0027] \u003d value.getValueAt(row, \"wednesday\")\n\t\tweekDayDict[\u0027th\u0027] \u003d value.getValueAt(row, \"thursday\")\n\t\tweekDayDict[\u0027fr\u0027] \u003d value.getValueAt(row, \"friday\")\n\t\tweekDayDict[\u0027sa\u0027] \u003d value.getValueAt(row, \"saturday\")\n\t\tweekDayDict[\u0027su\u0027] \u003d value.getValueAt(row, \"sunday\")\n\t\t\n\t\tbyweekday \u003d []\n\t\tfor key in weekDayDict:\n\t\t\tif weekDayDict[key]:\n\t\t\t\tbyweekday.append(key)\n\t\t\n\t\tif len(byweekday) !\u003d 0:\n\t\t\trrule[\u0027byweekday\u0027] \u003d byweekday\n\t\t\n\t\treturn rrule\n\t\n\tarray \u003d []\n\ttimeZone \u003d system.date.getTimezone()\n\t\n\tfor row in range(value.getRowCount()):\n\t\tevt \u003d {}\n\t\t\n\t\tfreq \u003d value.getValueAt(row, \"freq\")\n\t\t\n\t\tstartDate \u003d value.getValueAt(row, \"startDate\")\n\t\tendDate \u003d value.getValueAt(row, \"endDate\")\n\t\t\n\t\tevt[\"allDay\"] \u003d value.getValueAt(row, \"allDay\")\n\t\tevt[\"backgroundColor\"] \u003d \"#d41800\"\n\t\tevt[\"textColor\"] \u003d \"#ffffff\"\n\t\tevt[\"id\"] \u003d value.getValueAt(row, \"eventID\")\n\t\tevt[\"title\"] \u003d value.getValueAt(row, \"title\")\n\t\t\n\t\tif freq \u003d\u003d \"once\":\n\t\t\tevt[\"start\"] \u003d system.date.format(startDate, \u0027yyyy-MM-dd HH:mm:ss\u0027)\n\t\t\tevt[\"end\"] \u003d system.date.format(endDate, \u0027yyyy-MM-dd HH:mm:ss\u0027)\n\t\telse:\n\t\t\trrule \u003d {}\n\t\t\trrule[\u0027dtstart\u0027] \u003d system.date.format(startDate, \u0027yyyy-MM-dd\u0027) + \u0027T\u0027 + system.date.format(startDate, \u0027HH:mm:ss\u0027)\n\t\t\trrule[\u0027until\u0027] \u003d system.date.format(endDate, \u0027yyyy-MM-dd\u0027) + \u0027T\u0027 + system.date.format(endDate, \u0027HH:mm:ss\u0027)\n\t\t\trrule[\u0027freq\u0027] \u003d freq\n\t\t\trrule \u003d addIfNotNone(rrule, value.getValueAt(row, \"interval\"), \"interval\")\n\t\t\trrule \u003d getByWeekDay(rrule, row)\n\t\t\trrule \u003d addIfNotNone(rrule, value.getValueAt(row, \"bymonth\"), \"bymonth\")\n\t\t\trrule \u003d addIfNotNone(rrule, value.getValueAt(row, \"bysetpos\"), \"bysetpos\")\n\t\t\tevt[\"rrule\"] \u003d rrule\n\t\tarray.append(evt)\n\t\n\treturn array",
+                      "type": "script"
+                    }
+                  ],
+                  "type": "query"
+                }
+              },
+              "props.viewProperties.list.listDayAltFormat": {
+                "binding": {
+                  "config": {
+                    "path": "this.props.viewProperties.list.listDayFormat"
+                  },
+                  "type": "property"
+                }
+              }
+            },
+            "props": {
+              "currentCalendarDate": {
+                "currentDateEnd": "2021-04-01 00:00:00",
+                "currentDateStart": "2021-03-01 00:00:00",
+                "displayDateEnd": "2021-04-11 00:00:00",
+                "displayDateStart": "2021-02-28 00:00:00",
+                "month": 2,
+                "title": "March 2021",
+                "week": 9
+              },
+              "dateAndTimeDisplay": {
+                "slotDuration": "0:30:00"
+              },
+              "editable": true,
+              "selectable": true,
+              "selectedDate": {
+                "end": "2020-12-31 00:00:00",
+                "start": "2020-12-30 00:00:00"
+              },
+              "style": {
+                "classes": "Text/About_info"
+              },
+              "toolbar": {
+                "footer": {
+                  "center": "",
+                  "left": "",
+                  "right": ""
+                }
+              },
+              "viewProperties": {
+                "list": {}
+              }
+            },
+            "scripts": {
+              "customMethods": [],
+              "extensionFunctions": null,
+              "messageHandlers": [
+                {
+                  "messageType": "CreateCalendarEvent",
+                  "pageScope": true,
+                  "script": "\t\n\tself.refreshBinding(\"props.events\")",
+                  "sessionScope": true,
+                  "viewScope": false
+                }
+              ]
+            },
+            "type": "bijc.display.calendar"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "800px",
+          "shrink": 0
+        },
+        "props": {
+          "direction": "column",
+          "justify": "space-between"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "Background/Default"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

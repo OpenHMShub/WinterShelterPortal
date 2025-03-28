@@ -1,0 +1,27 @@
+{
+  "pages": {
+    "/WinterShelter/Congregations/Detail/:locationId/:backID/:tab_id": {
+      "title": "",
+      "viewPath": "WinterShelter/Detail/Congregation_Detail"
+    }
+  },
+  "sharedDocks": {
+    "cornerPriority": "left-right",
+    "left": [
+      {
+        "anchor": "fixed",
+        "autoBreakpoint": 768,
+        "content": "push",
+        "handle": "hide",
+        "iconUrl": "",
+        "id": "menu",
+        "modal": false,
+        "resizable": false,
+        "show": "auto",
+        "size": 250,
+        "viewParams": {},
+        "viewPath": "2_Menu/WinterPortalSidebar"
+      }
+    ]
+  }
+}

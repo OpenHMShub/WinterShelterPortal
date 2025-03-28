@@ -1,0 +1,40 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "RITIOps",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "4d42cc62e8b85d8d0ad8733271da74a27ed6ff57fd74e5d1265364363be739eb",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "yogini",
+      "timestamp": "2022-10-19T06:53:52Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "providerName",
+        "sqlType": 7
+      }
+    ]
+  }
+}

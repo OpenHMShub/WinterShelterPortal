@@ -1,0 +1,16 @@
+{
+  "scope": "G",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "style.json"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "BMS",
+      "timestamp": "2020-05-28T14:13:07Z"
+    },
+    "lastModificationSignature": "de65de331505c766175a36b1f40e25dcf8f5d02cafebc476ffba1cbe9fcb64ff"
+  }
+}

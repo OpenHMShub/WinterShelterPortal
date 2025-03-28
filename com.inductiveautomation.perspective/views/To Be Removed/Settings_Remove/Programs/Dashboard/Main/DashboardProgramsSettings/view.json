@@ -1,0 +1,175 @@
+{
+  "custom": {
+    "row_data": {},
+    "selection_data": []
+  },
+  "params": {},
+  "propConfig": {
+    "custom.row_data": {
+      "persistent": true
+    },
+    "custom.row_data.active": {
+      "binding": {
+        "config": {
+          "path": "view.custom.selection_data"
+        },
+        "transforms": [
+          {
+            "code": "\tif len(value):\n\t\tif value[0].active:\n\t\t\treturn 1\n\t\telse:\n\t\t\treturn 0\n\telse:\n\t\treturn -1",
+            "type": "script"
+          }
+        ],
+        "type": "property"
+      }
+    },
+    "custom.row_data.programDescription": {
+      "binding": {
+        "config": {
+          "path": "view.custom.selection_data"
+        },
+        "transforms": [
+          {
+            "code": "\tif len(value):\n\t\treturn value[0].programDescription\n\telse:\n\t\treturn \u0027\u0027",
+            "type": "script"
+          }
+        ],
+        "type": "property"
+      }
+    },
+    "custom.row_data.programId": {
+      "binding": {
+        "config": {
+          "path": "view.custom.selection_data"
+        },
+        "transforms": [
+          {
+            "code": "\tif len(value):\n\t\treturn value[0].programId\n\telse:\n\t\treturn -1",
+            "type": "script"
+          }
+        ],
+        "type": "property"
+      }
+    },
+    "custom.row_data.programName": {
+      "binding": {
+        "config": {
+          "path": "view.custom.selection_data"
+        },
+        "transforms": [
+          {
+            "code": "\tif len(value):\n\t\treturn value[0].programName\n\telse:\n\t\treturn \u0027\u0027",
+            "type": "script"
+          }
+        ],
+        "type": "property"
+      }
+    },
+    "custom.selection_data": {
+      "binding": {
+        "config": {
+          "path": "/root/Table.props.params.selection_data"
+        },
+        "type": "property"
+      },
+      "persistent": true
+    },
+    "custom.table_data": {
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "width": 1166
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Edit"
+        },
+        "position": {
+          "basis": "240px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.row_data": {
+            "binding": {
+              "config": {
+                "path": "view.custom.row_data"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "path": "Settings/Programs/Dashboard/Main/Edit/ProgramSettingsEdit",
+          "style": {
+            "marginLeft": "40px",
+            "marginRight": "40px"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Filter"
+        },
+        "position": {
+          "basis": "25px"
+        },
+        "props": {
+          "params": {
+            "filter_active": 1
+          },
+          "path": "Settings/Programs/Dashboard/Main/Filters/ProgramSettingsFilter",
+          "style": {
+            "marginLeft": "40px",
+            "marginRight": "40px"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Table"
+        },
+        "position": {
+          "basis": "320px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.params.filter_active": {
+            "binding": {
+              "config": {
+                "path": "../Filter.props.params.filter_active"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "selection_data": []
+          },
+          "path": "Settings/Programs/Dashboard/Main/Tables/ProgramSettingsTable",
+          "style": {
+            "marginLeft": "40px",
+            "marginRight": "40px"
+          }
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "Background/Alternative"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

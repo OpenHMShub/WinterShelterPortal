@@ -1,0 +1,75 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "0f9949568a316f3969f5d885d84eb4057298b8dcb35dce12e5a964499615f051",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:47:00Z"
+    },
+    "parameters": [
+      {
+        "type": "QueryString",
+        "identifier": "firstname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "middlename",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "lastname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "nickname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "search",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "ssn",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "dobyear",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "raceid",
+        "sqlType": 7
+      }
+    ]
+  }
+}

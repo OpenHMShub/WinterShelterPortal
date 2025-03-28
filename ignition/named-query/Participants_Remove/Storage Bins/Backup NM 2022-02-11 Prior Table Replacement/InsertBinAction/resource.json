@@ -1,0 +1,71 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "description": "Inserts a row into the StorageBin_History table for the given participant.",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "667a1c78c96abdf36ce08ce5ee456f487c49387f4451ec3608667e3b6442498a",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:46:31Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "column",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "bin",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "action",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "date",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "participantId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "employeeId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "timeCreated",
+        "sqlType": 8
+      }
+    ]
+  }
+}

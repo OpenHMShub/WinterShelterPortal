@@ -1,0 +1,186 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 185,
+      "width": 1470
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "KPI1"
+        },
+        "position": {
+          "basis": "345px",
+          "grow": 1,
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.Value": {
+            "binding": {
+              "config": {
+                "queryPath": "Participants/DrugScreen/DrugScreenKPI_ScreensYTD",
+                "returnFormat": "json"
+              },
+              "transforms": [
+                {
+                  "code": "\tif len(value):\n\t\treturn value[0].ytd_count\n\telse:\n\t\treturn -1",
+                  "type": "script"
+                }
+              ],
+              "type": "query"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "Title": "Total Suspensions This Year"
+          },
+          "path": "Participants/Templates/KPI/Metric_Flex",
+          "style": {
+            "classes": "KPIs/KPI_Card",
+            "marginLeft": "40px"
+          },
+          "useDefaultViewHeight": true
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "KPI2"
+        },
+        "position": {
+          "basis": "270px",
+          "grow": 1,
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.Value": {
+            "binding": {
+              "config": {
+                "queryPath": "Participants/DrugScreen/DrugScreenKPI_Participants",
+                "returnFormat": "json"
+              },
+              "transforms": [
+                {
+                  "code": "\tif len(value):\n\t\treturn value[0].participant_count\n\telse:\n\t\treturn -1",
+                  "type": "script"
+                }
+              ],
+              "type": "query"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "Title": "Suspended Participants"
+          },
+          "path": "Participants/Templates/KPI/Metric_Flex",
+          "style": {
+            "classes": "KPIs/KPI_Card"
+          },
+          "useDefaultViewHeight": true
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "KPI3"
+        },
+        "position": {
+          "basis": "345px",
+          "grow": 1,
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.Value": {
+            "binding": {
+              "config": {
+                "queryPath": "Participants/DrugScreen/DrugScreenKPI_PassRate_Monthly",
+                "returnFormat": "json"
+              },
+              "transforms": [
+                {
+                  "code": "\timport datetime\n\t\"\"\"if len(value):\n\t\ttrend_data \u003d []\n\t\tfor row in range(len(value)):\n\t\t\t#The query returns a month number, needs to be converted to a date\n\t\t\tmonth \u003d value[row].month - 1\n\t\t\tyear \u003d system.date.getYear(system.date.now())\n\t\t\tif month \u003e (system.date.getMonth(system.date.now())):\n\t\t\t\tdate \u003d system.date.getDate(year - 1, month, 1)\n\t\t\telse:\n\t\t\t\tdate \u003d system.date.getDate(year, month, 1)\n\t\t\t#date \u003d system.date.toMillis(date)\n\t\t\tdate \u003d system.date.format(date, \"M/d/yyyy\")\n\t\t\t#calculate the pass rate for the month\n\t\t\tif value[row].total \u003e 0:\n\t\t\t\tpct \u003d ((value[row].passed/value[row].total)) * 100\n\t\t\telse:\n\t\t\t\tpct \u003d 0\n\t\t\t#append the data\n\t\t\tappend_item \u003d {\"time\": date, \"value\":pct}\n\t\t\t#trend_data.append([date,pct])\n\t\t\ttrend_data.append(append_item)\n\t\treturn trend_data\n\telse:\n\t\treturn [1,0]\n\t\"\"\"\n\t#KPI3 Interviews Monthly\n\tif len(value):\n\t\ttrend_data \u003d []\n\t\tMonthCount \u003d 6\n\t\tnewApplicantsMonthly \u003d []\n\t\tnow \u003d system.date.now()\n\t\tfor i in reversed(range(MonthCount)):\n\t\t\timonthago \u003d system.date.addMonths(now, -i)\n\t\t\tcmonthago \u003d system.date.addMonths(imonthago, 1)\n\t\t\tmonth \u003d system.date.getMonth(imonthago) + 1\n\t\t\tdateMonth \u003d system.date.getMonth(imonthago)\n\t\t\tdateYear \u003d system.date.getYear(imonthago)\n\t\t\tdate \u003d system.date.getDate(dateYear, dateMonth, 01)\n\t\t\tdatetime \u003d system.date.setTime(date, 00, 00, 00)\n\t\t\tappend_item \u003d {\"time\": system.date.format(datetime, \"M/d/yyyy\") , \"Value\": 0}\n\t\t\tresultMonths \u003d 0\n\t\t\tfor row in range(len(value)):\n\t\t\t\tresultMonth \u003d value[row].month\n\t\t\t\tif month \u003d\u003d resultMonth:\n\t\t\t\t\tpct \u003d ((value[row].passed/value[row].total)) * 100\n\t\t\t\t\t\n\t\t\tappend_item[\"Value\"] \u003d pct\n\t\t\ttrend_data.append(append_item)\n\t\treturn trend_data\n\telse:\n\t\treturn [1,0]",
+                  "type": "script"
+                }
+              ],
+              "type": "query"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "Title": "Suspension Rate Monthly"
+          },
+          "path": "Participants/Drug Screen/Dashboard/Main/KPI/Graph_Flex _bar",
+          "style": {
+            "classes": "KPIs/KPI_Card"
+          },
+          "useDefaultViewHeight": true
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "KPI4"
+        },
+        "position": {
+          "basis": "270px",
+          "grow": 1,
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.Value": {
+            "binding": {
+              "config": {
+                "queryPath": "Participants/DrugScreen/DrugScreenKPI_PassRate",
+                "returnFormat": "json"
+              },
+              "transforms": [
+                {
+                  "code": "\tif len(value):\n\t\tif value[0].total \u003e 0:\n\t\t\treturn ((value[0].passed/value[0].total)) * 100\n\t\telse:\n\t\t\treturn 100\n\telse:\n\t\treturn 100",
+                  "type": "script"
+                },
+                {
+                  "formatType": "numeric",
+                  "formatValue": "00.0",
+                  "type": "format"
+                }
+              ],
+              "type": "query"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "Title": "30 Day Suspension Rate"
+          },
+          "path": "Participants/Templates/KPI/Percent_Flex",
+          "style": {
+            "classes": "KPIs/KPI_Card",
+            "marginRight": "40px"
+          },
+          "useDefaultViewHeight": true
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "alignContent": "flex-start",
+      "alignItems": "center",
+      "style": {
+        "classes": "KPIs/KPI_Flex_Container",
+        "overflow": "hidden",
+        "overflowY": "hidden"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

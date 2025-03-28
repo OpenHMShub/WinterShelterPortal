@@ -1,0 +1,185 @@
+{
+  "custom": {},
+  "params": {
+    "HBID": -1,
+    "HID": -1,
+    "VBID": -1,
+    "VID": -1
+  },
+  "propConfig": {
+    "params.HBID": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.HID": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.VBID": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.VID": {
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 60,
+      "width": 1202
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Embed_VID"
+        },
+        "position": {
+          "basis": "240px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.VID"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "label": "Staff.Volunteer ID"
+          },
+          "path": "1_TEMPLATES/60px/top/ReadOnly_Text",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_HID"
+        },
+        "position": {
+          "basis": "240px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.HID"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "label": "Humans.Human ID"
+          },
+          "path": "1_TEMPLATES/60px/top/ReadOnly_Text",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_HBID"
+        },
+        "position": {
+          "basis": "180px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.text": {
+            "binding": {
+              "config": {
+                "path": "view.params.HBID"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "label": "Humans.Human BreezeId"
+          },
+          "path": "1_TEMPLATES/60px/top/ReadOnly_Text",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_Email"
+        },
+        "position": {
+          "basis": "240px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.VBID"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "label": "Staff.Volunteer VolunteerIdentifier"
+          },
+          "path": "1_TEMPLATES/60px/top/ReadOnly_Text",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_Placeholder"
+        },
+        "position": {
+          "basis": "1px",
+          "grow": 1
+        },
+        "props": {
+          "path": "Participants/Templates/Placeholder",
+          "style": {
+            "classes": "InputCards/InputCard"
+          }
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "style": {
+        "classes": "Background/Default"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

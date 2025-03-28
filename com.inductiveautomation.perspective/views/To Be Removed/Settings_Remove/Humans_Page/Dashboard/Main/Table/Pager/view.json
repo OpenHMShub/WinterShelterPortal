@@ -1,0 +1,336 @@
+{
+  "custom": {
+    "actualPage": 1
+  },
+  "params": {
+    "fetch": 100,
+    "resultRowCount": 1001
+  },
+  "propConfig": {
+    "custom.actualPage": {
+      "persistent": true
+    },
+    "params.fetch": {
+      "binding": {
+        "config": {
+          "path": "/root/Dropdown.props.value"
+        },
+        "type": "property"
+      },
+      "paramDirection": "output",
+      "persistent": true
+    },
+    "params.resultRowCount": {
+      "access": "PUBLIC",
+      "onChange": {
+        "enabled": null,
+        "script": "\troot \u003d self.getChild(\"root\")\n\tdrp \u003d root.getChild(\"Dropdown\")\n\ttbc \u003d root.getChild(\"TabContainer_PageNumbers\")\n\t\n\tactualPage \u003d 1\n\tfetch \u003d drp.props.value\n\ttry:\n\t\tresultRowCount \u003d long(currentValue.value)\n\texcept:\n\t\tresultRowCount \u003d 0\n\t\t\n\t#ystem.perspective.print((\u0027rowCountChanged:\u0027,actualPage, resultRowCount, fetch))\n\ttbc.setDisplayedPages(actualPage, resultRowCount, fetch)\t\n\tself.custom.actualPage \u003d actualPage"
+      },
+      "paramDirection": "input",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 44,
+      "width": 1200
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "events": {
+          "component": {
+            "onActionPerformed": {
+              "config": {
+                "script": "\troot \u003d self.parent\n\ttbc \u003d root.getChild(\"TabContainer_PageNumbers\")\n\t\n\t\n\tactualPage \u003d 1\n\tresultRowCount \u003d self.view.params.resultRowCount\n\tfetch \u003d self.props.value\n\t\n\ttbc.setDisplayedPages(actualPage, resultRowCount, fetch)\n\tself.view.custom.actualPage \u003d actualPage\n\t\n\troot.sendMsgCondition(actualPage, fetch)\n"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Dropdown"
+        },
+        "position": {
+          "basis": "110px"
+        },
+        "props": {
+          "dropdownOptionStyle": {
+            "classes": "Dropdowns/DDL_TablePagerItems",
+            "marginBottom": "0px",
+            "marginTop": "0px",
+            "paddingBottom": "4px",
+            "paddingTop": "4px"
+          },
+          "options": [
+            {
+              "label": "5 rows",
+              "value": 5
+            },
+            {
+              "label": "15 rows",
+              "value": 15
+            },
+            {
+              "label": "25 rows",
+              "value": 25
+            },
+            {
+              "label": "50 rows",
+              "value": 50
+            },
+            {
+              "label": "100 rows",
+              "value": 100
+            }
+          ],
+          "style": {
+            "classes": "Dropdowns/DDL_TablePagerBuiltIn"
+          },
+          "value": 100
+        },
+        "type": "ia.input.dropdown"
+      },
+      {
+        "meta": {
+          "name": "Label"
+        },
+        "position": {
+          "basis": "10px",
+          "grow": 1
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "TabContainer_FirstPrev"
+        },
+        "position": {
+          "basis": "120px"
+        },
+        "propConfig": {
+          "props.currentTabIndex": {
+            "onChange": {
+              "enabled": null,
+              "script": "\troot \u003d self.parent #self.getSibling(\"TabContainer_PageNumbers\").props.menuType\n\ttbc \u003d root.getChild(\"TabContainer_PageNumbers\")\n\tdrp \u003d root.getChild(\"Dropdown\")\n\t\n\tactualPage \u003d self.view.custom.actualPage\n\tresultRowCount \u003d self.view.params.resultRowCount \n\tfetch \u003d drp.props.value\n\t\n\tif resultRowCount \u003c\u003d fetch:\n\t\treturn\n\n\tif currentValue.value \u003d\u003d 1:\n\t\t#\"First\"\n\t\tactualPage \u003d 1\n\n\telif currentValue.value \u003d\u003d 2:\n\t\t# \"Prev\"\n\t\tif actualPage \u003e 1:\n\t\t\tactualPage -\u003d 1\n\t\n\tif actualPage !\u003d self.view.custom.actualPage:\n\t\troot.sendMsgCondition(actualPage)\n\t\ttbc.setDisplayedPages(actualPage, resultRowCount, fetch)\n\t\tself.view.custom.actualPage \u003d actualPage\n\t\t\t\n\tself.props.currentTabIndex \u003d 0\n\n\t"
+            }
+          }
+        },
+        "props": {
+          "menuStyle": {
+            "classes": "Table/Pager_Aqua"
+          },
+          "tabSize": {
+            "width": 80
+          },
+          "tabStyle": {
+            "active": {
+              "fontWeight": "bold"
+            }
+          },
+          "tabs": [
+            " ",
+            "First",
+            "\u003c"
+          ]
+        },
+        "type": "ia.container.tab"
+      },
+      {
+        "custom": {
+          "key": "value"
+        },
+        "events": {
+          "dom": {
+            "onMouseUp": {
+              "config": {
+                "script": "\troot \u003d self.parent\n\t\n\tif len(self.props.tabs) \u003e self.props.currentTabIndex:\n\t\tactualPage \u003d self.props.tabs[self.props.currentTabIndex] if self.props.currentTabIndex \u003e\u003d 0 else 1\n\t\tself.view.custom.actualPage \u003d actualPage\n\t\t\n\troot.sendMsgCondition(actualPage)\n"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "TabContainer_PageNumbers"
+        },
+        "position": {
+          "basis": "210px"
+        },
+        "props": {
+          "menuStyle": {
+            "classes": "Table/Pager_Aqua"
+          },
+          "tabStyle": {
+            "active": {
+              "fontWeight": "bold"
+            }
+          },
+          "tabs": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "scripts": {
+          "customMethods": [
+            {
+              "name": "setDisplayedPages",
+              "params": [
+                "actualPage",
+                "resultRowCount",
+                "fetch"
+              ],
+              "script": "\troot \u003d self.parent\n\tdrp \u003d root.getChild(\"Dropdown\")\n\tshow\u003d5\n\n\tpageTotal \u003d resultRowCount / fetch   + int(resultRowCount % fetch !\u003d 0) \n\tfirstToShow \u003d show * (actualPage / show - int(actualPage % show \u003d\u003d 0)) + 1\n\tlastToShow \u003d firstToShow + show - 1 if firstToShow + show \u003c\u003d pageTotal else pageTotal\n\tpagesToShow \u003d [x for x in range(firstToShow, lastToShow + 1)]\n\tdisplayedPages \u003d [x for x in self.props.tabs]\n\n\tif pagesToShow !\u003d displayedPages:\n\t\tself.props.tabs \u003d pagesToShow\n\n\ttry:\n\t\tself.props.currentTabIndex  \u003d pagesToShow.index(actualPage)\t\n\texcept:\n\t\tself.props.tabs \u003d []\n\t\tself.props.currentTabIndex  \u003d  -1\n\t\t\t\n\t#ystem.perspective.print((\u0027 pagesToShow,actualPage,indx\u0027, pagesToShow,actualPage))\n\n\n\t\n\t\n"
+            }
+          ],
+          "extensionFunctions": null,
+          "messageHandlers": []
+        },
+        "type": "ia.container.tab"
+      },
+      {
+        "meta": {
+          "name": "TabContainer_LastNext"
+        },
+        "position": {
+          "basis": "120px"
+        },
+        "propConfig": {
+          "props.currentTabIndex": {
+            "onChange": {
+              "enabled": null,
+              "script": "\troot \u003d self.parent\n\ttbc \u003d root.getChild(\"TabContainer_PageNumbers\")\n\tdrp \u003d root.getChild(\"Dropdown\")\n\n\tactualPage \u003d self.view.custom.actualPage\n\tresultRowCount \u003d self.view.params.resultRowCount\n\tfetch \u003d drp.props.value\n\t\n\tpageTotal \u003d resultRowCount / fetch   + int(resultRowCount % fetch !\u003d 0) \n\t\n\tif resultRowCount \u003c\u003d fetch:\n\t\treturn\n\n\tif currentValue.value \u003d\u003d 1:\n\t\t#\"Last\"\n\t\tactualPage \u003d pageTotal\n\n\telif currentValue.value \u003d\u003d 0:\n\t\t# Next\n\t\tif actualPage \u003c pageTotal:\n\t\t\tactualPage +\u003d 1\n\n\tif actualPage !\u003d self.view.custom.actualPage:\n\t\troot.sendMsgCondition(actualPage)\n\t\ttbc.setDisplayedPages(actualPage, resultRowCount, fetch)\n\t\tself.view.custom.actualPage \u003d actualPage\n\t\t\t\n\tself.props.currentTabIndex \u003d 2\n"
+            }
+          }
+        },
+        "props": {
+          "currentTabIndex": 2,
+          "menuStyle": {
+            "classes": "Table/Pager_Aqua"
+          },
+          "tabSize": {
+            "width": 80
+          },
+          "tabStyle": {
+            "active": {
+              "fontWeight": "bold"
+            }
+          },
+          "tabs": [
+            "\u003e",
+            "Last",
+            ""
+          ]
+        },
+        "type": "ia.container.tab"
+      },
+      {
+        "custom": {
+          "basisMinusRows": "px"
+        },
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "basis": "px",
+          "grow": 1
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_PageTotal"
+        },
+        "position": {
+          "basis": "100px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "expression": "\u0027 Pages: \u0027 + toStr(toInt({view.params.resultRowCount} / {view.params.fetch} - 0.5) + if({view.params.resultRowCount} % {view.params.fetch} !\u003d 0, 1, 0))"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "classes": "ActivityCards/Card_TextDark Background/Default",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "meta": {
+          "name": "Label_Row_Tota"
+        },
+        "position": {
+          "basis": "100px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "expression": "\u0027Rows: \u0027 + toStr({view.params.resultRowCount})"
+              },
+              "type": "expr"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "classes": "ActivityCards/Card_TextDark Background/Default",
+            "textAlign": "center"
+          }
+        },
+        "type": "ia.display.label"
+      }
+    ],
+    "custom": {
+      "_devClean": false
+    },
+    "meta": {
+      "name": "root"
+    },
+    "propConfig": {
+      "custom._devClean": {
+        "onChange": {
+          "enabled": null,
+          "script": "\tdrp \u003d self.getChild(\"Dropdown\")\n\t\n\tdrp.props.value \u003d 100\n\tself.view.params.resultRowCount \u003d 1001\n\n\t"
+        }
+      }
+    },
+    "props": {
+      "alignContent": "flex-start",
+      "alignItems": "center",
+      "style": {
+        "classes": "Background/Default",
+        "overflow": "hidden"
+      }
+    },
+    "scripts": {
+      "customMethods": [
+        {
+          "name": "sendMsgCondition",
+          "params": [
+            "actualPage",
+            "fetch\u003dNone"
+          ],
+          "script": "\ttbl \u003d self.getSibling(\"Table\")\n\tdrp \u003d self.getChild(\"Dropdown\")\n\tpayload \u003d {}\n\t\n\t\n\tif fetch is None:\n\t\tfetch \u003d drp.props.value \n\t\n\tpayload[\u0027fetch\u0027] \u003d fetch\n\t\n\toffset \u003d (actualPage - 1) * fetch \n\tif offset \u003c 0:\n\t\toffset \u003d 0\n\t\n\tpayload[\u0027offset\u0027] \u003d offset\n\t\n\t#ystem.perspective.print((\u0027mhByCondition trace fetch\u0027, payload))\n\ttry:\n\t\tsystem.perspective.sendMessage(\u0027mhByCondition\u0027, payload \u003d payload)\n\texcept:\n\t\tsystem.perspective.print((\u0027mhByCondition error\u0027, payload))"
+        }
+      ],
+      "extensionFunctions": null,
+      "messageHandlers": []
+    },
+    "type": "ia.container.flex"
+  }
+}

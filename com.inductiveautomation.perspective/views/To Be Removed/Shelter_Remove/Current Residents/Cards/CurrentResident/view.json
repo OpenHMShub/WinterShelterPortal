@@ -1,0 +1,463 @@
+{
+  "custom": {
+    "bedId": 8,
+    "bedName": "Bed 1",
+    "checkInDate": "",
+    "checkInId": 25,
+    "data": [],
+    "function": 0,
+    "participantName": "",
+    "roomId": 4,
+    "roomName": "Apartment 300"
+  },
+  "events": {
+    "system": {
+      "onStartup": {
+        "config": {
+          "script": "\tself.custom.function \u003d 0\n\tself.params.reservationId \u003d -1\n#\tself.session.custom.dateRangeFromDate \u003d system.date.now()\n#\tself.session.custom.dateRangeToDate \u003d system.date.now()\n\tself.session.custom.dateRangeFromDate \u003d system.date.format(system.date.now(), \"MM/dd/yyyy\")\n\tself.session.custom.dateRangeToDate \u003d system.date.format(system.date.now(), \"MM/dd/yyyy\")"
+        },
+        "scope": "G",
+        "type": "script"
+      }
+    }
+  },
+  "params": {
+    "facilityID": 1,
+    "participantId": 4,
+    "reservationId": -1
+  },
+  "propConfig": {
+    "custom.bedId": {
+      "persistent": true
+    },
+    "custom.bedName": {
+      "persistent": true
+    },
+    "custom.checkInDate": {
+      "persistent": true
+    },
+    "custom.checkInId": {
+      "persistent": true
+    },
+    "custom.data": {
+      "persistent": true
+    },
+    "custom.function": {
+      "persistent": true
+    },
+    "custom.participantName": {
+      "persistent": true
+    },
+    "custom.roomId": {
+      "persistent": true
+    },
+    "custom.roomName": {
+      "persistent": true
+    },
+    "params.facilityID": {
+      "onChange": {
+        "enabled": null,
+        "script": "\tif origin \u003d\u003d \"Browser\":\n\t\tif currentValue.value \u003e\u003d 0:\n\t\t\tself.custom.function \u003d 1"
+      },
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.participantId": {
+      "paramDirection": "inout",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 290
+    },
+    "loading": {
+      "mode": "blocking"
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "EmbeddedView Header"
+        },
+        "position": {
+          "basis": "25px",
+          "shrink": 0
+        },
+        "props": {
+          "params": {
+            "Text": "Edit Check-in"
+          },
+          "path": "Shelter/Reservation/Cards/New Reservation/ReservationHeader"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView Dates Input"
+        },
+        "position": {
+          "basis": "60px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.beginDate": {
+            "binding": {
+              "config": {
+                "expression": "if ({view.custom.checkInDate} !\u003d \u0027\u0027, {view.custom.checkInDate} , now())"
+              },
+              "transforms": [
+                {
+                  "formatType": "datetime",
+                  "formatValue": {
+                    "date": "medium",
+                    "time": "short"
+                  },
+                  "type": "format"
+                }
+              ],
+              "type": "expr"
+            }
+          },
+          "props.params.endDate": {
+            "binding": {
+              "config": {
+                "expression": "if(isnull({view.custom.data[0].timeCreated}),\r\n\tnow(0),\r\n\tfromMillis({view.custom.data[0].timeCreated}))\r\n\r\n\r\n"
+              },
+              "type": "expr"
+            }
+          },
+          "props.params.participantId": {
+            "binding": {
+              "config": {
+                "path": "view.params.participantId"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.participantName": {
+            "binding": {
+              "config": {
+                "path": "view.custom.participantName"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "selectedBeginDate": "07/19/2021 00:00",
+            "selectedEndDate": "07/19/2021 00:00"
+          },
+          "path": "Shelter/Current Residents/Cards/Edit Checkin/CheckoutInput",
+          "style": {
+            "marginLeft": "10px",
+            "marginRight": "10px"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "EmbeddedView Inputs"
+        },
+        "position": {
+          "basis": "60px"
+        },
+        "propConfig": {
+          "props.params.bedId": {
+            "binding": {
+              "config": {
+                "path": "view.custom.bedId"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.bedName": {
+            "binding": {
+              "config": {
+                "path": "view.custom.bedName"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.endDate": {
+            "binding": {
+              "config": {
+                "path": "../EmbeddedView Dates Input.props.params.selectedEndDate"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.facilityId": {
+            "binding": {
+              "config": {
+                "path": "view.params.facilityID"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.participantId": {
+            "binding": {
+              "config": {
+                "path": "view.params.participantId"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.roomId": {
+            "binding": {
+              "config": {
+                "path": "view.custom.roomId"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.roomName": {
+            "binding": {
+              "config": {
+                "path": "view.custom.roomName"
+              },
+              "type": "property"
+            }
+          },
+          "props.params.startDate": {
+            "binding": {
+              "config": {
+                "path": "../EmbeddedView Dates Input.props.params.selectedBeginDate"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "path": "Shelter/Current Residents/Cards/Edit Checkin/ServiceTemplate",
+          "style": {
+            "marginLeft": "17px",
+            "marginRight": "10px"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "children": [
+          {
+            "events": {
+              "component": {
+                "onActionPerformed": {
+                  "config": {
+                    "script": "\tidForCheckout \u003d self.view.custom.checkInId\n\tnewBedId \u003d self.view.getChild(\"root\").custom.selectedBedId\n\tproject \u003d \"RITI\"\n\t# checkout first\n\tpath \u003d \"Shelter/Reservations/CheckOut\"\n\tparameters \u003d {\"id\":idForCheckout}\n\tsystem.db.runNamedQuery(project\u003dproject,path\u003dpath,parameters\u003dparameters)\n\t\n\tpath \u003d \"Shelter/Reservations/CheckIn\"\n\tparameters \u003d {\"bedId\": int(newBedId),\"participantId\": int(self.view.params.participantId),\"eventStart\":self.parent.parent.getChild(\"EmbeddedView Dates Input\").props.params.selectedBeginDate}\n\tretVal \u003d system.db.runNamedQuery(project\u003dproject,path\u003dpath,parameters\u003dparameters)\n\tself.getSibling(\"Label\").showMessage(\"Checked in edited Successfully\")\n\tsystem.perspective.sendMessage(messageType\u003d\"refreshReservations\", payload\u003d{}, scope\u003d\"session\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Save"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "props": {
+              "style": {
+                "classes": "Buttons/Main",
+                "marginBottom": "5px",
+                "marginLeft": "10px",
+                "marginTop": "5px"
+              },
+              "text": "Save"
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "events": {
+              "component": {
+                "onActionPerformed": {
+                  "config": {
+                    "script": "\tcheckInId \u003d self.view.custom.checkInId\n\tbedId \u003d self.view.custom.bedId\n\tparticipantId \u003d self.view.getChild(\"root\").custom.selectedParticipantId\n\troomId \u003d self.view.custom.roomId\n\tcheckInDate \u003d self.view.custom.checkInDate\n\tparticipantName \u003d self.view.custom.participantName\n\troomName \u003d self.view.custom.roomName\n\tbedName \u003d self.view.custom.bedName\n\tsystem.perspective.print(\u0027sending msg\u0027)\n\tsystem.perspective.sendMessage(\"residentselected\",payload \u003d {\u0027facilityId\u0027: self.view.params.facilityID,\u0027checkInId\u0027:checkInId,\u0027bedId\u0027:bedId, \u0027participantId\u0027:participantId, \u0027roomId\u0027:roomId, \u0027participantName\u0027:participantName, \u0027checkInDate\u0027:checkInDate, \u0027roomName\u0027: roomName, \u0027bedName\u0027:bedName},scope\u003d\"session\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "Cancel"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "props": {
+              "style": {
+                "classes": "Buttons/Delete",
+                "marginBottom": "5px",
+                "marginLeft": "10px",
+                "marginTop": "5px"
+              },
+              "text": "Cancel"
+            },
+            "type": "ia.input.button"
+          },
+          {
+            "meta": {
+              "name": "Label",
+              "visible": false
+            },
+            "position": {
+              "basis": "50px",
+              "grow": 1
+            },
+            "props": {
+              "style": {
+                "classes": "Text/Error_Message"
+              },
+              "text": "Something went wrong while deleting data. Please select \u0026 try again."
+            },
+            "scripts": {
+              "customMethods": [
+                {
+                  "name": "showMessage",
+                  "params": [
+                    "message"
+                  ],
+                  "script": "\timport time\n\tself.props.text \u003d message\n\tself.meta.visible \u003d True\n\ttime.sleep(5)\n\tself.meta.visible \u003d False\n\t"
+                }
+              ],
+              "extensionFunctions": null,
+              "messageHandlers": []
+            },
+            "type": "ia.display.label"
+          },
+          {
+            "events": {
+              "component": {
+                "onActionPerformed": {
+                  "config": {
+                    "script": "\tidForCheckout \u003d self.view.custom.checkInId\n\t#system.perspective.print(\"checking out : \" + str(idForCheckout))\n\tproject \u003d \"RITI\"\n\tpath \u003d \"Shelter/Reservations/CheckOut\"\n\tparameters \u003d {\"id\":idForCheckout}\n\tsystem.db.runNamedQuery(project\u003dproject,path\u003dpath,parameters\u003dparameters)\n\tsystem.perspective.sendMessage(messageType\u003d\"refreshReservations\", payload\u003d{}, scope\u003d\"session\")"
+                  },
+                  "scope": "G",
+                  "type": "script"
+                }
+              }
+            },
+            "meta": {
+              "name": "CheckOut"
+            },
+            "position": {
+              "basis": "100px"
+            },
+            "props": {
+              "style": {
+                "classes": "Buttons/Btn_Teal_Shelter",
+                "marginBottom": "5px",
+                "marginLeft": "10px",
+                "marginRight": "10px",
+                "marginTop": "5px"
+              },
+              "text": "Check-out"
+            },
+            "type": "ia.input.button"
+          }
+        ],
+        "custom": {
+          "ReservationSaved": false
+        },
+        "meta": {
+          "name": "root Actions"
+        },
+        "position": {
+          "basis": "51px",
+          "shrink": 0
+        },
+        "props": {
+          "style": {
+            "borderTopColor": "#9db8d1",
+            "borderTopStyle": "solid",
+            "borderTopWidth": "1px",
+            "classes": "Background/Default",
+            "marginLeft": "10px",
+            "marginRight": "10px",
+            "marginTop": "5px",
+            "paddingTop": "5px"
+          }
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "propConfig": {
+      "custom.addedNotes": {
+        "binding": {
+          "config": {
+            "path": "./EmbeddedView Note.props.params.CaseNote"
+          },
+          "type": "property"
+        }
+      },
+      "custom.selectedBedId": {
+        "binding": {
+          "config": {
+            "path": "./EmbeddedView Inputs.props.params.bedId"
+          },
+          "type": "property"
+        }
+      },
+      "custom.selectedBeginDate": {
+        "binding": {
+          "config": {
+            "path": "./EmbeddedView Dates Input.props.params.selectedBeginDate"
+          },
+          "type": "property"
+        }
+      },
+      "custom.selectedEndDate": {
+        "binding": {
+          "config": {
+            "path": "./EmbeddedView Dates Input.props.params.selectedEndDate"
+          },
+          "type": "property"
+        }
+      },
+      "custom.selectedParticipantId": {
+        "binding": {
+          "config": {
+            "path": "./EmbeddedView Inputs.props.params.participantId"
+          },
+          "type": "property"
+        }
+      },
+      "custom.selectedRoomId": {
+        "binding": {
+          "config": {
+            "path": "./EmbeddedView Inputs.props.params.roomId"
+          },
+          "type": "property"
+        }
+      }
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "Background/Default"
+      }
+    },
+    "scripts": {
+      "customMethods": [],
+      "extensionFunctions": null,
+      "messageHandlers": [
+        {
+          "messageType": "residentselected",
+          "pageScope": true,
+          "script": "\t# implement your handler here\n#\tsystem.perspective.print(payload[\u0027checkInDate\u0027])\n\tself.view.custom.checkInId \u003d int(payload[\u0027checkInId\u0027])\n\tself.view.custom.bedId \u003d int(payload[\u0027bedId\u0027])\n\tself.view.custom.roomId \u003d int(payload[\u0027roomId\u0027])\n\tself.view.custom.participantName \u003d payload[\u0027participantName\u0027]\n\tself.view.custom.checkInDate \u003d payload[\u0027checkInDate\u0027]\n\tself.view.params.participantId \u003d int(payload[\u0027participantId\u0027])\n\tself.view.params.facilityID \u003d int(payload[\u0027facilityId\u0027])\n\tself.view.custom.roomName \u003d payload[\u0027roomName\u0027]\n\tself.view.custom.bedName \u003d payload[\u0027bedName\u0027]\n\t",
+          "sessionScope": true,
+          "viewScope": true
+        }
+      ]
+    },
+    "type": "ia.container.flex"
+  }
+}

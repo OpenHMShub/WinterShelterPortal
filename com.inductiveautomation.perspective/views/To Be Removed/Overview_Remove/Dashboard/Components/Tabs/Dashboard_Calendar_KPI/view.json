@@ -1,0 +1,79 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {},
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "KPI"
+        },
+        "position": {
+          "basis": "175px",
+          "shrink": 0
+        },
+        "props": {
+          "path": "Overview/Dashboard/Cards/KPI_Header"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "calendar"
+            },
+            "position": {
+              "basis": "620px"
+            },
+            "props": {
+              "currentCalendarDate": {
+                "currentDateEnd": "2020-12-01 00:00:00",
+                "currentDateStart": "2020-11-01 00:00:00",
+                "displayDateEnd": "2020-12-13 00:00:00",
+                "displayDateStart": "2020-11-01 00:00:00",
+                "month": 10,
+                "title": "November 2020",
+                "week": 44
+              },
+              "eventPopUp": {
+                "canEditEventOnPopUp": true,
+                "useCreateEventPopUp": true,
+                "useEventPopUp": true
+              },
+              "selectedDate": {
+                "start": "2020-11-10 00:00:00"
+              },
+              "style": {
+                "classes": "Text/About_info"
+              }
+            },
+            "type": "bijc.display.calendar"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "basis": "620px",
+          "shrink": 0
+        },
+        "props": {
+          "direction": "column",
+          "justify": "space-between"
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "Background/Default"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

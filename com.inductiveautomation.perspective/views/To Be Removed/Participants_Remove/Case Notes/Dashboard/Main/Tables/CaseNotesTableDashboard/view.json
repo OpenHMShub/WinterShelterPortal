@@ -1,0 +1,4201 @@
+{
+  "custom": {
+    "filtered_data": [],
+    "services_data": {
+      "$": [
+        "ds",
+        192,
+        1626023126373
+      ],
+      "$columns": [
+        {
+          "data": [
+            478,
+            479,
+            480,
+            482,
+            481,
+            483,
+            472,
+            473,
+            465,
+            453,
+            434,
+            425,
+            368,
+            304,
+            305
+          ],
+          "name": "servicesRowId",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            4725,
+            4725,
+            4725,
+            4725,
+            4725,
+            4725,
+            4676,
+            4676,
+            519,
+            4750,
+            4676,
+            4703,
+            4059,
+            1838,
+            1838
+          ],
+          "name": "participantId",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            107,
+            107,
+            107,
+            108,
+            113,
+            114,
+            74,
+            74,
+            93,
+            106,
+            104,
+            103,
+            97,
+            94,
+            94
+          ],
+          "name": "CaseNotesId",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            2,
+            2,
+            3,
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            1,
+            1,
+            2,
+            1,
+            4,
+            4
+          ],
+          "name": "employeeId",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            "Kelly Muldoon",
+            "Kelly Muldoon",
+            "Amanda Jones",
+            "Martina Condron",
+            "Staff Employee",
+            "Kelly Muldoon",
+            "Martina Condron",
+            "Staff Employee",
+            "Martina Condron",
+            "Martina Condron",
+            "Martina Condron",
+            "Kelly Muldoon",
+            "Martina Condron",
+            "Melanie Barnett",
+            "Melanie Barnett"
+          ],
+          "name": "employeeName",
+          "type": "String"
+        },
+        {
+          "data": [
+            29,
+            29,
+            24,
+            29,
+            47,
+            29,
+            44,
+            44,
+            42,
+            29,
+            44,
+            47,
+            24,
+            29,
+            42
+          ],
+          "name": "programId",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            "Hope University",
+            "Hope University",
+            "Campus Store",
+            "Hope University",
+            "Guest House",
+            "Hope University",
+            "Extended Recuperative Care",
+            "Extended Recuperative Care",
+            "Belmont House Residential",
+            "Hope University",
+            "Extended Recuperative Care",
+            "Guest House",
+            "Campus Store",
+            "Hope University",
+            "Belmont House Residential"
+          ],
+          "name": "programName",
+          "type": "String"
+        },
+        {
+          "data": [
+            13,
+            1,
+            16,
+            5,
+            2,
+            13,
+            1,
+            1,
+            1,
+            13,
+            1,
+            2,
+            16,
+            13,
+            21
+          ],
+          "name": "serviceTypeId",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            132,
+            1,
+            10,
+            65,
+            7,
+            45,
+            98,
+            1,
+            1,
+            39,
+            1,
+            7,
+            11,
+            41,
+            50
+          ],
+          "name": "serviceId",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            "6-8 AM Census",
+            "ACLS",
+            "Points Credited",
+            "iADL Support",
+            "Clothing",
+            "Hygiene Kit - Hope University",
+            "Completed ISP Test",
+            "ACLS",
+            "ACLS",
+            "Café Attendance",
+            "ACLS",
+            "Clothing",
+            "Store Purchase With Points Earned",
+            "GED / HiSet Tutoring",
+            "Attended Legal Clinic"
+          ],
+          "name": "serviceName",
+          "type": "String"
+        },
+        {
+          "data": [
+            1624741653627,
+            1624741653627,
+            1624741653627,
+            1624742068443,
+            1624742053763,
+            1624742123803,
+            1624126047410,
+            1624126047410,
+            1624110564330,
+            1613228844407,
+            1612108598343,
+            1610864975333,
+            1605941837830,
+            1603721252890,
+            1603721252890
+          ],
+          "name": "timeCreated",
+          "type": "Date"
+        },
+        {
+          "data": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "name": "HMIS",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            10,
+            1,
+            1,
+            1,
+            4,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            2,
+            3
+          ],
+          "name": "quantity",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            "",
+            "",
+            "",
+            "iADL Support",
+            "Get him a shirt that fits",
+            "",
+            "",
+            "",
+            "ACLS for sure, but no HMIS",
+            "Lunch with Brad Pitt",
+            "I can\u0027t type very much in this box, but I don\u0027t know what to do about it",
+            "",
+            "",
+            "Hope University GED",
+            "Attend Legal Clinic"
+          ],
+          "name": "comment",
+          "type": "String"
+        }
+      ]
+    },
+    "sql_data": {
+      "$": [
+        "ds",
+        192,
+        1626023125375
+      ],
+      "$columns": [
+        {
+          "data": [
+            107,
+            108,
+            113,
+            114,
+            74,
+            93,
+            95,
+            100,
+            101,
+            112,
+            111,
+            99,
+            102,
+            109,
+            96,
+            105,
+            106,
+            104,
+            103,
+            97,
+            94,
+            80,
+            91,
+            92,
+            83,
+            76,
+            77,
+            72,
+            73,
+            68
+          ],
+          "name": "noteId",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            4725,
+            4725,
+            4725,
+            4725,
+            4676,
+            519,
+            519,
+            519,
+            4645,
+            65,
+            0,
+            519,
+            4059,
+            3,
+            4676,
+            4676,
+            4750,
+            4676,
+            4703,
+            4059,
+            1838,
+            519,
+            519,
+            519,
+            920,
+            4676,
+            3403,
+            2063,
+            4676,
+            519
+          ],
+          "name": "participantId",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            "George Cartman Washington",
+            "George Cartman Washington",
+            "George Cartman Washington",
+            "George Cartman Washington",
+            "Chris Edward McLaughlin",
+            "Michael Eric Zimmerman",
+            "Michael Eric Zimmerman",
+            "Michael Eric Zimmerman",
+            "Christopher  Finch",
+            "Shirl Ann Harless",
+            "Andrew Enzo Hunt",
+            "Michael Eric Zimmerman",
+            "Sonja K Ziegler",
+            "Jessica Alexandra Smith",
+            "Chris Edward McLaughlin",
+            "Chris Edward McLaughlin",
+            "Brad  Pitt",
+            "Chris Edward McLaughlin",
+            "Colin  Furze",
+            "Sonja K Ziegler",
+            "Martin Alvin Zimmerman",
+            "Michael Eric Zimmerman",
+            "Michael Eric Zimmerman",
+            "Michael Eric Zimmerman",
+            "Jeff R Zills",
+            "Chris Edward McLaughlin",
+            "mike mcclahan",
+            "Alan Jerry Cobb",
+            "Chris Edward McLaughlin",
+            "Michael Eric Zimmerman"
+          ],
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "data": [
+            "George",
+            "George",
+            "George",
+            "George",
+            "Chris",
+            "Michael",
+            "Michael",
+            "Michael",
+            "Christopher",
+            "Shirl",
+            "Andrew",
+            "Michael",
+            "Sonja",
+            "Jessica",
+            "Chris",
+            "Chris",
+            "Brad",
+            "Chris",
+            "Colin",
+            "Sonja",
+            "Martin",
+            "Michael",
+            "Michael",
+            "Michael",
+            "Jeff",
+            "Chris",
+            "mike",
+            "Alan",
+            "Chris",
+            "Michael"
+          ],
+          "name": "firstName",
+          "type": "String"
+        },
+        {
+          "data": [
+            "Cartman",
+            "Cartman",
+            "Cartman",
+            "Cartman",
+            "Edward",
+            "Eric",
+            "Eric",
+            "Eric",
+            "",
+            "Ann",
+            "Enzo",
+            "Eric",
+            "K",
+            "Alexandra",
+            "Edward",
+            "Edward",
+            "",
+            "Edward",
+            "",
+            "K",
+            "Alvin",
+            "Eric",
+            "Eric",
+            "Eric",
+            "R",
+            "Edward",
+            null,
+            "Jerry",
+            "Edward",
+            "Eric"
+          ],
+          "name": "middleName",
+          "type": "String"
+        },
+        {
+          "data": [
+            "Washington",
+            "Washington",
+            "Washington",
+            "Washington",
+            "McLaughlin",
+            "Zimmerman",
+            "Zimmerman",
+            "Zimmerman",
+            "Finch",
+            "Harless",
+            "Hunt",
+            "Zimmerman",
+            "Ziegler",
+            "Smith",
+            "McLaughlin",
+            "McLaughlin",
+            "Pitt",
+            "McLaughlin",
+            "Furze",
+            "Ziegler",
+            "Zimmerman",
+            "Zimmerman",
+            "Zimmerman",
+            "Zimmerman",
+            "Zills",
+            "McLaughlin",
+            "mcclahan",
+            "Cobb",
+            "McLaughlin",
+            "Zimmerman"
+          ],
+          "name": "lastName",
+          "type": "String"
+        },
+        {
+          "data": [
+            "General George",
+            "General George",
+            "General George",
+            "General George",
+            "",
+            "Big Z Man",
+            "Big Z Man",
+            "Big Z Man",
+            "Finch, Christopher",
+            "Harless, Shirl Ann",
+            "",
+            "Big Z Man",
+            "Ziegler, Sonja K",
+            "Jessie",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Ziegler, Sonja K",
+            "Zimmerman, Martin Alvin",
+            "Big Z Man",
+            "Big Z Man",
+            "Big Z Man",
+            "Zills, Jeff R",
+            "",
+            "mcclahan, mike",
+            "Cobb, Alan Jerry",
+            "",
+            "Big Z Man"
+          ],
+          "name": "nickName",
+          "type": "String"
+        },
+        {
+          "data": [
+            "***-**-0359",
+            "***-**-0359",
+            "***-**-0359",
+            "***-**-0359",
+            "***-**-6789",
+            "***-**-4567",
+            "***-**-4567",
+            "***-**-4567",
+            "***-**-5610",
+            "***-**-2072",
+            "***-**-6789",
+            "***-**-4567",
+            "***-**-5042",
+            "***-**-0912",
+            "***-**-6789",
+            "***-**-6789",
+            "***-**-0000",
+            "***-**-6789",
+            "***-**-4567",
+            "***-**-5042",
+            "***-**-8919",
+            "***-**-4567",
+            "***-**-4567",
+            "***-**-4567",
+            "***-**-2039",
+            "***-**-6789",
+            "***-**-6658",
+            "***-**-8064",
+            "***-**-6789",
+            "***-**-4567"
+          ],
+          "name": "ssn",
+          "type": "String"
+        },
+        {
+          "data": [
+            "06/26/2021",
+            "06/26/2021",
+            "06/26/2021",
+            "06/26/2021",
+            "06/19/2021",
+            "06/19/2021",
+            "06/19/2021",
+            "06/19/2021",
+            "06/19/2021",
+            "04/29/2021",
+            "04/27/2021",
+            "04/23/2021",
+            "04/23/2021",
+            "03/19/2021",
+            "02/15/2021",
+            "02/13/2021",
+            "02/13/2021",
+            "01/31/2021",
+            "01/17/2021",
+            "11/21/2020",
+            "10/26/2020",
+            "10/25/2020",
+            "10/25/2020",
+            "10/25/2020",
+            "10/13/2020",
+            "09/18/2020",
+            "09/18/2020",
+            "09/16/2020",
+            "09/16/2020",
+            "09/15/2020"
+          ],
+          "name": "noteDate",
+          "type": "String"
+        },
+        {
+          "data": [
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            false,
+            false,
+            false,
+            false,
+            true,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false,
+            false,
+            true,
+            false,
+            true,
+            true,
+            true,
+            false,
+            false,
+            true
+          ],
+          "name": "hmis",
+          "type": "Boolean"
+        },
+        {
+          "data": [
+            1,
+            1,
+            1,
+            4,
+            1,
+            1,
+            2,
+            1,
+            1,
+            4,
+            1,
+            1,
+            1,
+            1,
+            3,
+            2,
+            4,
+            1,
+            3,
+            3,
+            1,
+            2,
+            2,
+            3,
+            1,
+            1,
+            2,
+            2,
+            3,
+            1
+          ],
+          "name": "CaseNoteTypeID",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            "Goal Setting",
+            "Goal Setting",
+            "Goal Setting",
+            "Other",
+            "Goal Setting",
+            "Goal Setting",
+            "Weekly Session",
+            "Goal Setting",
+            "Goal Setting",
+            "Other",
+            "Goal Setting",
+            "Goal Setting",
+            "Goal Setting",
+            "Goal Setting",
+            "Weekly Check In",
+            "Weekly Session",
+            "Other",
+            "Goal Setting",
+            "Weekly Check In",
+            "Weekly Check In",
+            "Goal Setting",
+            "Weekly Session",
+            "Weekly Session",
+            "Weekly Check In",
+            "Goal Setting",
+            "Goal Setting",
+            "Weekly Session",
+            "Weekly Session",
+            "Weekly Check In",
+            "Goal Setting"
+          ],
+          "name": "CaseNoteTypeName",
+          "type": "String"
+        },
+        {
+          "data": [
+            "Cartman needs to lose weight. Intermittent fasting is a dietary strategy that cycles between periods of fasting and eating.\n\nVarious forms exist, including the 16/8 method, which involves limiting your calorie intake to 8 hours per day, and the 5:2 method, which restricts your daily calorie intake to 500–600 calories twice per week.",
+            "Setting the attitude goals.",
+            "Cartman needs more goals",
+            "Cartman needs to behave",
+            "In astronomy, reflection nebulae are clouds of interstellar dust which might reflect the light of a nearby star or stars. The energy from the nearby stars is insufficient to ionize the gas of the nebula to create an emission nebula, but is enough to give sufficient scattering to make the dust visible. Thus, the frequency spectrum shown by reflection nebulae is similar to that of the illuminating stars. Among the microscopic particles responsible for the scattering are carbon compounds (e. g. diamond dust) and compounds of other elements such as iron and nickel. The latter two are often aligned with the galactic magnetic field and cause the scattered light to be slightly polarized.",
+            "Setting those goals! (edited again, and again, and some more)",
+            "New Note",
+            "Setting more goals",
+            "Case Note Test (and updating)",
+            "It is a test ",
+            "Test April 27",
+            "This is a test again, update on 6/26",
+            "Test of Activity Feed 2",
+            "Mobile test",
+            "This is a test (and you can update it too)",
+            "Just played some ping pong and had a talk",
+            "Note to Brad Pitt",
+            "Set a Goal",
+            "He is the best You Tuber ever!",
+            "I talked with her about her recent incident",
+            "Martin needs goals!",
+            "Kelly is showing me the new data base and this is amazing.",
+            "This is a case note type of weekly session",
+            "This is a new weekly check in case note",
+            "Example of case note",
+            "This is so cool!",
+            "Easy entry of a case note",
+            "Is the gig economy the way forward? More than a third of American workers — or 59 million people — took on some freelance work this year as the pandemic spurred rapid changes in the job market, according to a new report commissioned by Upwork. ",
+            "I have nothing to say about Chris.",
+            "Bus Services"
+          ],
+          "name": "Note",
+          "type": "String"
+        },
+        {
+          "data": [
+            0,
+            1,
+            3,
+            2,
+            0,
+            1,
+            5,
+            3,
+            1,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "name": "employeeId",
+          "type": "Integer"
+        },
+        {
+          "data": [
+            "Staff Employee",
+            "Martina Condron",
+            "Amanda Jones",
+            "Kelly Muldoon",
+            "Staff Employee",
+            "Martina Condron",
+            "Rachel Hester",
+            "Amanda Jones",
+            "Martina Condron",
+            "Staff Employee",
+            "Staff Employee",
+            "Melanie Barnett",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee",
+            "Staff Employee"
+          ],
+          "name": "employeeName",
+          "type": "String"
+        }
+      ]
+    },
+    "table_data": [
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "",
+            "employee_id": 2,
+            "employee_name": "Kelly Muldoon",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 4725,
+            "quantity": 10,
+            "row_num": 0,
+            "service_id": 132,
+            "service_name": "6-8 AM Census",
+            "type_id": 13
+          },
+          {
+            "HMIS": 1,
+            "comment": "",
+            "employee_id": 2,
+            "employee_name": "Kelly Muldoon",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 4725,
+            "quantity": 1,
+            "row_num": 1,
+            "service_id": 1,
+            "service_name": "ACLS",
+            "type_id": 1
+          },
+          {
+            "HMIS": 0,
+            "comment": "",
+            "employee_id": 3,
+            "employee_name": "Amanda Jones",
+            "enrollment_id": 24,
+            "enrollment_name": "Campus Store",
+            "participant_id": 4725,
+            "quantity": 1,
+            "row_num": 2,
+            "service_id": 10,
+            "service_name": "Points Credited",
+            "type_id": 16
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "General George",
+          "note": "Cartman needs to lose weight. Intermittent fasting is a dietary strategy that cycles between periods of fasting and eating.\n\nVarious forms exist, including the 16/8 method, which involves limiting your calorie intake to 8 hours per day, and the 5:2 method, which restricts your daily calorie intake to 500–600 calories twice per week.",
+          "note_id": 107,
+          "note_trunc": "Cartman needs to lose weight. Intermittent fasting is a dietary strate",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4725,
+          "participant_name": "George Cartman Washington",
+          "service_desc": "6-8 AM Census, ACLS, Points Credited, ",
+          "ssn": "***-**-0359",
+          "time_created": "06/26/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 1,
+            "comment": "iADL Support",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 4725,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 65,
+            "service_name": "iADL Support",
+            "type_id": 5
+          }
+        ],
+        "value": {
+          "employee_id": 1,
+          "employee_name": "Martina Condron",
+          "hmis": true,
+          "nick_name": "General George",
+          "note": "Setting the attitude goals.",
+          "note_id": 108,
+          "note_trunc": "Setting the attitude goals.",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4725,
+          "participant_name": "George Cartman Washington",
+          "service_desc": "iADL Support, ",
+          "ssn": "***-**-0359",
+          "time_created": "06/26/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "Get him a shirt that fits",
+            "employee_id": 0,
+            "employee_name": "Staff Employee",
+            "enrollment_id": 47,
+            "enrollment_name": "Guest House",
+            "participant_id": 4725,
+            "quantity": 4,
+            "row_num": 0,
+            "service_id": 7,
+            "service_name": "Clothing",
+            "type_id": 2
+          }
+        ],
+        "value": {
+          "employee_id": 3,
+          "employee_name": "Amanda Jones",
+          "hmis": true,
+          "nick_name": "General George",
+          "note": "Cartman needs more goals",
+          "note_id": 113,
+          "note_trunc": "Cartman needs more goals",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4725,
+          "participant_name": "George Cartman Washington",
+          "service_desc": "Clothing, ",
+          "ssn": "***-**-0359",
+          "time_created": "06/26/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 1,
+            "comment": "",
+            "employee_id": 2,
+            "employee_name": "Kelly Muldoon",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 4725,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 45,
+            "service_name": "Hygiene Kit - Hope University",
+            "type_id": 13
+          }
+        ],
+        "value": {
+          "employee_id": 2,
+          "employee_name": "Kelly Muldoon",
+          "hmis": true,
+          "nick_name": "General George",
+          "note": "Cartman needs to behave",
+          "note_id": 114,
+          "note_trunc": "Cartman needs to behave",
+          "note_type": "Other",
+          "note_type_id": 4,
+          "participant_id": 4725,
+          "participant_name": "George Cartman Washington",
+          "service_desc": "Hygiene Kit - Hope University, ",
+          "ssn": "***-**-0359",
+          "time_created": "06/26/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 1,
+            "comment": "",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 44,
+            "enrollment_name": "Extended Recuperative Care",
+            "participant_id": 4676,
+            "quantity": 2,
+            "row_num": 0,
+            "service_id": 98,
+            "service_name": "Completed ISP Test",
+            "type_id": 1
+          },
+          {
+            "HMIS": 1,
+            "comment": "",
+            "employee_id": 0,
+            "employee_name": "Staff Employee",
+            "enrollment_id": 44,
+            "enrollment_name": "Extended Recuperative Care",
+            "participant_id": 4676,
+            "quantity": 1,
+            "row_num": 1,
+            "service_id": 1,
+            "service_name": "ACLS",
+            "type_id": 1
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "In astronomy, reflection nebulae are clouds of interstellar dust which might reflect the light of a nearby star or stars. The energy from the nearby stars is insufficient to ionize the gas of the nebula to create an emission nebula, but is enough to give sufficient scattering to make the dust visible. Thus, the frequency spectrum shown by reflection nebulae is similar to that of the illuminating stars. Among the microscopic particles responsible for the scattering are carbon compounds (e. g. diamond dust) and compounds of other elements such as iron and nickel. The latter two are often aligned with the galactic magnetic field and cause the scattered light to be slightly polarized.",
+          "note_id": 74,
+          "note_trunc": "In astronomy, reflection nebulae are clouds of interstellar dust which",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "Completed ISP Test, ACLS, ",
+          "ssn": "***-**-6789",
+          "time_created": "06/19/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "ACLS for sure, but no HMIS",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 42,
+            "enrollment_name": "Belmont House Residential",
+            "participant_id": 519,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 1,
+            "service_name": "ACLS",
+            "type_id": 1
+          }
+        ],
+        "value": {
+          "employee_id": 1,
+          "employee_name": "Martina Condron",
+          "hmis": true,
+          "nick_name": "Big Z Man",
+          "note": "Setting those goals! (edited again, and again, and some more)",
+          "note_id": 93,
+          "note_trunc": "Setting those goals! (edited again, and again, and some more)",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "ACLS, ",
+          "ssn": "***-**-4567",
+          "time_created": "06/19/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 5,
+          "employee_name": "Rachel Hester",
+          "hmis": false,
+          "nick_name": "Big Z Man",
+          "note": "New Note",
+          "note_id": 95,
+          "note_trunc": "New Note",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "06/19/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 3,
+          "employee_name": "Amanda Jones",
+          "hmis": false,
+          "nick_name": "Big Z Man",
+          "note": "Setting more goals",
+          "note_id": 100,
+          "note_trunc": "Setting more goals",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "06/19/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 1,
+          "employee_name": "Martina Condron",
+          "hmis": false,
+          "nick_name": "Finch, Christopher",
+          "note": "Case Note Test (and updating)",
+          "note_id": 101,
+          "note_trunc": "Case Note Test (and updating)",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4645,
+          "participant_name": "Christopher  Finch",
+          "service_desc": "",
+          "ssn": "***-**-5610",
+          "time_created": "06/19/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Harless, Shirl Ann",
+          "note": "It is a test ",
+          "note_id": 112,
+          "note_trunc": "It is a test ",
+          "note_type": "Other",
+          "note_type_id": 4,
+          "participant_id": 65,
+          "participant_name": "Shirl Ann Harless",
+          "service_desc": "",
+          "ssn": "***-**-2072",
+          "time_created": "04/29/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "Test April 27",
+          "note_id": 111,
+          "note_trunc": "Test April 27",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 0,
+          "participant_name": "Andrew Enzo Hunt",
+          "service_desc": "",
+          "ssn": "***-**-6789",
+          "time_created": "04/27/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 4,
+          "employee_name": "Melanie Barnett",
+          "hmis": true,
+          "nick_name": "Big Z Man",
+          "note": "This is a test again, update on 6/26",
+          "note_id": 99,
+          "note_trunc": "This is a test again, update on 6/26",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "04/23/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Ziegler, Sonja K",
+          "note": "Test of Activity Feed 2",
+          "note_id": 102,
+          "note_trunc": "Test of Activity Feed 2",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4059,
+          "participant_name": "Sonja K Ziegler",
+          "service_desc": "",
+          "ssn": "***-**-5042",
+          "time_created": "04/23/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Jessie",
+          "note": "Mobile test",
+          "note_id": 109,
+          "note_trunc": "Mobile test",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 3,
+          "participant_name": "Jessica Alexandra Smith",
+          "service_desc": "",
+          "ssn": "***-**-0912",
+          "time_created": "03/19/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "This is a test (and you can update it too)",
+          "note_id": 96,
+          "note_trunc": "This is a test (and you can update it too)",
+          "note_type": "Weekly Check In",
+          "note_type_id": 3,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "",
+          "ssn": "***-**-6789",
+          "time_created": "02/15/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "",
+          "note": "Just played some ping pong and had a talk",
+          "note_id": 105,
+          "note_trunc": "Just played some ping pong and had a talk",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "",
+          "ssn": "***-**-6789",
+          "time_created": "02/13/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 1,
+            "comment": "Lunch with Brad Pitt",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 4750,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 39,
+            "service_name": "Café Attendance",
+            "type_id": 13
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "Note to Brad Pitt",
+          "note_id": 106,
+          "note_trunc": "Note to Brad Pitt",
+          "note_type": "Other",
+          "note_type_id": 4,
+          "participant_id": 4750,
+          "participant_name": "Brad  Pitt",
+          "service_desc": "Café Attendance, ",
+          "ssn": "***-**-0000",
+          "time_created": "02/13/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "I can\u0027t type very much in this box, but I don\u0027t know what to do about it",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 44,
+            "enrollment_name": "Extended Recuperative Care",
+            "participant_id": 4676,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 1,
+            "service_name": "ACLS",
+            "type_id": 1
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "Set a Goal",
+          "note_id": 104,
+          "note_trunc": "Set a Goal",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "ACLS, ",
+          "ssn": "***-**-6789",
+          "time_created": "01/31/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "",
+            "employee_id": 2,
+            "employee_name": "Kelly Muldoon",
+            "enrollment_id": 47,
+            "enrollment_name": "Guest House",
+            "participant_id": 4703,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 7,
+            "service_name": "Clothing",
+            "type_id": 2
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "",
+          "note": "He is the best You Tuber ever!",
+          "note_id": 103,
+          "note_trunc": "He is the best You Tuber ever!",
+          "note_type": "Weekly Check In",
+          "note_type_id": 3,
+          "participant_id": 4703,
+          "participant_name": "Colin  Furze",
+          "service_desc": "Clothing, ",
+          "ssn": "***-**-4567",
+          "time_created": "01/17/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 1,
+            "comment": "",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 24,
+            "enrollment_name": "Campus Store",
+            "participant_id": 4059,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 11,
+            "service_name": "Store Purchase With Points Earned",
+            "type_id": 16
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "Ziegler, Sonja K",
+          "note": "I talked with her about her recent incident",
+          "note_id": 97,
+          "note_trunc": "I talked with her about her recent incident",
+          "note_type": "Weekly Check In",
+          "note_type_id": 3,
+          "participant_id": 4059,
+          "participant_name": "Sonja K Ziegler",
+          "service_desc": "Store Purchase With Points Earned, ",
+          "ssn": "***-**-5042",
+          "time_created": "11/21/2020"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "Hope University GED",
+            "employee_id": 4,
+            "employee_name": "Melanie Barnett",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 1838,
+            "quantity": 2,
+            "row_num": 0,
+            "service_id": 41,
+            "service_name": "GED / HiSet Tutoring",
+            "type_id": 13
+          },
+          {
+            "HMIS": 1,
+            "comment": "Attend Legal Clinic",
+            "employee_id": 4,
+            "employee_name": "Melanie Barnett",
+            "enrollment_id": 42,
+            "enrollment_name": "Belmont House Residential",
+            "participant_id": 1838,
+            "quantity": 3,
+            "row_num": 1,
+            "service_id": 50,
+            "service_name": "Attended Legal Clinic",
+            "type_id": 21
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Zimmerman, Martin Alvin",
+          "note": "Martin needs goals!",
+          "note_id": 94,
+          "note_trunc": "Martin needs goals!",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 1838,
+          "participant_name": "Martin Alvin Zimmerman",
+          "service_desc": "GED / HiSet Tutoring, Attended Legal Clinic, ",
+          "ssn": "***-**-8919",
+          "time_created": "10/26/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Big Z Man",
+          "note": "Kelly is showing me the new data base and this is amazing.",
+          "note_id": 80,
+          "note_trunc": "Kelly is showing me the new data base and this is amazing.",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "10/25/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "Big Z Man",
+          "note": "This is a case note type of weekly session",
+          "note_id": 91,
+          "note_trunc": "This is a case note type of weekly session",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "10/25/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Big Z Man",
+          "note": "This is a new weekly check in case note",
+          "note_id": 92,
+          "note_trunc": "This is a new weekly check in case note",
+          "note_type": "Weekly Check In",
+          "note_type_id": 3,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "10/25/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "Zills, Jeff R",
+          "note": "Example of case note",
+          "note_id": 83,
+          "note_trunc": "Example of case note",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 920,
+          "participant_name": "Jeff R Zills",
+          "service_desc": "",
+          "ssn": "***-**-2039",
+          "time_created": "10/13/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "This is so cool!",
+          "note_id": 76,
+          "note_trunc": "This is so cool!",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "",
+          "ssn": "***-**-6789",
+          "time_created": "09/18/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "mcclahan, mike",
+          "note": "Easy entry of a case note",
+          "note_id": 77,
+          "note_trunc": "Easy entry of a case note",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 3403,
+          "participant_name": "mike mcclahan",
+          "service_desc": "",
+          "ssn": "***-**-6658",
+          "time_created": "09/18/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Cobb, Alan Jerry",
+          "note": "Is the gig economy the way forward? More than a third of American workers — or 59 million people — took on some freelance work this year as the pandemic spurred rapid changes in the job market, according to a new report commissioned by Upwork. ",
+          "note_id": 72,
+          "note_trunc": "Is the gig economy the way forward? More than a third of American work",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 2063,
+          "participant_name": "Alan Jerry Cobb",
+          "service_desc": "",
+          "ssn": "***-**-8064",
+          "time_created": "09/16/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "",
+          "note": "I have nothing to say about Chris.",
+          "note_id": 73,
+          "note_trunc": "I have nothing to say about Chris.",
+          "note_type": "Weekly Check In",
+          "note_type_id": 3,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "",
+          "ssn": "***-**-6789",
+          "time_created": "09/16/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "Big Z Man",
+          "note": "Bus Services",
+          "note_id": 68,
+          "note_trunc": "Bus Services",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "09/15/2020"
+        }
+      }
+    ]
+  },
+  "params": {
+    "activity_range": 365,
+    "participant_search": false,
+    "selection_data": [],
+    "services": [
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“Get busy living or get busy dying.”\n? Stephen King, Different Seasons ",
+          "note_id": 60,
+          "note_trunc": "“Get busy living or get busy dying.”\n? Stephen King, Different Seasons ",
+          "service_desc": "",
+          "time_created": 1599949806067
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 2,
+            "employee_name": "Kelly  Muldoon",
+            "enrollment_id": 1,
+            "enrollment_name": "Permanent Supportive Housing",
+            "service_id": 78,
+            "service_name": "PSH Support Coordination Services"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "“May you live every day of your life.”\n? Jonathan Swift ",
+          "note_id": 59,
+          "note_trunc": "“May you live every day of your life.”\n? Jonathan Swift ",
+          "service_desc": "PSH Support Coordination Services, ",
+          "time_created": 1599949680767
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 2,
+            "employee_name": "Kelly  Muldoon",
+            "enrollment_id": 24,
+            "enrollment_name": "Campus Store",
+            "service_id": 10,
+            "service_name": "Points Credited"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "",
+          "note_id": 58,
+          "note_trunc": "",
+          "service_desc": "Points Credited, ",
+          "time_created": 1599949628337
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 4,
+            "employee_name": "Melanie  Barnett",
+            "enrollment_id": 24,
+            "enrollment_name": "Campus Store",
+            "service_id": 11,
+            "service_name": "Store Purchase With Points Earned"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“Where there is love there is life.”\n? Mahatma Gandhi ",
+          "note_id": 57,
+          "note_trunc": "“Where there is love there is life.”\n? Mahatma Gandhi ",
+          "service_desc": "Store Purchase With Points Earned, ",
+          "time_created": 1599949539830
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 5,
+            "employee_name": "Rachel  Hester",
+            "enrollment_id": 24,
+            "enrollment_name": "Campus Store",
+            "service_id": 10,
+            "service_name": "Points Credited"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "“Death ends a life, not a relationship.”\n? Mitch Albom, Tuesdays with Morrie ",
+          "note_id": 56,
+          "note_trunc": "“Death ends a life, not a relationship.”\n? Mitch Albom, Tuesdays with Morrie ",
+          "service_desc": "Points Credited, ",
+          "time_created": 1599949117023
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 1,
+            "employee_name": "Martina  Condron",
+            "enrollment_id": 22,
+            "enrollment_name": "Assessments",
+            "service_id": 1,
+            "service_name": "ACLS"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“If you don\u0027t know where you\u0027re going, any road\u0027ll take you there”\n? George Harrison ",
+          "note_id": 55,
+          "note_trunc": "“If you don\u0027t know where you\u0027re going, any road\u0027ll take you there”\n? George Harr",
+          "service_desc": "ACLS, ",
+          "time_created": 1599948862673
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“If you don\u0027t know where you\u0027re going, any road\u0027ll take you there”\n? George Harrison ",
+          "note_id": 54,
+          "note_trunc": "“If you don\u0027t know where you\u0027re going, any road\u0027ll take you there”\n? George Harr",
+          "service_desc": "",
+          "time_created": 1599948852287
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 1,
+            "employee_name": "Martina  Condron",
+            "enrollment_id": 41,
+            "enrollment_name": "Congregation Services",
+            "service_id": 123,
+            "service_name": "Shower"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“I speak to everyone in the same way, whether he is the garbage man or the president of the university.”\n? Albert Einstein",
+          "note_id": 53,
+          "note_trunc": "“I speak to everyone in the same way, whether he is the garbage man or the presi",
+          "service_desc": "Shower, ",
+          "time_created": 1599948537067
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 1,
+            "employee_name": "Martina  Condron",
+            "enrollment_id": 36,
+            "enrollment_name": "Recovery Community",
+            "service_id": 83,
+            "service_name": "Housing Bednight"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "view.refreshBinding(\"custom.services_data\")",
+          "note_id": 52,
+          "note_trunc": "view.refreshBinding(\"custom.services_data\")",
+          "service_desc": "Housing Bednight, ",
+          "time_created": 1599948427680
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "view.refreshBinding(\"custom.services_data\")",
+          "note_id": 51,
+          "note_trunc": "view.refreshBinding(\"custom.services_data\")",
+          "service_desc": "",
+          "time_created": 1599948409903
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.”\n? Mark Twain ",
+          "note_id": 50,
+          "note_trunc": "“The fear of death follows from the fear of life. A man who lives fully is prepa",
+          "service_desc": "",
+          "time_created": 1599948333973
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.”\n? Mark Twain ",
+          "note_id": 49,
+          "note_trunc": "“The fear of death follows from the fear of life. A man who lives fully is prepa",
+          "service_desc": "",
+          "time_created": 1599948206073
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.”\n? Mark Twain ",
+          "note_id": 48,
+          "note_trunc": "“The fear of death follows from the fear of life. A man who lives fully is prepa",
+          "service_desc": "",
+          "time_created": 1599948076653
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.”\n? Mark Twain ",
+          "note_id": 47,
+          "note_trunc": "“The fear of death follows from the fear of life. A man who lives fully is prepa",
+          "service_desc": "",
+          "time_created": 1599948013657
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.”\n? Mark Twain ",
+          "note_id": 46,
+          "note_trunc": "“The fear of death follows from the fear of life. A man who lives fully is prepa",
+          "service_desc": "",
+          "time_created": 1599947940153
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 4,
+            "employee_name": "Melanie  Barnett",
+            "enrollment_id": 41,
+            "enrollment_name": "Congregation Services",
+            "service_id": 7,
+            "service_name": "Clothing"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.”\n? Mark Twain ",
+          "note_id": 45,
+          "note_trunc": "“The fear of death follows from the fear of life. A man who lives fully is prepa",
+          "service_desc": "Clothing, ",
+          "time_created": 1599947602163
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 1,
+            "employee_name": "Martina  Condron",
+            "enrollment_id": 26,
+            "enrollment_name": "Employment",
+            "service_id": 13,
+            "service_name": "Attended Employment Power Day"
+          },
+          {
+            "employee_id": 1,
+            "employee_name": "Martina  Condron",
+            "enrollment_id": 26,
+            "enrollment_name": "Employment",
+            "service_id": 15,
+            "service_name": "Attended Employment Skills Training"
+          },
+          {
+            "employee_id": 1,
+            "employee_name": "Martina  Condron",
+            "enrollment_id": 26,
+            "enrollment_name": "Employment",
+            "service_id": 16,
+            "service_name": "Bike Shop Employment Training"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "“I\u0027m the one that\u0027s got to die when it\u0027s time for me to die, so let me live my life the way I want to.”\n? Jimi Hendrix, Jimi Hendrix - Axis: Bold as Love ",
+          "note_id": 44,
+          "note_trunc": "“I\u0027m the one that\u0027s got to die when it\u0027s time for me to die, so let me live my l",
+          "service_desc": "Attended Employment Power Day, Attended Employment Skills Training, Bike Shop Employment Training, ",
+          "time_created": 1599947081107
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 5,
+            "employee_name": "Rachel  Hester",
+            "enrollment_id": 23,
+            "enrollment_name": "Basic Needs",
+            "service_id": 7,
+            "service_name": "Clothing"
+          },
+          {
+            "employee_id": 5,
+            "employee_name": "Rachel  Hester",
+            "enrollment_id": 23,
+            "enrollment_name": "Basic Needs",
+            "service_id": 8,
+            "service_name": "Dispensary of Hope"
+          },
+          {
+            "employee_id": 5,
+            "employee_name": "Rachel  Hester",
+            "enrollment_id": 23,
+            "enrollment_name": "Basic Needs",
+            "service_id": 9,
+            "service_name": "Lunch Attendance"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "“Finish each day and be done with it. You have done what you could. Some blunders and absurdities no doubt crept in; forget them as soon as you can. Tomorrow is a new day. You shall begin it serenely and with too high a spirit to be encumbered with your old nonsense.”\n? Ralph Waldo Emerson ",
+          "note_id": 43,
+          "note_trunc": "“Finish each day and be done with it. You have done what you could. Some blunder",
+          "service_desc": "Clothing, Dispensary of Hope, Lunch Attendance, ",
+          "time_created": 1599946671900
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 5,
+            "employee_name": "Rachel  Hester",
+            "enrollment_id": 23,
+            "enrollment_name": "Basic Needs",
+            "service_id": 7,
+            "service_name": "Clothing"
+          },
+          {
+            "employee_id": 5,
+            "employee_name": "Rachel  Hester",
+            "enrollment_id": 23,
+            "enrollment_name": "Basic Needs",
+            "service_id": 8,
+            "service_name": "Dispensary of Hope"
+          },
+          {
+            "employee_id": 5,
+            "employee_name": "Rachel  Hester",
+            "enrollment_id": 23,
+            "enrollment_name": "Basic Needs",
+            "service_id": 9,
+            "service_name": "Lunch Attendance"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "“Finish each day and be done with it. You have done what you could. Some blunders and absurdities no doubt crept in; forget them as soon as you can. Tomorrow is a new day. You shall begin it serenely and with too high a spirit to be encumbered with your old nonsense.”\n? Ralph Waldo Emerson ",
+          "note_id": 42,
+          "note_trunc": "“Finish each day and be done with it. You have done what you could. Some blunder",
+          "service_desc": "Clothing, Dispensary of Hope, Lunch Attendance, ",
+          "time_created": 1599946634027
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 5,
+            "employee_name": "Rachel  Hester",
+            "enrollment_id": 40,
+            "enrollment_name": "Winter Shelter",
+            "service_id": 117,
+            "service_name": "Winter Shelter Bed Night"
+          },
+          {
+            "employee_id": 4,
+            "employee_name": "Melanie  Barnett",
+            "enrollment_id": 37,
+            "enrollment_name": "Substance Abuse",
+            "service_id": 92,
+            "service_name": "Drug Screening"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "“Life is like riding a bicycle. To keep your balance, you must keep moving.”\n? Albert Einstein",
+          "note_id": 40,
+          "note_trunc": "“Life is like riding a bicycle. To keep your balance, you must keep moving.”\n? A",
+          "service_desc": "Winter Shelter Bed Night, Drug Screening, ",
+          "time_created": 1599925859813
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 4,
+            "employee_name": "Melanie  Barnett",
+            "enrollment_id": 37,
+            "enrollment_name": "Substance Abuse",
+            "service_id": 92,
+            "service_name": "Drug Screening"
+          },
+          {
+            "employee_id": 5,
+            "employee_name": "Rachel  Hester",
+            "enrollment_id": 40,
+            "enrollment_name": "Winter Shelter",
+            "service_id": 118,
+            "service_name": "Youth Shelter No Ticket Week"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "“Life is like riding a bicycle. To keep your balance, you must keep moving.”\n? Albert Einstein",
+          "note_id": 39,
+          "note_trunc": "“Life is like riding a bicycle. To keep your balance, you must keep moving.”\n? A",
+          "service_desc": "Drug Screening, Youth Shelter No Ticket Week, ",
+          "time_created": 1599925798050
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 5,
+            "employee_name": "Rachel  Hester",
+            "enrollment_id": 40,
+            "enrollment_name": "Winter Shelter",
+            "service_id": 118,
+            "service_name": "Youth Shelter No Ticket Week"
+          },
+          {
+            "employee_id": 4,
+            "employee_name": "Melanie  Barnett",
+            "enrollment_id": 37,
+            "enrollment_name": "Substance Abuse",
+            "service_id": 93,
+            "service_name": "Substance Abuse Information / Numbers Given"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "",
+          "note_id": 38,
+          "note_trunc": "",
+          "service_desc": "Youth Shelter No Ticket Week, Substance Abuse Information / Numbers Given, ",
+          "time_created": 1599925743163
+        }
+      },
+      {
+        "services": [
+          {
+            "employee_id": 3,
+            "employee_name": "Amanda  Jones",
+            "enrollment_id": 39,
+            "enrollment_name": "Transportation",
+            "service_id": 109,
+            "service_name": "All Day Bus Pass"
+          },
+          {
+            "employee_id": 1,
+            "employee_name": "Martina  Condron",
+            "enrollment_id": 41,
+            "enrollment_name": "Congregation Services",
+            "service_id": 7,
+            "service_name": "Clothing"
+          }
+        ],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "",
+          "note_id": 37,
+          "note_trunc": "",
+          "service_desc": "All Day Bus Pass, Clothing, ",
+          "time_created": 1599925669667
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "",
+          "note_id": 36,
+          "note_trunc": "",
+          "service_desc": "",
+          "time_created": 1599925452667
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "",
+          "note_id": 35,
+          "note_trunc": "",
+          "service_desc": "",
+          "time_created": 1599924991683
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "",
+          "note_id": 34,
+          "note_trunc": "",
+          "service_desc": "",
+          "time_created": 1599924937763
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "",
+          "note_id": 33,
+          "note_trunc": "",
+          "service_desc": "",
+          "time_created": 1599924863973
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": true,
+          "note": "",
+          "note_id": 32,
+          "note_trunc": "",
+          "service_desc": "",
+          "time_created": 1599924195657
+        }
+      },
+      {
+        "services": [],
+        "style": {
+          "classes": "Table/Cell_Detail"
+        },
+        "value": {
+          "employee_id": 0,
+          "employee_name": "  (Placeholder)",
+          "hmis": false,
+          "note": "\"Do not go where the path may lead, go instead where there is no path and leave a trail.\" -Ralph Waldo Emerson",
+          "note_id": 11,
+          "note_trunc": "\"Do not go where the path may lead, go instead where there is no path and leave ",
+          "service_desc": "",
+          "time_created": 1598898465260
+        }
+      }
+    ],
+    "table_data": [
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "",
+            "employee_id": 2,
+            "employee_name": "Kelly Muldoon",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 4725,
+            "quantity": 10,
+            "row_num": 0,
+            "service_id": 132,
+            "service_name": "6-8 AM Census",
+            "type_id": 13
+          },
+          {
+            "HMIS": 1,
+            "comment": "",
+            "employee_id": 2,
+            "employee_name": "Kelly Muldoon",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 4725,
+            "quantity": 1,
+            "row_num": 1,
+            "service_id": 1,
+            "service_name": "ACLS",
+            "type_id": 1
+          },
+          {
+            "HMIS": 0,
+            "comment": "",
+            "employee_id": 3,
+            "employee_name": "Amanda Jones",
+            "enrollment_id": 24,
+            "enrollment_name": "Campus Store",
+            "participant_id": 4725,
+            "quantity": 1,
+            "row_num": 2,
+            "service_id": 10,
+            "service_name": "Points Credited",
+            "type_id": 16
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "General George",
+          "note": "Cartman needs to lose weight. Intermittent fasting is a dietary strategy that cycles between periods of fasting and eating.\n\nVarious forms exist, including the 16/8 method, which involves limiting your calorie intake to 8 hours per day, and the 5:2 method, which restricts your daily calorie intake to 500–600 calories twice per week.",
+          "note_id": 107,
+          "note_trunc": "Cartman needs to lose weight. Intermittent fasting is a dietary strate",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4725,
+          "participant_name": "George Cartman Washington",
+          "service_desc": "6-8 AM Census, ACLS, Points Credited, ",
+          "ssn": "***-**-0359",
+          "time_created": "06/26/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 1,
+            "comment": "iADL Support",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 4725,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 65,
+            "service_name": "iADL Support",
+            "type_id": 5
+          }
+        ],
+        "value": {
+          "employee_id": 1,
+          "employee_name": "Martina Condron",
+          "hmis": true,
+          "nick_name": "General George",
+          "note": "Setting the attitude goals.",
+          "note_id": 108,
+          "note_trunc": "Setting the attitude goals.",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4725,
+          "participant_name": "George Cartman Washington",
+          "service_desc": "iADL Support, ",
+          "ssn": "***-**-0359",
+          "time_created": "06/26/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "Get him a shirt that fits",
+            "employee_id": 0,
+            "employee_name": "Staff Employee",
+            "enrollment_id": 47,
+            "enrollment_name": "Guest House",
+            "participant_id": 4725,
+            "quantity": 4,
+            "row_num": 0,
+            "service_id": 7,
+            "service_name": "Clothing",
+            "type_id": 2
+          }
+        ],
+        "value": {
+          "employee_id": 3,
+          "employee_name": "Amanda Jones",
+          "hmis": true,
+          "nick_name": "General George",
+          "note": "Cartman needs more goals",
+          "note_id": 113,
+          "note_trunc": "Cartman needs more goals",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4725,
+          "participant_name": "George Cartman Washington",
+          "service_desc": "Clothing, ",
+          "ssn": "***-**-0359",
+          "time_created": "06/26/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 1,
+            "comment": "",
+            "employee_id": 2,
+            "employee_name": "Kelly Muldoon",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 4725,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 45,
+            "service_name": "Hygiene Kit - Hope University",
+            "type_id": 13
+          }
+        ],
+        "value": {
+          "employee_id": 2,
+          "employee_name": "Kelly Muldoon",
+          "hmis": true,
+          "nick_name": "General George",
+          "note": "Cartman needs to behave",
+          "note_id": 114,
+          "note_trunc": "Cartman needs to behave",
+          "note_type": "Other",
+          "note_type_id": 4,
+          "participant_id": 4725,
+          "participant_name": "George Cartman Washington",
+          "service_desc": "Hygiene Kit - Hope University, ",
+          "ssn": "***-**-0359",
+          "time_created": "06/26/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 1,
+            "comment": "",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 44,
+            "enrollment_name": "Extended Recuperative Care",
+            "participant_id": 4676,
+            "quantity": 2,
+            "row_num": 0,
+            "service_id": 98,
+            "service_name": "Completed ISP Test",
+            "type_id": 1
+          },
+          {
+            "HMIS": 1,
+            "comment": "",
+            "employee_id": 0,
+            "employee_name": "Staff Employee",
+            "enrollment_id": 44,
+            "enrollment_name": "Extended Recuperative Care",
+            "participant_id": 4676,
+            "quantity": 1,
+            "row_num": 1,
+            "service_id": 1,
+            "service_name": "ACLS",
+            "type_id": 1
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "In astronomy, reflection nebulae are clouds of interstellar dust which might reflect the light of a nearby star or stars. The energy from the nearby stars is insufficient to ionize the gas of the nebula to create an emission nebula, but is enough to give sufficient scattering to make the dust visible. Thus, the frequency spectrum shown by reflection nebulae is similar to that of the illuminating stars. Among the microscopic particles responsible for the scattering are carbon compounds (e. g. diamond dust) and compounds of other elements such as iron and nickel. The latter two are often aligned with the galactic magnetic field and cause the scattered light to be slightly polarized.",
+          "note_id": 74,
+          "note_trunc": "In astronomy, reflection nebulae are clouds of interstellar dust which",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "Completed ISP Test, ACLS, ",
+          "ssn": "***-**-6789",
+          "time_created": "06/19/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "ACLS for sure, but no HMIS",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 42,
+            "enrollment_name": "Belmont House Residential",
+            "participant_id": 519,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 1,
+            "service_name": "ACLS",
+            "type_id": 1
+          }
+        ],
+        "value": {
+          "employee_id": 1,
+          "employee_name": "Martina Condron",
+          "hmis": true,
+          "nick_name": "Big Z Man",
+          "note": "Setting those goals! (edited again, and again, and some more)",
+          "note_id": 93,
+          "note_trunc": "Setting those goals! (edited again, and again, and some more)",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "ACLS, ",
+          "ssn": "***-**-4567",
+          "time_created": "06/19/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 5,
+          "employee_name": "Rachel Hester",
+          "hmis": false,
+          "nick_name": "Big Z Man",
+          "note": "New Note",
+          "note_id": 95,
+          "note_trunc": "New Note",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "06/19/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 3,
+          "employee_name": "Amanda Jones",
+          "hmis": false,
+          "nick_name": "Big Z Man",
+          "note": "Setting more goals",
+          "note_id": 100,
+          "note_trunc": "Setting more goals",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "06/19/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 1,
+          "employee_name": "Martina Condron",
+          "hmis": false,
+          "nick_name": "Finch, Christopher",
+          "note": "Case Note Test (and updating)",
+          "note_id": 101,
+          "note_trunc": "Case Note Test (and updating)",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4645,
+          "participant_name": "Christopher  Finch",
+          "service_desc": "",
+          "ssn": "***-**-5610",
+          "time_created": "06/19/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Harless, Shirl Ann",
+          "note": "It is a test ",
+          "note_id": 112,
+          "note_trunc": "It is a test ",
+          "note_type": "Other",
+          "note_type_id": 4,
+          "participant_id": 65,
+          "participant_name": "Shirl Ann Harless",
+          "service_desc": "",
+          "ssn": "***-**-2072",
+          "time_created": "04/29/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "Test April 27",
+          "note_id": 111,
+          "note_trunc": "Test April 27",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 0,
+          "participant_name": "Andrew Enzo Hunt",
+          "service_desc": "",
+          "ssn": "***-**-6789",
+          "time_created": "04/27/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 4,
+          "employee_name": "Melanie Barnett",
+          "hmis": true,
+          "nick_name": "Big Z Man",
+          "note": "This is a test again, update on 6/26",
+          "note_id": 99,
+          "note_trunc": "This is a test again, update on 6/26",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "04/23/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Ziegler, Sonja K",
+          "note": "Test of Activity Feed 2",
+          "note_id": 102,
+          "note_trunc": "Test of Activity Feed 2",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4059,
+          "participant_name": "Sonja K Ziegler",
+          "service_desc": "",
+          "ssn": "***-**-5042",
+          "time_created": "04/23/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Jessie",
+          "note": "Mobile test",
+          "note_id": 109,
+          "note_trunc": "Mobile test",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 3,
+          "participant_name": "Jessica Alexandra Smith",
+          "service_desc": "",
+          "ssn": "***-**-0912",
+          "time_created": "03/19/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "This is a test (and you can update it too)",
+          "note_id": 96,
+          "note_trunc": "This is a test (and you can update it too)",
+          "note_type": "Weekly Check In",
+          "note_type_id": 3,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "",
+          "ssn": "***-**-6789",
+          "time_created": "02/15/2021"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "",
+          "note": "Just played some ping pong and had a talk",
+          "note_id": 105,
+          "note_trunc": "Just played some ping pong and had a talk",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "",
+          "ssn": "***-**-6789",
+          "time_created": "02/13/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 1,
+            "comment": "Lunch with Brad Pitt",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 4750,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 39,
+            "service_name": "Café Attendance",
+            "type_id": 13
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "Note to Brad Pitt",
+          "note_id": 106,
+          "note_trunc": "Note to Brad Pitt",
+          "note_type": "Other",
+          "note_type_id": 4,
+          "participant_id": 4750,
+          "participant_name": "Brad  Pitt",
+          "service_desc": "Café Attendance, ",
+          "ssn": "***-**-0000",
+          "time_created": "02/13/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "I can\u0027t type very much in this box, but I don\u0027t know what to do about it",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 44,
+            "enrollment_name": "Extended Recuperative Care",
+            "participant_id": 4676,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 1,
+            "service_name": "ACLS",
+            "type_id": 1
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "Set a Goal",
+          "note_id": 104,
+          "note_trunc": "Set a Goal",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "ACLS, ",
+          "ssn": "***-**-6789",
+          "time_created": "01/31/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "",
+            "employee_id": 2,
+            "employee_name": "Kelly Muldoon",
+            "enrollment_id": 47,
+            "enrollment_name": "Guest House",
+            "participant_id": 4703,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 7,
+            "service_name": "Clothing",
+            "type_id": 2
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "",
+          "note": "He is the best You Tuber ever!",
+          "note_id": 103,
+          "note_trunc": "He is the best You Tuber ever!",
+          "note_type": "Weekly Check In",
+          "note_type_id": 3,
+          "participant_id": 4703,
+          "participant_name": "Colin  Furze",
+          "service_desc": "Clothing, ",
+          "ssn": "***-**-4567",
+          "time_created": "01/17/2021"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 1,
+            "comment": "",
+            "employee_id": 1,
+            "employee_name": "Martina Condron",
+            "enrollment_id": 24,
+            "enrollment_name": "Campus Store",
+            "participant_id": 4059,
+            "quantity": 1,
+            "row_num": 0,
+            "service_id": 11,
+            "service_name": "Store Purchase With Points Earned",
+            "type_id": 16
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "Ziegler, Sonja K",
+          "note": "I talked with her about her recent incident",
+          "note_id": 97,
+          "note_trunc": "I talked with her about her recent incident",
+          "note_type": "Weekly Check In",
+          "note_type_id": 3,
+          "participant_id": 4059,
+          "participant_name": "Sonja K Ziegler",
+          "service_desc": "Store Purchase With Points Earned, ",
+          "ssn": "***-**-5042",
+          "time_created": "11/21/2020"
+        }
+      },
+      {
+        "services": [
+          {
+            "HMIS": 0,
+            "comment": "Hope University GED",
+            "employee_id": 4,
+            "employee_name": "Melanie Barnett",
+            "enrollment_id": 29,
+            "enrollment_name": "Hope University",
+            "participant_id": 1838,
+            "quantity": 2,
+            "row_num": 0,
+            "service_id": 41,
+            "service_name": "GED / HiSet Tutoring",
+            "type_id": 13
+          },
+          {
+            "HMIS": 1,
+            "comment": "Attend Legal Clinic",
+            "employee_id": 4,
+            "employee_name": "Melanie Barnett",
+            "enrollment_id": 42,
+            "enrollment_name": "Belmont House Residential",
+            "participant_id": 1838,
+            "quantity": 3,
+            "row_num": 1,
+            "service_id": 50,
+            "service_name": "Attended Legal Clinic",
+            "type_id": 21
+          }
+        ],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Zimmerman, Martin Alvin",
+          "note": "Martin needs goals!",
+          "note_id": 94,
+          "note_trunc": "Martin needs goals!",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 1838,
+          "participant_name": "Martin Alvin Zimmerman",
+          "service_desc": "GED / HiSet Tutoring, Attended Legal Clinic, ",
+          "ssn": "***-**-8919",
+          "time_created": "10/26/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Big Z Man",
+          "note": "Kelly is showing me the new data base and this is amazing.",
+          "note_id": 80,
+          "note_trunc": "Kelly is showing me the new data base and this is amazing.",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "10/25/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "Big Z Man",
+          "note": "This is a case note type of weekly session",
+          "note_id": 91,
+          "note_trunc": "This is a case note type of weekly session",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "10/25/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Big Z Man",
+          "note": "This is a new weekly check in case note",
+          "note_id": 92,
+          "note_trunc": "This is a new weekly check in case note",
+          "note_type": "Weekly Check In",
+          "note_type_id": 3,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "10/25/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "Zills, Jeff R",
+          "note": "Example of case note",
+          "note_id": 83,
+          "note_trunc": "Example of case note",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 920,
+          "participant_name": "Jeff R Zills",
+          "service_desc": "",
+          "ssn": "***-**-2039",
+          "time_created": "10/13/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "",
+          "note": "This is so cool!",
+          "note_id": 76,
+          "note_trunc": "This is so cool!",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "",
+          "ssn": "***-**-6789",
+          "time_created": "09/18/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "mcclahan, mike",
+          "note": "Easy entry of a case note",
+          "note_id": 77,
+          "note_trunc": "Easy entry of a case note",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 3403,
+          "participant_name": "mike mcclahan",
+          "service_desc": "",
+          "ssn": "***-**-6658",
+          "time_created": "09/18/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "Cobb, Alan Jerry",
+          "note": "Is the gig economy the way forward? More than a third of American workers — or 59 million people — took on some freelance work this year as the pandemic spurred rapid changes in the job market, according to a new report commissioned by Upwork. ",
+          "note_id": 72,
+          "note_trunc": "Is the gig economy the way forward? More than a third of American work",
+          "note_type": "Weekly Session",
+          "note_type_id": 2,
+          "participant_id": 2063,
+          "participant_name": "Alan Jerry Cobb",
+          "service_desc": "",
+          "ssn": "***-**-8064",
+          "time_created": "09/16/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": false,
+          "nick_name": "",
+          "note": "I have nothing to say about Chris.",
+          "note_id": 73,
+          "note_trunc": "I have nothing to say about Chris.",
+          "note_type": "Weekly Check In",
+          "note_type_id": 3,
+          "participant_id": 4676,
+          "participant_name": "Chris Edward McLaughlin",
+          "service_desc": "",
+          "ssn": "***-**-6789",
+          "time_created": "09/16/2020"
+        }
+      },
+      {
+        "services": [],
+        "value": {
+          "employee_id": 0,
+          "employee_name": "Staff Employee",
+          "hmis": true,
+          "nick_name": "Big Z Man",
+          "note": "Bus Services",
+          "note_id": 68,
+          "note_trunc": "Bus Services",
+          "note_type": "Goal Setting",
+          "note_type_id": 1,
+          "participant_id": 519,
+          "participant_name": "Michael Eric Zimmerman",
+          "service_desc": "",
+          "ssn": "***-**-4567",
+          "time_created": "09/15/2020"
+        }
+      }
+    ]
+  },
+  "propConfig": {
+    "custom.services_data": {
+      "binding": {
+        "config": {
+          "path": "view.custom.sql_data"
+        },
+        "transforms": [
+          {
+            "code": "\timport traceback\n\ttry:\n\t\tsqlData \u003d value\n\t\tproject \u003d \"RITI\"\n\n\t\t#Get the prgram and servcie filters\n\t\tprogramFilter \u003d self.session.custom.filters.caseNotesDashboard.program.where\n\t\tserviceFilter \u003d self.session.custom.filters.caseNotesDashboard.service.where\n\t\tif sqlData.getRowCount():\n\t\t\t#Create an empty dataset with the correct headers\n\t\t\tpath \u003d \"Participants/CaseNotes/CaseNotesServiceSelect\"\n\t\t\tparameters \u003d {\"case_note_id\":0,\n\t\t\t\t\t\t\"participant_id\":0,\n\t\t\t\t\t\t\"program\":programFilter,\n\t\t\t\t\t\t\"service\":serviceFilter}\n\t\t\tservices \u003d system.db.runNamedQuery(project\u003dproject,path\u003dpath,parameters\u003dparameters, getKey\u003dTrue)\n\t\t\t#Append all the services for each associated case note\n\t\t\tfor row in range(sqlData.getRowCount()):\n\t\t\t\tcase_note_id \u003d sqlData.getValueAt(row,\u0027noteId\u0027)\n\t\t\t\tparticipant_id \u003d  sqlData.getValueAt(row,\u0027participantId\u0027)\n\t\t\t\t#system.perspective.print(\u0027Case Note:\u0027 + str(case_note_id) + \u0027 Participant:\u0027 + str(participant_id))\n\t\t\t\tpath \u003d \"Participants/CaseNotes/CaseNotesServiceSelect\"\n\t\t\t\tparameters \u003d {\"case_note_id\":case_note_id,\n\t\t\t\t\t\t\t\"participant_id\":participant_id,\n\t\t\t\t\t\t\t\"program\":programFilter,\n\t\t\t\t\t\t\t\"service\":serviceFilter}\n\t\t\t\tservice_append \u003d system.db.runNamedQuery(project\u003dproject,path\u003dpath,parameters\u003dparameters, getKey\u003dTrue)\n\n\t\t\t\tservices \u003d system.dataset.appendDataset(services, service_append)\n\n\t\t\treturn services\n\t\n\t\telse:\n\t\t\treturn None\n\texcept:\n\t\tlogger \u003d system.util.getLogger(\"Participants Case Notes Dashboard Services Data\")\n\t\tmsg \u003d traceback.format_exc()\n\t\tlogger.error(msg)",
+            "type": "script"
+          }
+        ],
+        "type": "property"
+      },
+      "onChange": {
+        "enabled": null,
+        "script": "\t#Refresh the table data any time the services have changed\n\tself.refreshBinding(\"custom.table_data\")"
+      },
+      "persistent": true
+    },
+    "custom.sql_data": {
+      "binding": {
+        "config": {
+          "parameters": {
+            "activity_range": "{view.params.activity_range}",
+            "enteredby": "{session.custom.filters.caseNotesDashboard.EnteredBy.where}",
+            "firstname": "{session.custom.filters.caseNotesDashboard.FirstName.where}",
+            "hmis": "{session.custom.filters.caseNotesDashboard.hmis.where}",
+            "lastname": "{session.custom.filters.caseNotesDashboard.LastName.where}",
+            "middlename": "{session.custom.filters.caseNotesDashboard.MiddleName.where}",
+            "nickname": "{session.custom.filters.caseNotesDashboard.NickName.where}",
+            "notedate": "{session.custom.filters.caseNotesDashboard.NoteDate.where}",
+            "notetype": "{session.custom.filters.caseNotesDashboard.NoteType.where}",
+            "search": "{session.custom.filters.caseNotesDashboard.Search.where}"
+          },
+          "queryPath": "Participants/CaseNotes/CaseNotesDashboardSelect",
+          "returnFormat": "dataset"
+        },
+        "type": "query"
+      },
+      "persistent": true
+    },
+    "custom.table_data": {
+      "binding": {
+        "config": {
+          "path": "view.custom.sql_data"
+        },
+        "transforms": [
+          {
+            "code": "\timport traceback\n\ttry:\n\t\tsql_data \u003d value\n\t\tservices_data \u003d self.custom.services_data\n\t\t#system.perspective.print(str(len(services_data)) + \u0027 services found\u0027)\n\t\t#if services_data.getRowCount() \u003c 1:\n\t\t#\tservices_data \u003d []\n\t\ttable_data \u003d []\n\t\t#Move the date from the case notes directly to the table\n\t\tif sql_data.getRowCount() \u003e 0:\n\t\t\tfor row in range(sql_data.getRowCount()):\n\t\t\t\trow_struct \u003d {}\n\t\t\t\tnote \u003d {}\n\t\t\t\tservice_list \u003d []\n\t\t\t\tstyle \u003d {}\t\n\t\t\t\t#Map query results into correct attributes\n\t\t\t\t#system.perspective.print(\u0027Table Data Processing Case Note\u0027 + str(notes_data[row].value.note_id))\n\t\t\t\tnote[\u0027participant_id\u0027] \u003d sql_data.getValueAt(row,\u0027participantId\u0027)\n\t\t\t\tnote[\u0027note_id\u0027] \u003d sql_data.getValueAt(row,\u0027noteId\u0027)\n\t\t\t\t\n\t\t\t\tnote[\u0027participant_name\u0027] \u003d sql_data.getValueAt(row,\u0027name\u0027)\n\t\t\t\tnote[\u0027nick_name\u0027] \u003d sql_data.getValueAt(row,\u0027nickName\u0027)\n\t\t\t\tnote[\u0027ssn\u0027] \u003d sql_data.getValueAt(row,\u0027ssn\u0027)\n\t\n\t\t\t\tnote[\u0027time_created\u0027] \u003d sql_data.getValueAt(row,\u0027noteDate\u0027)\n\t\t\t\tnote[\u0027employee_id\u0027] \u003d sql_data.getValueAt(row,\u0027employeeId\u0027)\n\t\t\t\tnote[\u0027employee_name\u0027] \u003d sql_data.getValueAt(row,\u0027employeeName\u0027)\n\t\t\t\tnote[\u0027hmis\u0027]  \u003d sql_data.getValueAt(row,\u0027HMIS\u0027)\n\t\t\t\tnote[\u0027note_type_id\u0027] \u003d sql_data.getValueAt(row,\u0027CaseNoteTypeId\u0027)\n\t\t\t\tnote[\u0027note_type\u0027] \u003d sql_data.getValueAt(row,\u0027CaseNoteTypeName\u0027)\n\t\t\t\tnote[\u0027note\u0027] \u003d sql_data.getValueAt(row,\u0027Note\u0027)\n\t\t\t\tnote[\u0027note_trunc\u0027] \u003d str(note[\u0027note\u0027])[0:70]\n\t\t\t\tnote[\u0027service_desc\u0027] \u003d \u0027\u0027\n\t\t\t\tRowNumber \u003d 0\n\t\t\t\tif services_data is not None:\n\t\t\t\t\tif services_data.getRowCount() \u003e 0:\n\t\t\t\t\t\tfor s_row in range(services_data.getRowCount()):\n\t\t\t\t\t\t\tservice \u003d {}\n\t\t\t\t\t\t\t#system.perspective.print(str(note[\u0027note_id\u0027]) + \u0027 \u0027 + str(services_data[s_row].value.note_id))\n\t\t\t\t\t\t\tif note[\u0027note_id\u0027] \u003d\u003d services_data.getValueAt(s_row,\u0027CaseNotesId\u0027):\n\t\t\t\t\t\t\t\t#system.perspective.print(\u0027Table Data Processing Service\u0027 + str(services_data[s_row].value.service_id))\n\t\t\t\t\t\t\t\tservice[\u0027participant_id\u0027] \u003d services_data.getValueAt(s_row,\u0027participantId\u0027)\n\t\t\t\t\t\t\t\tservice[\u0027employee_id\u0027] \u003d services_data.getValueAt(s_row,\u0027employeeID\u0027)\n\t\t\t\t\t\t\t\tservice[\u0027employee_name\u0027] \u003d services_data.getValueAt(s_row,\u0027employeeName\u0027)\n\t\t\t\t\t\t\t\tservice[\u0027enrollment_id\u0027] \u003d services_data.getValueAt(s_row,\u0027programId\u0027)\n\t\t\t\t\t\t\t\tservice[\u0027enrollment_name\u0027] \u003d services_data.getValueAt(s_row,\u0027programName\u0027)\n\t\t\t\t\t\t\t\tservice[\u0027type_id\u0027] \u003d services_data.getValueAt(s_row,\u0027serviceTypeId\u0027)\n\t\t\t\t\t\t\t\tservice[\u0027service_id\u0027] \u003d services_data.getValueAt(s_row,\u0027serviceId\u0027)\n\t\t\t\t\t\t\t\tservice[\u0027service_name\u0027] \u003d services_data.getValueAt(s_row,\u0027serviceName\u0027)\n\t\t\t\t\t\t\t\tservice[\u0027HMIS\u0027] \u003d services_data.getValueAt(s_row,\u0027HMIS\u0027)\n\t\t\t\t\t\t\t\tservice[\u0027quantity\u0027] \u003d services_data.getValueAt(s_row,\u0027quantity\u0027)\n\t\t\t\t\t\t\t\tservice[\u0027comment\u0027] \u003d services_data.getValueAt(s_row,\u0027comment\u0027)\n\t\t\t\t\t\t\t\tservice[\u0027row_num\u0027] \u003d RowNumber\n\t\t\t\t\t\t\t\tnote[\u0027service_desc\u0027] \u003d note[\u0027service_desc\u0027] + service[\u0027service_name\u0027] + \", \"\n\t\t\t\t\t\t\t\tservice_list.append(service)\n\t\t\t\t\t\t\t\tRowNumber +\u003d 1\n\t\t\t\t\n\t\t\t\t#Set the default style for the row\n\t\t\t\t#style[\u0027classes\u0027] \u003d \"Table/Cell_Dashboard\"\n\t\t\t\t#note[\u0027services\u0027] \u003d service_list\n\t\t\t\trow_struct[\u0027value\u0027] \u003d note\n\t\t\t\trow_struct[\u0027services\u0027] \u003d service_list\n\t\t\t\t#row_struct[\u0027style\u0027] \u003d style\n\t\t\t\t#Append the individual row date to the table data object\n\t\t\t\ttable_data.append(row_struct)\n\t\n\t\treturn table_data\n\texcept:\n\t\tlogger \u003d system.util.getLogger(\"Participants Case Notes Dashboard Table Data\")\n\t\tmsg \u003d traceback.format_exc()\n\t\tlogger.error(msg)",
+            "type": "script"
+          }
+        ],
+        "type": "property"
+      },
+      "onChange": {
+        "enabled": null,
+        "script": "\t#system.perspective.print(\"Table Data Changed\")\n\tsystem.perspective.sendMessage(messageType\u003d\"refreshCaseNotesDashboard\", payload\u003d{}, scope\u003d\"session\")"
+      },
+      "persistent": true
+    },
+    "params.activity_range": {
+      "paramDirection": "input",
+      "persistent": true
+    },
+    "params.participant_search": {
+      "paramDirection": "output",
+      "persistent": true
+    },
+    "params.selection_data": {
+      "binding": {
+        "config": {
+          "path": "/root/Table.props.selection.data"
+        },
+        "type": "property"
+      },
+      "paramDirection": "output",
+      "persistent": true
+    },
+    "params.table_data": {
+      "binding": {
+        "config": {
+          "path": "view.custom.table_data"
+        },
+        "type": "property"
+      },
+      "paramDirection": "output",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 620,
+      "width": 1023
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Label_0"
+        },
+        "position": {
+          "basis": "25px",
+          "display": false,
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.text": {
+            "binding": {
+              "config": {
+                "path": "../Table.props.data"
+              },
+              "transforms": [
+                {
+                  "code": "\tif value \u003d\u003d None:\n\t\t\toutput \u003d \u0027No Rows\u0027\n\telif len(value) \u003d\u003d 0:\n\t\toutput \u003d \u0027No Rows\u0027\n\telse:\n\t\toutput \u003d str(len(value)) + \u0027 Rows\u0027\n\treturn output",
+                  "type": "script"
+                }
+              ],
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "style": {
+            "classes": "Table/Filter_Header_Container Text/Error_Message"
+          }
+        },
+        "type": "ia.display.label"
+      },
+      {
+        "events": {
+          "component": {
+            "onRowClick": {
+              "config": {
+                "script": "\tselectedColumn \u003d self.props.selection.selectedColumn\n\t#system.perspective.print(self.props.data[event.row])\t\n\tif selectedColumn \u003d\u003d \"note_id\": \n\t\t##Display the detail screen\n\t\tparticipantID \u003d str(self.props.data[event.row].value.participant_id)\n\t\tsystem.perspective.print(participantID)\n\t\ttab_id \u003d 40\n\t\tsystem.perspective.navigate(\"Participants/Detail/\" + str(participantID) + \"/\" + str(tab_id))\n\telif selectedColumn \u003d\u003d \"participant_id\":\n\t\tparticipantID \u003d str(self.props.data[event.row].value.participant_id)\n\t\tsystem.perspective.print(participantID)\n\t\tid \u003d \"PreviewParticipant\" \n\t\tparams \u003d {\"participantID\":participantID}\n\t\tsystem.perspective.openDock(id\u003did,params\u003dparams)\n\telse:\n\t\t#Close the search window\n\t\tself.view.params.participant_search \u003d False\n\t\t#Highlight the select row\n\t\tfor item in range(len(self.props.data)):\n\t\t\tif item \u003d\u003d event.row:\n\t\t\t\tself.props.data[item].style.classes \u003d \u0027Table/Row_Select_Dashboard\u0027\n\t\t\telse:\n\t\t\t\tself.props.data[item].style.classes \u003d \u0027Table/Cell_Dashboard\u0027"
+              },
+              "scope": "G",
+              "type": "script"
+            }
+          }
+        },
+        "meta": {
+          "name": "Table"
+        },
+        "position": {
+          "basis": "96%"
+        },
+        "propConfig": {
+          "props.data": {
+            "binding": {
+              "config": {
+                "path": "view.custom.table_data"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "cells": {
+            "style": {
+              "classes": "Table/Cell_Dashboard"
+            }
+          },
+          "columns": [
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "participant_id",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": " "
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "view",
+              "resizable": true,
+              "sort": "none",
+              "sortable": false,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "1_TEMPLATES/Tables/TableOptions",
+              "visible": true,
+              "width": 35
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "note_id",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": " "
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "view",
+              "resizable": true,
+              "sort": "none",
+              "sortable": false,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "1_TEMPLATES/Tables/TableDetail",
+              "visible": true,
+              "width": 25
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "participant_name",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Name"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 180
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "nick_name",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Nickname"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 180
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "ssn",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "SSN"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 100
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "employee_id",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Employee ID"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": false,
+              "width": 100
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "employee_name",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Employee Name"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": false,
+              "width": 100
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "time_created",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Date"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "date",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 100
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "hmis",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "HMIS"
+              },
+              "justify": "center",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "boolean",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 60
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "note_type_id",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Note Type"
+              },
+              "justify": "left",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": false,
+              "width": 60
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "note_type",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Note Type"
+              },
+              "justify": "left",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": true,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": 120
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "note_trunc",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Note"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "note",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Note"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": false,
+              "width": ""
+            },
+            {
+              "align": "center",
+              "boolean": "checkbox",
+              "dateFormat": "MM/DD/YYYY",
+              "editable": false,
+              "field": "service_desc",
+              "footer": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": ""
+                },
+                "title": ""
+              },
+              "header": {
+                "align": "center",
+                "justify": "left",
+                "style": {
+                  "classes": "Table/Column_Header"
+                },
+                "title": "Services"
+              },
+              "justify": "auto",
+              "number": "value",
+              "numberFormat": "0,0.##",
+              "progressBar": {
+                "bar": {
+                  "color": "#62A3F6",
+                  "linecap": "round",
+                  "width": 5
+                },
+                "max": 100,
+                "track": {
+                  "color": "#DADADA",
+                  "linecap": "round",
+                  "width": 2
+                },
+                "value": {
+                  "color": "#7D7D7D",
+                  "show": true
+                }
+              },
+              "render": "auto",
+              "resizable": true,
+              "sort": "none",
+              "sortable": true,
+              "strictWidth": false,
+              "style": {
+                "classes": "Table/Column_Normal"
+              },
+              "toggleSwitch": {
+                "color": {
+                  "selected": "#2196F3",
+                  "unselected": "#FFFFFF"
+                }
+              },
+              "viewParams": {},
+              "viewPath": "",
+              "visible": true,
+              "width": ""
+            }
+          ],
+          "pager": {
+            "initialOption": 10
+          },
+          "rows": {
+            "highlight": {
+              "enabled": false
+            },
+            "striped": {
+              "enabled": false
+            }
+          },
+          "style": {
+            "classes": "Background/Default"
+          }
+        },
+        "scripts": {
+          "customMethods": [],
+          "extensionFunctions": null,
+          "messageHandlers": [
+            {
+              "messageType": "refreshCaseNotesDashboard",
+              "pageScope": true,
+              "script": "\t### Refresh data\n\t#system.perspective.print(\"Refresh Case Notes Dashboard\")\n\tself.refreshBinding(\"props.data\")\n\tself.props.selection.selectedRow \u003d None",
+              "sessionScope": true,
+              "viewScope": true
+            }
+          ]
+        },
+        "type": "ia.display.table"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column"
+    },
+    "scripts": {
+      "customMethods": [],
+      "extensionFunctions": null,
+      "messageHandlers": [
+        {
+          "messageType": "refreshCaseNotesDashboardData",
+          "pageScope": true,
+          "script": "\t#from time import sleep\n\t\t### Refresh data\n\tsystem.perspective.print(\"Refresh Case Notes Dashboard Data\")\n\tview \u003d self.view\n\t#view.refreshBinding(\"custom.notes_data\")\n\tview.refreshBinding(\"custom.services_data\")\n\t",
+          "sessionScope": true,
+          "viewScope": true
+        }
+      ]
+    },
+    "type": "ia.container.flex"
+  }
+}

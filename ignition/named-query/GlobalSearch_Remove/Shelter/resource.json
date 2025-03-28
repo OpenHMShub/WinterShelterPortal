@@ -1,0 +1,16 @@
+{
+  "scope": "DG",
+  "version": 1,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "data.bin"
+  ],
+  "attributes": {
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:46:11Z"
+    },
+    "lastModificationSignature": "ef586c24c97b108722c0c5e8a8580abbf8abd9fa5f6594988e49907281c15b51"
+  }
+}

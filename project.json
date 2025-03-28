@@ -1,0 +1,7 @@
+{
+  "title": "WinterShelterPortal",
+  "description": "Congregation Portal",
+  "parent": "Global",
+  "enabled": true,
+  "inheritable": false
+}

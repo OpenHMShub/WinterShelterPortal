@@ -1,0 +1,78 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "height": 864,
+      "width": 1037
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "children": [
+          {
+            "meta": {
+              "name": "calendar"
+            },
+            "position": {
+              "basis": "360px"
+            },
+            "props": {
+              "currentCalendarDate": {
+                "currentDateEnd": "2020-12-01 00:00:00",
+                "currentDateStart": "2020-11-01 00:00:00",
+                "displayDateEnd": "2020-12-13 00:00:00",
+                "displayDateStart": "2020-11-01 00:00:00",
+                "month": 10,
+                "title": "November 2020",
+                "week": 44
+              },
+              "eventDisplay": {
+                "color": "#C5D4E3"
+              },
+              "eventPopUp": {
+                "canEditEventOnPopUp": true,
+                "useCreateEventPopUp": true,
+                "useEventPopUp": true
+              },
+              "popoverProperties": {
+                "eventLimit": true
+              },
+              "selectedDate": {
+                "start": "2020-10-25 00:00:00"
+              },
+              "style": {
+                "classes": "Dropdowns/DetailFilter",
+                "color": "#000000"
+              },
+              "toolbar": {
+                "footer": true,
+                "title": {
+                  "font": {
+                    "color": "#5D75E4"
+                  }
+                }
+              }
+            },
+            "type": "bijc.display.calendar"
+          }
+        ],
+        "meta": {
+          "name": "FlexContainer"
+        },
+        "position": {
+          "height": 754,
+          "width": 993.0000000000001,
+          "x": 21.006,
+          "y": 79.00599999999997
+        },
+        "type": "ia.container.flex"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "type": "ia.container.coord"
+  }
+}

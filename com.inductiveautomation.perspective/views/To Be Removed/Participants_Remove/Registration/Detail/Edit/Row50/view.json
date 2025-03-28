@@ -1,0 +1,241 @@
+{
+  "custom": {},
+  "params": {
+    "alt_phone": "",
+    "communication_type_id": "",
+    "email": "",
+    "insurance_type_id": "",
+    "phone": ""
+  },
+  "propConfig": {
+    "params.alt_phone": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.communication_type_id": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.email": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.insurance_type_id": {
+      "paramDirection": "inout",
+      "persistent": true
+    },
+    "params.phone": {
+      "paramDirection": "inout",
+      "persistent": true
+    }
+  },
+  "props": {
+    "defaultSize": {
+      "height": 76,
+      "width": 1416
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Embed_Phone"
+        },
+        "position": {
+          "basis": "300px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.phone"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "label": "Phone Number",
+            "placeholder": "Enter Phone Number"
+          },
+          "path": "Participants/Templates/Input_Text",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_AltPhone"
+        },
+        "position": {
+          "basis": "300px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.alt_phone"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "label": "Alternate Phone Number",
+            "placeholder": "Enter Alternate Phone Number"
+          },
+          "path": "Participants/Templates/Input_Text",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_Email"
+        },
+        "position": {
+          "basis": "240px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.text": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.email"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "label": "Email Address",
+            "placeholder": "Enter Email Address"
+          },
+          "path": "Participants/Templates/Input_Text",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_PreferredCommunication"
+        },
+        "position": {
+          "basis": "180px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.options": {
+            "binding": {
+              "config": {
+                "queryPath": "Participants/Registration/GetCommunicationType"
+              },
+              "type": "query"
+            }
+          },
+          "props.params.selection": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.communication_type_id"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "text": "Preferred Method"
+          },
+          "path": "Participants/Templates/Input_DropDownSingle",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_Insurance"
+        },
+        "position": {
+          "basis": "240px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.options": {
+            "binding": {
+              "config": {
+                "queryPath": "Participants/Registration/GetInsuranceType"
+              },
+              "type": "query"
+            }
+          },
+          "props.params.selection": {
+            "binding": {
+              "config": {
+                "bidirectional": true,
+                "path": "view.params.insurance_type_id"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "text": "Insurance"
+          },
+          "path": "Participants/Templates/Input_DropDownSingle",
+          "style": {
+            "classes": "InputCards/InputCard",
+            "overflow": "hidden"
+          }
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Embed_Placeholder"
+        },
+        "position": {
+          "basis": "1px",
+          "grow": 1
+        },
+        "props": {
+          "path": "Participants/Templates/Placeholder",
+          "style": {
+            "classes": "InputCards/InputCard"
+          }
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "style": {
+        "classes": "Background/Default"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

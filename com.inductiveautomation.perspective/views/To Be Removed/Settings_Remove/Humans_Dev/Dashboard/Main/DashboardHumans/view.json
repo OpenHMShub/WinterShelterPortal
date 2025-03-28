@@ -1,0 +1,66 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1992
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Filter"
+        },
+        "position": {
+          "basis": "50px"
+        },
+        "props": {
+          "params": {
+            "dob_month": null,
+            "dob_year": null,
+            "first_name": null,
+            "last_name": null,
+            "race": null,
+            "ssn": null
+          },
+          "path": "Settings/Humans_Dev/Dashboard/Main/Filter/HumansDev_ConditionsFilters",
+          "useDefaultViewHeight": true
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Table"
+        },
+        "position": {
+          "basis": "300px",
+          "grow": 1,
+          "shrink": 0
+        },
+        "props": {
+          "params": {
+            "dob_month": null,
+            "dob_year": null,
+            "first_name": null,
+            "last_name": null,
+            "race": null,
+            "ssn": null
+          },
+          "path": "Settings/Humans_Dev/Dashboard/Main/Table/HumansDev_Table"
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "Background/Alternative"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

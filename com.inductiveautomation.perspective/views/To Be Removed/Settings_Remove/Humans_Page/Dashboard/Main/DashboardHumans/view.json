@@ -1,0 +1,93 @@
+{
+  "custom": {},
+  "params": {},
+  "props": {
+    "defaultSize": {
+      "width": 1992
+    }
+  },
+  "root": {
+    "children": [
+      {
+        "meta": {
+          "name": "Filter"
+        },
+        "position": {
+          "basis": "50px",
+          "shrink": 0
+        },
+        "props": {
+          "params": {
+            "searchTextToBind": ""
+          },
+          "path": "Settings/Humans_Page/Dashboard/Main/Filter/HumansPage_Conditions",
+          "useDefaultViewHeight": true
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "Table"
+        },
+        "position": {
+          "basis": "300px",
+          "grow": 1
+        },
+        "propConfig": {
+          "props.params.fetch": {
+            "binding": {
+              "config": {
+                "path": "../emvPager.props.params.fetch"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "resultRowCount": 15686
+          },
+          "path": "Settings/Humans_Page/Dashboard/Main/Table/HumansPage_Table"
+        },
+        "type": "ia.display.view"
+      },
+      {
+        "meta": {
+          "name": "emvPager"
+        },
+        "position": {
+          "basis": "44px",
+          "shrink": 0
+        },
+        "propConfig": {
+          "props.params.resultRowCount": {
+            "binding": {
+              "config": {
+                "path": "../Table.props.params.resultRowCount"
+              },
+              "type": "property"
+            }
+          }
+        },
+        "props": {
+          "params": {
+            "fetch": 100
+          },
+          "path": "Settings/Humans_Page/Dashboard/Main/Table/Pager",
+          "useDefaultViewHeight": true
+        },
+        "type": "ia.display.view"
+      }
+    ],
+    "meta": {
+      "name": "root"
+    },
+    "props": {
+      "direction": "column",
+      "style": {
+        "classes": "Background/Alternative"
+      }
+    },
+    "type": "ia.container.flex"
+  }
+}

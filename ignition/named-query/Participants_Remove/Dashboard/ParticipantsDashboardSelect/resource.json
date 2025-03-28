@@ -1,0 +1,106 @@
+{
+  "scope": "DG",
+  "version": 2,
+  "restricted": false,
+  "overridable": true,
+  "files": [
+    "query.sql"
+  ],
+  "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "description": "Select the participants for the participants dashboard.",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "RITIOps",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "15954bcfbc110effddb50472b4eff6aedeeb824f411f16bb4b093179bf2edf30",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
+    "lastModification": {
+      "actor": "lane",
+      "timestamp": "2022-08-13T02:46:31Z"
+    },
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "activity_range",
+        "sqlType": 2
+      },
+      {
+        "type": "QueryString",
+        "identifier": "genderid",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "raceid",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "veteranid",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "firstname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "middlename",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "lastname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "nickname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "dobyear",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "minage",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "maxage",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "shelter",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "search",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "fullRegistration",
+        "sqlType": 7
+      }
+    ]
+  }
+}
