@@ -17,7 +17,7 @@ The portal is intended for internal use by individual congregations or shelter p
 This project is part of the OpenHMSHub platform and depends on shared logic and components from the `Global` project.
 
 ## Requirements
-`Ignition 8.1.45` or later
+`Ignition 8.1.47` or later
 
 Database with Discovery_Schema.sql and Discovery_Master_Data.sql already loaded
 
