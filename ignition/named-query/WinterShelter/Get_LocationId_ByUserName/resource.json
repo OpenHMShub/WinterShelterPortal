@@ -18,7 +18,7 @@
     "cacheEnabled": false,
     "database": "RITIOps",
     "fallbackEnabled": false,
-    "lastModificationSignature": "4d42cc62e8b85d8d0ad8733271da74a27ed6ff57fd74e5d1265364363be739eb",
+    "lastModificationSignature": "bb365c0a1bac3f8328cd98968fa8ed8e05db1306f88946ac763828a8d87ddb24",
     "permissions": [
       {
         "zone": "",
@@ -26,8 +26,8 @@
       }
     ],
     "lastModification": {
-      "actor": "yogini",
-      "timestamp": "2022-10-19T06:53:52Z"
+      "actor": "external",
+      "timestamp": "2025-05-19T13:08:10Z"
     },
     "parameters": [
       {

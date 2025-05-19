@@ -19,7 +19,7 @@
     "cacheEnabled": false,
     "database": "RITIOps",
     "fallbackEnabled": true,
-    "lastModificationSignature": "68300c9e1c96e548b6cf3a058615fa09c2a736c9bf1d1e2e3273f7b1d41a0cd6",
+    "lastModificationSignature": "992e78f720a56ebcb36fb88d905e8394691a66eccc4e103f9b99b3fa74fd2113",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +27,8 @@
       }
     ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:45:34Z"
+      "actor": "external",
+      "timestamp": "2025-05-19T13:08:10Z"
     }
   }
 }
