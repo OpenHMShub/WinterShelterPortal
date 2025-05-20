@@ -1,5 +1,5 @@
 # WinterShelterPortal – Shelter Management Portal for Congregations
-WinterShelterPortal (WSP) is a secure, web-based application built with Ignition Perspective, designed for congregations and partner organizations participating in the Room In The Inn initiative.
+WinterShelterPortal (WSP) is a secure, web-based application built with Ignition Perspective, designed for congregations and partner organizations participating in the Homeless Management System initiative.
 Each organization uses the portal to register, configure, and manage its own shelter offerings — including beds, availability, schedules, and guest information
 It provides a simple, mobile-friendly interface for accessing real-time shelter availability across participating organizations.
 
@@ -14,24 +14,24 @@ The portal is intended for internal use by individual congregations or shelter p
 
 * Track historical statistics and activity
 
-This project is part of the OpenHMSHub platform and depends on shared logic and components from the `Global` project.
+This project is part of the OpenHMShub platform and depends on shared logic and components from the `Global` project.
 
 ## Requirements
 `Ignition 8.1.47` or later
 
 Database with Discovery_Schema.sql and Discovery_Master_Data.sql already loaded
 
-[`Global`](https://github.com/OpenHMSHub/Global) project must be cloned and configured first
+[`Global`](https://github.com/OpenHMShub/Global) project must be cloned and configured first
 
 ## Project Structure
-[Documentation](https://github.com/OpenHMSHub/Documentation/wiki/Winter-Shelter-Portal)
+[Documentation](https://github.com/OpenHMShub/Documentation/wiki/Winter-Shelter-Portal)
 
-[User Roles and Permissions](https://github.com/OpenHMSHub/Documentation/wiki/User-Roles-and-Permissions)
+[User Roles and Permissions](https://github.com/OpenHMShub/Documentation/wiki/User-Roles-and-Permissions)
 
-[ERD](https://github.com/OpenHMSHub/Documentation/wiki/Entity-Relationship-Diagrams) 
+[ERD](https://github.com/OpenHMShub/Documentation/wiki/Entity-Relationship-Diagrams) 
 
 ## Installation
-[Instalation Guide](https://github.com/OpenHMSHub/Documentation/wiki/Instalation-Guide)
+[Instalation Guide](https://github.com/OpenHMShub/Documentation/wiki/Instalation-Guide)
 
 Clone the repository into your Ignition projects directory:
 
@@ -42,7 +42,7 @@ Windows:
 `C:\Program Files\Inductive Automation\Ignition\data\projects`
 
 ```bash
-git clone https://github.com/OpenHMSHub/WinterShelterPortal.git
+git clone https://github.com/OpenHMShub/WinterShelterPortal.git
 ```
 Restart your Ignition Gateway.
 
@@ -53,8 +53,8 @@ Launch the application in your browser:
 `http://localhost:8088/data/perspective/client/WinterShelterPortal/`
 
 ## Related Projects
-[Global](https://github.com/OpenHMSHub/Global)
+[Global](https://github.com/OpenHMShub/Global)
 
-[RITI](https://github.com/OpenHMSHub/RITI)
+[HMS](https://github.com/OpenHMShub/HMS)
 
-[Discovery](https://github.com/OpenHMSHub/Discovery)
+[MobileHMS](https://github.com/OpenHMShub/MobileHMS)
