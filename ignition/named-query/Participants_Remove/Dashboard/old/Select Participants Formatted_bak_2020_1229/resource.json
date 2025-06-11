@@ -1,16 +1,51 @@
 {
   "scope": "DG",
-  "version": 1,
+  "documentation": "Select the participants for the participants dashboard.",
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "f80d520668238363c9a3ba0e7a1ae3cc8f56edd173543cb763f967cc31cf715e",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:24Z"
     },
-    "lastModificationSignature": "5eab5a8242e2270c2dc2e707cc1f582db1806b7c8e335aaae4ea528d07460513"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "startDOB",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "endDOB",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "genderStr",
+        "sqlType": 7
+      }
+    ]
   }
 }

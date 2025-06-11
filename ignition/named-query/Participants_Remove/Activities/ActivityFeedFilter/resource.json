@@ -1,16 +1,40 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "f75c68037b8e7192b258936f15b947e16dd69946a5b3733cf15fa34b6254c51c",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:25Z"
     },
-    "lastModificationSignature": "e9a0c5dd1f9644984878c033762741535995dce3740c39bd7fa904259fb99583"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "participantId",
+        "sqlType": 2
+      }
+    ]
   }
 }

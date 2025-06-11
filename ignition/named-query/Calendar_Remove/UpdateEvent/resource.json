@@ -1,16 +1,180 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "784afa647ee45ef1501b86b8f38412a48b1993a134bd6c275648ad7e7c007764",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:45:18Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:12:48Z"
     },
-    "lastModificationSignature": "7b86662d8df2316dd59db304106401a8b05e43d4fe4a3d7b7f7508c71676242f"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "allDay",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "audienceMen",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "audienceMinors",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "audienceParticipants",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "audienceStaff",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "audienceVolunteers",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "audienceWomen",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "category",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "description",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "room",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "staffNeeded",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "subCategory",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "title",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "venue",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "volunteersNeeded",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "monday",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "tuesday",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "wednesday",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "thursday",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "friday",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "saturday",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "sunday",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "bymonth",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "bysetpos",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "endDate",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "freq",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "startDate",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "interval",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "eventID",
+        "sqlType": 3
+      }
+    ]
   }
 }

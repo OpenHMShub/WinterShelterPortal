@@ -1,16 +1,40 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "4bba5dcdecb4cefb198ab0d052f0f45a0e7520993e62dc5a82e99da1367f0492",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:07Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:47Z"
     },
-    "lastModificationSignature": "e9db10bc481487f02e7b8d21bb337f5a30a05324b1adaa2fffb78975a5db94ab"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "roomID",
+        "sqlType": 3
+      }
+    ]
   }
 }

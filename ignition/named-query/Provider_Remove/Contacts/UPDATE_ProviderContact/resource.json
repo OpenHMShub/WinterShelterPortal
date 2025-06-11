@@ -1,16 +1,60 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "2a9f012435dc8c90d29504c2e042dc53b1221821468e0dd1e43d6a97e4382dad",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:42Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:52:08Z"
     },
-    "lastModificationSignature": "075c7a437547314cc122d1d4e393c246a4e583a62891afb2b8f815eab527312c"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "provId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "contactPhone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "contactName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "providerName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "contactEmail",
+        "sqlType": 7
+      }
+    ]
   }
 }

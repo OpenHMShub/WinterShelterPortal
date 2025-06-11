@@ -1,16 +1,45 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "2a65a111c9d0ec1ab5074e9682993088b4a306a17c6943cd40f282a7c6a7950a",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:00Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:48:30Z"
     },
-    "lastModificationSignature": "757f4bb9cebba681eb219ad7805f3bd2c7535a316a4f7a9b87268612bcdbfc60"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "program_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "service_id",
+        "sqlType": 2
+      }
+    ]
   }
 }

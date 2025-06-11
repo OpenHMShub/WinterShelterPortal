@@ -1,16 +1,85 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "692494cbf8320b234f4926a5c34001911644d1ef368260074550948303d4659c",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:25Z"
     },
-    "lastModificationSignature": "8579121225ce75f7bed0490ad0280076314448f668266c8774e04d1b296d8d28"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "activity_range",
+        "sqlType": 2
+      },
+      {
+        "type": "QueryString",
+        "identifier": "notedate",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "notetype",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "hmis",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "enteredby",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "firstname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "middlename",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "lastname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "nickname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "search",
+        "sqlType": 7
+      }
+    ]
   }
 }

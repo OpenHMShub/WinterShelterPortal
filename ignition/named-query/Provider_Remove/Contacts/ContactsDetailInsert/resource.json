@@ -1,16 +1,70 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "5a024418cb4fa09f767f0e8b409f9d741673b2402d1bac85652e79ea92615b3b",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:42Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:52:08Z"
     },
-    "lastModificationSignature": "d432723f7bae30a68640cb52dc138e083838ab161bce046642d593c3455b9f97"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "time_created",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "user_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "provider_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "Email",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "Phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "FirstName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "LastName",
+        "sqlType": 7
+      }
+    ]
   }
 }

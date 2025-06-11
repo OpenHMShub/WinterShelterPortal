@@ -1,16 +1,95 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "d31522d61a74e963181aa4a5579ac038223fc42c8ba595d06522c4b304bb5b2f",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:45:27Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:12:49Z"
     },
-    "lastModificationSignature": "dd58eec2608909ee8fcd95d5a12bdda0865772536d6d7fa44ccb441c47d0f341"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "email",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "city",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "state",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "zip",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "website",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "orgName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "qualifiers",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "status",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "businessDesc",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "orgId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "addr",
+        "sqlType": 7
+      }
+    ]
   }
 }

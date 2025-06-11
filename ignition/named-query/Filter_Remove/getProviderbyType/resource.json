@@ -1,5 +1,6 @@
 {
   "scope": "DG",
+  "documentation": "Select a list of providers",
   "version": 2,
   "restricted": false,
   "overridable": true,
@@ -17,9 +18,9 @@
     "enabled": true,
     "cacheAmount": 1,
     "cacheEnabled": false,
-    "database": "RITIOps",
+    "database": "",
     "fallbackEnabled": true,
-    "lastModificationSignature": "5f3d22aac79d9d9fc587f0e3bf4212aef2a1a2a90edc929e55268151c2c84f7d",
+    "lastModificationSignature": "3ac1b17eb9b64d3ceeae7c74ebd878848c0dedfc2b2116bc940bcb028eba61ca",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +28,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:25Z"
     },
     "parameters": [
       {

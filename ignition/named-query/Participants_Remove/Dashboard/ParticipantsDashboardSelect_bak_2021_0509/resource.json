@@ -1,16 +1,56 @@
 {
   "scope": "DG",
-  "version": 1,
+  "documentation": "Select the participants for the participants dashboard.",
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "e9a0620a18d6d2214c665560011f9f110387b1f5ff0e84c16f61c2487e3026dc",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:25Z"
     },
-    "lastModificationSignature": "74a1c43d3f619af64e1455af6dc3257cc3e0014e3aee98e542a309888d2952e7"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "activity_range",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "gender_id",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "race_id",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "veteran_id",
+        "sqlType": 7
+      }
+    ]
   }
 }

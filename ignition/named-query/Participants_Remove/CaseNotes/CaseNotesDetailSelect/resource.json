@@ -1,16 +1,70 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "fad66412d1dfd091468d7a9a4334b46355322c57a78b3563d59ff7c678bd08b5",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:25Z"
     },
-    "lastModificationSignature": "b83f1d4eff7a73634fd60b928f6af675e69837620837868b62e191a1e7cf2d7d"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "participant_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "activity_range",
+        "sqlType": 2
+      },
+      {
+        "type": "QueryString",
+        "identifier": "notedate",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "notetype",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "hmis",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "enteredby",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "search",
+        "sqlType": 7
+      }
+    ]
   }
 }

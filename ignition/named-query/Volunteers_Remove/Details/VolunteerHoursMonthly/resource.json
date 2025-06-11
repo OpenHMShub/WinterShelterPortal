@@ -1,16 +1,40 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "5544cdfe0821022e91362d7c5398bd11392b77248c0ceb8677f18f2278b0b1b2",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:19Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:47Z"
     },
-    "lastModificationSignature": "6a9076409d064bd93134e5537c03453e891ae9914153336d4a05dc0d0b5a5e6f"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "volunteerId",
+        "sqlType": 2
+      }
+    ]
   }
 }

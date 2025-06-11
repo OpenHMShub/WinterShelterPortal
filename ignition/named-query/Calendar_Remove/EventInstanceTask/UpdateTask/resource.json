@@ -1,16 +1,50 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "70a1a80ec57d57c49024f69b81264542406797c1e18ac17d037cc514536fdb06",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:45:18Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:12:49Z"
     },
-    "lastModificationSignature": "b4d8401267ce1a33bcdfc84de5ce7c42469738ee57ee7af77d5deb421f8b1aee"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "taskID",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "completed",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "task",
+        "sqlType": 7
+      }
+    ]
   }
 }

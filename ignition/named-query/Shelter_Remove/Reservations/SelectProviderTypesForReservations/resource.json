@@ -1,16 +1,33 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "6836cb3f27c57d72fdb874a3b4c15be0277395a99655a6f6e94edecd28ab849a",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:07Z"
-    },
-    "lastModificationSignature": "9c010e1eb880ba4dbd87ba1cb67d4c06d7b5e73f884bcefbd4b6f4239fb5510e"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:47Z"
+    }
   }
 }

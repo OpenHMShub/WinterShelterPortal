@@ -1,16 +1,55 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "19f4cb87ada911c38148cb4566162a38060eab44bdaa9ce250d754bcf80bbf85",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:45:27Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:12:48Z"
     },
-    "lastModificationSignature": "2a2b08ae607172cf4185ee59549fad07d87a9006658acf6e000afba80f437c26"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "applied",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "interviewed",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "hired",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "not_hired",
+        "sqlType": 6
+      }
+    ]
   }
 }

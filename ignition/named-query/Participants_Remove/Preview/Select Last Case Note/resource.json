@@ -1,16 +1,41 @@
 {
   "scope": "DG",
-  "version": 1,
+  "documentation": "Select the last case note entered for a participant.",
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "f552e158eacc23500e36a8c2b0099804ca99a9fe566e3a66fd83cfd44fbe5e95",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:00:59Z"
     },
-    "lastModificationSignature": "21bde7acf739b01f23048e757e41760b2d939b885e9bf517a80b5e7030f4a1f4"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "participantID",
+        "sqlType": 2
+      }
+    ]
   }
 }

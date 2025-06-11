@@ -1,0 +1,1 @@
+UPDATE lodging.BedLog SET eventEnd = GETDATE() WHERE id = :id

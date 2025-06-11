@@ -1,16 +1,60 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "2aeb12e33f5622f97d980e97b1bfb7958383bb8cc80021efd5a805938c086f93",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:53:15Z"
     },
-    "lastModificationSignature": "b01f3e275ad093bc926024f16c373ff71d430aa7dfd75503ab2d2c921ccf13e8"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "firstName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "lastName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dob",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ssn",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "race",
+        "sqlType": 2
+      }
+    ]
   }
 }

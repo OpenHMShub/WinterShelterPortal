@@ -1,16 +1,41 @@
 {
   "scope": "DG",
-  "version": 1,
+  "documentation": "Select a list of providers",
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "-1",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": true,
+    "lastModificationSignature": "79af4a3342599a144492a75345bae5a2b1455627e3b30b7fa7996d426c66d809",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:53:15Z"
     },
-    "lastModificationSignature": "18ecdc295ba24d2ab04af811a7308f640b524ab160a9b6fe450d8c7d2f814755"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "provider_type_id",
+        "sqlType": 2
+      }
+    ]
   }
 }

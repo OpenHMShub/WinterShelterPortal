@@ -1,16 +1,50 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "90b91aec2a9cc16abe2ab423f5d87029444fd431e982dff3d01345a56950e532",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:45:18Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:12:48Z"
     },
-    "lastModificationSignature": "556464597be07a719eb18b02f94ce2a550de6f4ef8a50876d4b0685f41bb0e68"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "eventID",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "staffID",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "taskID",
+        "sqlType": 3
+      }
+    ]
   }
 }

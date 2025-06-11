@@ -1,16 +1,55 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "f61e90cfe23bad6914588d79dc0f6a661a21ed226e2256fc74cef591dbb2ee1c",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:07Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:47Z"
     },
-    "lastModificationSignature": "6865dca034095ed4f6084af57970deb3ab244d0720eb501459483e1a9aa08cea"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "participantid",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "programid",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dateadded",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "notes",
+        "sqlType": 7
+      }
+    ]
   }
 }

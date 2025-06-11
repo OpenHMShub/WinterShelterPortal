@@ -1,16 +1,50 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "0802a1b92d0bc65cfa068d79898a8589b69b6338e552f25b03e277c88b4cd26d",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:07Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:47:29Z"
     },
-    "lastModificationSignature": "5bbbb6a2accfa59f3299acc5b0f5544cba8ac80929139ecaa8406830eebc3f2b"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "bedId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "timeBegin",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "timeEnd",
+        "sqlType": 8
+      }
+    ]
   }
 }

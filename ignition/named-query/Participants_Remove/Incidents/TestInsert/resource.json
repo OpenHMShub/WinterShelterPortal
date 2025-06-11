@@ -1,16 +1,41 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "a2651af9fc2b8a39c628e9e51f66dec15d58c1c4c4e99dcfcc1c3dfbe1b699ff",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:00:59Z"
     },
-    "lastModificationSignature": "16cff4088974c873b2f43c1ec1e43db1682f40e4be66b3b16325a07ff94bfe37"
+    "syntaxProvider": "class com.adbs.syntax.MSSQLSyntaxProvider",
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "name",
+        "sqlType": 7
+      }
+    ]
   }
 }

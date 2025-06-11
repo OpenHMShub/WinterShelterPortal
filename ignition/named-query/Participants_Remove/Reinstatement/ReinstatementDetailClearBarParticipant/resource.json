@@ -1,16 +1,40 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "0b9696b4b4d22168154dab4acd5e3d6d4995d446a96d3ca38bc021da5fc3d60a",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:57:17Z"
     },
-    "lastModificationSignature": "45ac6b17d2ab88cee9e2f6e3b871f7a507971428df0f09ee66ea9a4ab348e778"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "incident_id",
+        "sqlType": 2
+      }
+    ]
   }
 }

@@ -1,16 +1,185 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "efd7dd6aa4a926ca1260565423f62a997172c2ef8070432bf18dce202fb9f3d1",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:19Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:47Z"
     },
-    "lastModificationSignature": "0a2a02354c18171b8bb21f94e0a0e975c41a442ccefeafb083908a5760d67010"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "first_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "middle_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "last_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "suffix_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "nick_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dob",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dob_quality",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "race_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ethnicity_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "veteran_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "disability_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "alt_phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "email",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "communication_type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_email",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "hoh_relationship_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "gender_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "school",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "employer",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "congregation",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "street",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "state",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "zip_code",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "city",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ssn_quality",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ssn",
+        "sqlType": 7
+      }
+    ]
   }
 }

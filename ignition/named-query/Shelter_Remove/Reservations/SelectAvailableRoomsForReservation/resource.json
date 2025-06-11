@@ -1,16 +1,50 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "a308695f912f520066dfcae0e176f417630006d3b79b10da2092093e62d82556",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:07Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:47Z"
     },
-    "lastModificationSignature": "805a4853e27f6737c85c0c5b6cd1dcd9d2401276f956b8dee5eafa6be030b5b2"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "facilityId",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "startDate",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "endDate",
+        "sqlType": 7
+      }
+    ]
   }
 }

@@ -1,16 +1,34 @@
 {
   "scope": "DG",
-  "version": 1,
+  "documentation": "Select the Volunteers for the volunteers dashboard.",
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": true,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "be3f6673121715d4250d714b93afe7481c28683eff966fd3d5de04beaa10cbc1",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:11Z"
-    },
-    "lastModificationSignature": "d05beb0c4cb8adeb5f35ed47184f5b772d99a85702da33479dea064f0b820a76"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:25Z"
+    }
   }
 }

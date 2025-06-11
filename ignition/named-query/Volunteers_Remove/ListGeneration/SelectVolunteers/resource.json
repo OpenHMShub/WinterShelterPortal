@@ -1,16 +1,76 @@
 {
   "scope": "DG",
-  "version": 1,
+  "documentation": "This is the filtered list of volunteers for List Generation.",
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "1ab8a0c0239c8182f4fcea5cb93cbab658ab184b149fee28d72f07f0cd1dc819",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:19Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:47Z"
     },
-    "lastModificationSignature": "d382de9e4f3ea68ee35170338dd233c6e60d3bfbf986e14b6961e8fa2da9e5ef"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "firstName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "lastName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "gender",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "useGender",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ageAbove",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ageBelow",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "groupId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "useGroup",
+        "sqlType": 6
+      }
+    ]
   }
 }

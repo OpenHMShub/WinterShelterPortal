@@ -1,16 +1,80 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "d61295aac8797cc842ec1bdf2df072fc100fd1ed9b4ab337fc9626f5bc4f552f",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:00:59Z"
     },
-    "lastModificationSignature": "4b652ce082e192979dfba43f7e33fa799a237f93b34bd00023e17ea0c5aa23f6"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "ssn",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "first_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "last_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "race_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dob_year",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dob_month",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dob_day",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "middle_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "nick_name",
+        "sqlType": 7
+      }
+    ]
   }
 }

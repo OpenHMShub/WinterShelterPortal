@@ -1,16 +1,55 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "9e9fada3c1ad1876b52d285ba4bcd27766726f56a2b9b0f67338fb11f1688011",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:07Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:47Z"
     },
-    "lastModificationSignature": "1bc2c0cb7c9b40be932455059bf8f98ca8494e95e9b33b4b3744fe5594144ba9"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "participantId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "bedId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "eventStart",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "reservationId",
+        "sqlType": 2
+      }
+    ]
   }
 }

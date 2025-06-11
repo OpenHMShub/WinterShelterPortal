@@ -1,5 +1,6 @@
 {
   "scope": "DG",
+  "documentation": "Gets the currently used Storage Bins so that available options can be filtered out from being able to be selected.",
   "version": 2,
   "restricted": false,
   "overridable": true,
@@ -19,7 +20,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "3e1e9ac757685c444a1e4c37a00e845b9a4fc250bd51c9bcaf1255296228cd7a",
+    "lastModificationSignature": "836eb8a61e52727c188e891757bcb91411bcfee32c4650be968f14f599f198f5",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +28,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:55:05Z"
     },
     "parameters": [
       {

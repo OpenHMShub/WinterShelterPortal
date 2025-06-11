@@ -1,16 +1,45 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "aadeeb463f402d260cb6c7b19b01c5c43db7fbf0605430ef1125de90ec0883e6",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:45:18Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:12:48Z"
     },
-    "lastModificationSignature": "6b33668f18b594dc90100121fa5f44fedf7556304911dd4555b2983112deda35"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "instanceID",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "volunteerID",
+        "sqlType": 3
+      }
+    ]
   }
 }

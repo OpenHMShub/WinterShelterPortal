@@ -1,16 +1,41 @@
 {
   "scope": "DG",
-  "version": 1,
+  "documentation": "Select the last shelter entered for a participant.",
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "7c6de52b7e43640aa77512b33c69edcf39b9dbf55a87526e5883ec934abcc268",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:00:59Z"
     },
-    "lastModificationSignature": "bdffcbdeff508356bd4c1255b370b933ae231196a03c6500de16ff31ce327c4f"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "participantID",
+        "sqlType": 2
+      }
+    ]
   }
 }

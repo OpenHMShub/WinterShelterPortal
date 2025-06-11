@@ -1,0 +1,20 @@
+INSERT INTO	participant.CaseNotes
+	(
+	participantId,
+	employeeId,
+	HMIS, 
+	CaseNoteTypeID, 
+	Note, 
+    timeCreated,
+    userName 
+	)
+VALUES
+	(
+ 	:participant_id, 
+  	:employee_id, 
+   	:hmis,
+   	:note_type_id, 
+    :note, 
+    GetDate(),
+    :user_name 
+	)

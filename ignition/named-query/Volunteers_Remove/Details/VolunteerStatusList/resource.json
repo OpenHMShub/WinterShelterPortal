@@ -1,16 +1,34 @@
 {
   "scope": "DG",
-  "version": 1,
+  "documentation": "Return a selection list of status",
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "800f2497b21ed5d4b600655f7f30a354ee08f3e833db9576f87e2a2f5c7d07e7",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:19Z"
-    },
-    "lastModificationSignature": "4f0340ed2567580099f4758d412eb63d045abb67a183f3e77cbdd862f8c3cf88"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:42:15Z"
+    }
   }
 }

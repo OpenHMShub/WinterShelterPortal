@@ -1,16 +1,45 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "54ae1330d921f947d940d86fdaeec0a805d8f0b71e86e59259b516e21a6b78c4",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:07Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:46Z"
     },
-    "lastModificationSignature": "a5268762b673d12678abe3aba1328ea0f732de65faeb909386fbf66ba3315afc"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "reservationId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "checkInStart",
+        "sqlType": 7
+      }
+    ]
   }
 }

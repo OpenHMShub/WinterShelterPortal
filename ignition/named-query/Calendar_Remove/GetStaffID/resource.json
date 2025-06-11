@@ -1,16 +1,50 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "be305ac1bc6db14216c1845564134f2a4b404402717b23530017a950d02ad8af",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:45:18Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:12:49Z"
     },
-    "lastModificationSignature": "c813ea7bdc2cfc31e0f48d417dacd71f5dc94584b1a8c6cae8ec827f0854a218"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "firstName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "middleName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "lastName",
+        "sqlType": 7
+      }
+    ]
   }
 }

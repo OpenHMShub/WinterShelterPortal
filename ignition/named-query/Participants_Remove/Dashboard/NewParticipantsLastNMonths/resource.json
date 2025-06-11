@@ -1,16 +1,45 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "6676f2e98934732202c92b645e0a2f7c12c819965d75206826f0d054186e1521",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:25Z"
     },
-    "lastModificationSignature": "ca45c615d1754b9e2a33490361e905eda43e15bff61972255a4bdf14b807dbc0"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "IdList",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "MonthCount",
+        "sqlType": 3
+      }
+    ]
   }
 }

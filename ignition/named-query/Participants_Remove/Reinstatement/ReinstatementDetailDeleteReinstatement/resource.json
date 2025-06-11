@@ -1,16 +1,40 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "534a82cddf75a23670d9021efe48d9a5dc91e351aec1c7c57eb0a9cc2f4b5e0c",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:57:18Z"
     },
-    "lastModificationSignature": "6971938c33c57e0fd39275433c44c07af72c5376f5186b2f6a8007c7d72f62bf"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "suspension_id",
+        "sqlType": 2
+      }
+    ]
   }
 }

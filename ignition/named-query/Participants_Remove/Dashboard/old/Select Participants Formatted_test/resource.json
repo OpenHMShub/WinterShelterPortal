@@ -1,16 +1,42 @@
 {
   "scope": "DG",
-  "version": 1,
+  "documentation": "Select the participants for the participants dashboard.",
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "d68d4e0887bd1d4cc4d5255098ddc69d3404879b7d04fb3a45c32f9d640f1943",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:25Z"
     },
-    "lastModificationSignature": "5713ac9ac68b8345a989e8353f6f748acc0002336dc83eabbf1a88fb02457f35"
+    "syntaxProvider": "class com.adbs.syntax.MSSQLSyntaxProvider",
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "startDOB",
+        "sqlType": 8
+      }
+    ]
   }
 }

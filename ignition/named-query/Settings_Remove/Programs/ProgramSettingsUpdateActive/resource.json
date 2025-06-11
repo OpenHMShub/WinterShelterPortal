@@ -1,16 +1,55 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "2dff4a790ac8b9ea7391a54031182b2bd85d348e2298c5bbee3a3d4e9d84c49c",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:00Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:48:30Z"
     },
-    "lastModificationSignature": "bd433b783bb9b858d70cad898b5a97d165917e6c043ecaa280b059868cc43e35"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "program_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "program_desc",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "time_created",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "program_id",
+        "sqlType": 2
+      }
+    ]
   }
 }

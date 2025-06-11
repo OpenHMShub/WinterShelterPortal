@@ -1,5 +1,6 @@
 {
   "scope": "DG",
+  "documentation": "Gets historical storage bin allocations from the StorageBinLog table.\nAllows filtering with a search term on the participant name and the storage bin (col + bin). Filter passed in should generally be surrounded by % as search term uses a LIKE clause.",
   "version": 2,
   "restricted": false,
   "overridable": true,
@@ -19,7 +20,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "024816ba0a777eff26a265145c55ab3e68593f22bb254e6bb9d9ca792915d6c5",
+    "lastModificationSignature": "b89e9e750778c25f75bcecd0017752a97f96a50655ee5b33af292eda475cb7eb",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +28,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:00:59Z"
     },
     "parameters": [
       {

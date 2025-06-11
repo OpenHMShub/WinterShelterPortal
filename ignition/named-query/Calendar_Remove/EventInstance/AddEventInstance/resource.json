@@ -1,16 +1,60 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "0",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "ScalarQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": true,
+    "lastModificationSignature": "1dc747562d0125143e5e9eae9995b3ad845d0678271339cc9faae12adf13f9df",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:45:18Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:12:49Z"
     },
-    "lastModificationSignature": "ce451a2568b712f8d1ab5b27c3804412033685a40d4673c97adcd0e2b81c1f15"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "eventID",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "endDate",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "venue",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "startDate",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "room",
+        "sqlType": 7
+      }
+    ]
   }
 }

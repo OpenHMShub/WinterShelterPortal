@@ -1,5 +1,6 @@
 {
   "scope": "DG",
+  "documentation": "Inserts a row into the StorageBin_History table for the given participant.",
   "version": 2,
   "restricted": false,
   "overridable": true,
@@ -19,7 +20,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "492bac72908d54795a7b695905065faf260bc89fed584f22ad565b94ba19ccb0",
+    "lastModificationSignature": "6a94499b70a0263e04041ded0cb7c507c6daa82914485d30913f7cb80129549a",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +28,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:55:05Z"
     },
     "parameters": [
       {

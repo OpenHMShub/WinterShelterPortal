@@ -1,16 +1,70 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "bce8afdcca5ec77467f740746eab0dfad055e8ce35ede76a3b46d56e0051db6c",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:25Z"
     },
-    "lastModificationSignature": "6701ba9b720e239393f6856a5432dbe6622ef815c6e0759e42ab088f717f2779"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "employee_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "time_created",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "note",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "hmis",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "participant_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "user_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "note_type_id",
+        "sqlType": 2
+      }
+    ]
   }
 }

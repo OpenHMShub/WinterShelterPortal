@@ -1,5 +1,6 @@
 {
   "scope": "DG",
+  "documentation": "Cancels an existing bin. Use this to cancel an existing bin or when updating an existing bin with new dates.",
   "version": 2,
   "restricted": false,
   "overridable": true,
@@ -19,7 +20,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "d5ba4270d7db3dcb02b869272d8f63661b91948bade5fdd8a05c0cdab3ec092f",
+    "lastModificationSignature": "51b10e828e08350d37897e5f8b9d1fa4c3b4fae05c4484e9d233bc7bb1ad0bdb",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +28,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:55:05Z"
     },
     "parameters": [
       {

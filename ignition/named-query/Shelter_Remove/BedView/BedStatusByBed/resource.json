@@ -1,16 +1,40 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "54a449c0508d7d24fe41edf627357e972a1dc2b1457087f40ff71947c3eb3a85",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:07Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:47:16Z"
     },
-    "lastModificationSignature": "1945d21538833e1f73151237a46ca6de9511e0b832232cc756eae1d84588e95c"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "BedID",
+        "sqlType": 3
+      }
+    ]
   }
 }

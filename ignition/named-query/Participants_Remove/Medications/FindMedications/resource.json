@@ -1,5 +1,6 @@
 {
   "scope": "DG",
+  "documentation": "Gets a list of medications matching the filter. Don\u0027t forget to include the % wildcards!\nA full list will not be returned since there are way too many options.",
   "version": 2,
   "restricted": false,
   "overridable": true,
@@ -19,7 +20,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "9f0c3881a3ecf91bb7ee6b99542f1f2f4c769e3c355765760c345118ee0a1c90",
+    "lastModificationSignature": "4568cd48630825d207bf83e7a4b324fa5028d7d288f85fb155e87e488410d51c",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +28,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:00:59Z"
     },
     "parameters": [
       {

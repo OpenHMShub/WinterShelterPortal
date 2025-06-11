@@ -1,16 +1,90 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "95773e2a1bf068612a0ba87fe8a6245ce6f1a1290a0c7ca7363f706b6c4313b5",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:07Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:48Z"
     },
-    "lastModificationSignature": "5a4d2ce25e5ef2cf607842bcd8a6c0e3956137f8261b5f762b9f018e5a21699d"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "bedId",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "participantId",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "reservationStart",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "reservationEnd",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "notes",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "reservationID",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "providerTypeId",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "providerId",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "programId",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "waitingListName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "reservationType",
+        "sqlType": 7
+      }
+    ]
   }
 }

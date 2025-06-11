@@ -1,16 +1,90 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "47667b29bb04da91d9e6c8d3472cf6eee0d3757fd40f27f216d6290f200054b2",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:57:18Z"
     },
-    "lastModificationSignature": "55ccf4b8f0cabd57e9e62451f5176774fcb0e357b497bb1420a629856cae6ee5"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "activity_range",
+        "sqlType": 2
+      },
+      {
+        "type": "QueryString",
+        "identifier": "serviceDate",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "HMIS",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "employeeId",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "programId",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "serviceId",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "firstName",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "middleName",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "lastName",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "nickName",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "search",
+        "sqlType": 7
+      }
+    ]
   }
 }

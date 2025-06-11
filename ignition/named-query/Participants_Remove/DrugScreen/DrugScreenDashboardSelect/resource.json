@@ -1,16 +1,95 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "{}",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "b9303f6dc138fd18a0796adf9fced60bedb7325fa45c70223b1cf5e966045ddb",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:25Z"
     },
-    "lastModificationSignature": "899808bba9d1661fadbce4e09d988bdfb543fad7e95f1d80c8c26894752e8ebe"
+    "parameters": [
+      {
+        "type": "Database",
+        "identifier": "database",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "activity_range",
+        "sqlType": 2
+      },
+      {
+        "type": "QueryString",
+        "identifier": "testDate",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "administeredById",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "drugScreenResonId",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "drugScreenTypeId",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "passed",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "firstname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "middlename",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "lastname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "nickname",
+        "sqlType": 7
+      },
+      {
+        "type": "QueryString",
+        "identifier": "search",
+        "sqlType": 7
+      }
+    ]
   }
 }

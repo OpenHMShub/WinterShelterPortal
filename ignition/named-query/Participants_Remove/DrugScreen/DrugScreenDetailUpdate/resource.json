@@ -1,16 +1,105 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "{}",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "7a71a867e51eefdf27609b87ca2ebc52b7da5954fda04812c2ceba9189e49a2c",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:16:25Z"
     },
-    "lastModificationSignature": "4fe0b7dd3c51713c765a20cc6b670dfab3b649481608dc3388c3c2834c281964"
+    "parameters": [
+      {
+        "type": "Database",
+        "identifier": "database",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "employee_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "participant_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "drug_screen_type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "provider_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "passed",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "score",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "grade_level",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "comments",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "row_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "time_created",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "test_date",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "test_reason_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "user_name",
+        "sqlType": 7
+      }
+    ]
   }
 }

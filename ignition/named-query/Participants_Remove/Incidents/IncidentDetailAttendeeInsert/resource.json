@@ -1,16 +1,55 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "96d8878a033d2163605ded8dd77eaba8da19c04bf872f2e9714d26183cbae944",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:00:59Z"
     },
-    "lastModificationSignature": "7065885983ed2cd0aa143f058045bc95eea1582144f2757ddfdab50ed4ca5882"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "time_created",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "log_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "human_id",
+        "sqlType": 2
+      }
+    ]
   }
 }

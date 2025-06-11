@@ -1,16 +1,60 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "ebaeed806156b4960544d850a69e7cf6ba54f093206c0eb7042b67adfb6d16ce",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:00Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:48:30Z"
     },
-    "lastModificationSignature": "6c6644955915cd3f0a3d6b8f44d51afb5fd4d2a33ba13d1b32666d93c430514d"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "program_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "program_desc",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "time_created",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "time_retired",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "program_id",
+        "sqlType": 2
+      }
+    ]
   }
 }

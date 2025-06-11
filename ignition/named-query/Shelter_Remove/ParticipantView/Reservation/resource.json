@@ -1,16 +1,50 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "47670b8df2b1f7715af2af74e9a0046ddb109fff4e4e64e9286eb1614cef03d4",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:07Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:47Z"
     },
-    "lastModificationSignature": "a83a469f6af61355cbf7b1ec58356e366002856c079b0ba74da3608b192d0652"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "timeBegin",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "timeEnd",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "participantId",
+        "sqlType": 2
+      }
+    ]
   }
 }

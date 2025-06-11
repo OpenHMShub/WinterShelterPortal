@@ -1,16 +1,130 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "e5a4dca8cd47c2b21e8bcb90f48606b8b689e2976284fa7072619fb47043b582",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:57:18Z"
     },
-    "lastModificationSignature": "a47521406f7726891a8c9134bb22f22a9ce40782b2ef4bd85189568fea85a70e"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "firstName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "middleName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "lastName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "nickname",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dob",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dobQuality",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "gender",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ethnicity",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "race",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "disability",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "veteran",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "familyId",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "hohRelationship",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "email",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergencyContactName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergencyContactPhone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "timeDeceased",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "humanId",
+        "sqlType": 2
+      }
+    ]
   }
 }

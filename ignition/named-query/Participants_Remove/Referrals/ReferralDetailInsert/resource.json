@@ -1,16 +1,60 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "e181b32b1dc89f80f9882404e700f48018794b714f9830cccfdf4a06401855f6",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:00:59Z"
     },
-    "lastModificationSignature": "d92356290a2cbfdbed1b3e66f5ab8c281ff9ac3e6043e6a51d8e3bb65c5dfb4b"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "participant_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "provider_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "status_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "program_id",
+        "sqlType": 2
+      }
+    ]
   }
 }

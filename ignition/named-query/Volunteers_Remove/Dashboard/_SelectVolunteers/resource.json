@@ -1,5 +1,6 @@
 {
   "scope": "DG",
+  "documentation": "Select the Volunteers for the volunteers dashboard.",
   "version": 2,
   "restricted": false,
   "overridable": true,
@@ -17,9 +18,9 @@
     "enabled": true,
     "cacheAmount": 1,
     "cacheEnabled": false,
-    "database": "RITIOps",
+    "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "775f8e18d5f8b752cf7fdcfd3b887a44bee261212932285c06d1d6666e5be209",
+    "lastModificationSignature": "d08971238d288def6710a5e94d023d261b29304e379b9e7013215a7b0a10da25",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +28,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:46:47Z"
     },
     "parameters": [
       {

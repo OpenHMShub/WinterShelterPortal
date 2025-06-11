@@ -1,16 +1,65 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "c8af353a3684ee7099e7521f2fe6020d9d9303950a9e99c5fbd3b48d066545a1",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:00Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:48:30Z"
     },
-    "lastModificationSignature": "a8eb4cfa96308a45df87a1a223dffeaaa21910d1a255c3a7afbc4569c5b026a5"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "time_created",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "service_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "service_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "service_desc",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "time_retired",
+        "sqlType": 8
+      }
+    ]
   }
 }

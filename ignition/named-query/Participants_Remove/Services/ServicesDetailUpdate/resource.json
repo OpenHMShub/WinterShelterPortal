@@ -1,16 +1,85 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "8b1c2d706713232de1997b5a23c94cc766e10067d089b82894bf1ec7da5b12ba",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:55:05Z"
     },
-    "lastModificationSignature": "c76703f53bd04e11747dba5463fe06aef927d9ce503bb8b1fb3087bc673d56d9"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "employee_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "time_created",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "row_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "participant_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "enrollment_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "service_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "user_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "HMIS",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "quantity",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "comment",
+        "sqlType": 7
+      }
+    ]
   }
 }

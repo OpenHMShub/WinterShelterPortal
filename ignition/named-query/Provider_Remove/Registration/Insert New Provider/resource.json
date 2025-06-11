@@ -1,16 +1,105 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "5284d1180a07ae7e52394fb47a2ef48ef799dd7cfe2a5133730aba688177d3b7",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:42Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:49:50Z"
     },
-    "lastModificationSignature": "23b8830dda619e6fa851edb00ff6d232c95bc2371e2ad47f6d83254a83f75ce9"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "email",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "providerName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "addr",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "city",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "state",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "zip",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "contactName",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "contactPhone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "website",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "nationalProvID",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "locationDesc",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "organizationID",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "providerTypeId",
+        "sqlType": 2
+      }
+    ]
   }
 }

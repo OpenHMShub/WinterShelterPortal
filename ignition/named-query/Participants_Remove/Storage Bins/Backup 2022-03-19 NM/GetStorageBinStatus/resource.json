@@ -1,5 +1,6 @@
 {
   "scope": "DG",
+  "documentation": "Gets the most recent storage bin allocations from the StorageBinLog table.\nAllows filtering with a search term on the participant name and the storage bin (col + bin). Filter passed in should generally be surrounded by % as search term uses a LIKE clause.",
   "version": 2,
   "restricted": false,
   "overridable": true,
@@ -19,7 +20,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "0b84d4a334cf9192262374076ad46896c4ff50981dcfdb7a84c204d1bd587c3e",
+    "lastModificationSignature": "66cc005652c3e1b0d9de63b69613d92354a0cd3100e9cb1163f4fde24b51debd",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +28,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:55:05Z"
     },
     "parameters": [
       {

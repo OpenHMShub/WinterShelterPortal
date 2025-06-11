@@ -1,16 +1,230 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "5c88d064f04d2535bab0ce6e6ae6ff8118ad139445e2663330befc3e69c86279",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:00:59Z"
     },
-    "lastModificationSignature": "b1235014860e4a52ba29c25990d8b3908c6a1b372d2d6a68e6f37b92d00bfcda"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "first_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "middle_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "last_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "suffix_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "nick_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "gender_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ssn",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ssn_quality_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dob",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "dob_quality_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "race_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "ethnicity_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "veteran_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "disability_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "time_deceased",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "street",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "city",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "state",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "zip_code",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "alt_phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "email",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "communication_type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_email",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "family_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "hoh_relationship_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "employer",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "school",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "congregation",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "emergency_contact_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "human_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "insurance_type_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "tri_morbid",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "chronic_homeless",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "so_registry",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "mail_service",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "full_register",
+        "sqlType": 6
+      }
+    ]
   }
 }

@@ -1,16 +1,80 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "8ab577f519998521d535df5c131113a976fbac0d5d7c1846f6a0e2885e91caeb",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:57:18Z"
     },
-    "lastModificationSignature": "96bfee969c6d7e578f4b7afa05ed1b64d22f13310139fb473266fff4a383270e"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "time_created",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "participant_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "service_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "enrollment_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "employee_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "user_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "HMIS",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "quantity",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "comment",
+        "sqlType": 7
+      }
+    ]
   }
 }

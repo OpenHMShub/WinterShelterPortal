@@ -1,5 +1,6 @@
 {
   "scope": "DG",
+  "documentation": "Inserts a row into the StorageBinLog table for the given participant.",
   "version": 2,
   "restricted": false,
   "overridable": true,
@@ -19,7 +20,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "bf6fbc53c52fd97205d19de56558a0d92974ec77c0e4e6794ed07ed19fbe043d",
+    "lastModificationSignature": "233c98fc2f6f97aa22ef40d244c8f32dc42db996232eb9ba04a5b55550ee9874",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +28,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:55:05Z"
     },
     "parameters": [
       {

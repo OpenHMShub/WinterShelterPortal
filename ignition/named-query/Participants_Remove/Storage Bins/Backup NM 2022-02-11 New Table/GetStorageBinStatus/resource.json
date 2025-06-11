@@ -1,5 +1,6 @@
 {
   "scope": "DG",
+  "documentation": "Gets the most recent storage bin allocations from the StorageBin_History table and joins related tables.",
   "version": 2,
   "restricted": false,
   "overridable": true,
@@ -19,7 +20,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "6fcc5e0bdae72100140756529951932ff4fc1351c292c8a4286698f715f8af3d",
+    "lastModificationSignature": "781b43ff068f4df6780f3c070b85fbf474cae4a9ead1050b70f77d43fad0da0d",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +28,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:55:05Z"
     },
     "parameters": [
       {

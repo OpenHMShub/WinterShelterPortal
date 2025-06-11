@@ -1,16 +1,90 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "1a269ef509a52914aca138bd96a9807ecf6cf460d51d7925430fd99b7ba97b3c",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:46:31Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:00:59Z"
     },
-    "lastModificationSignature": "6f70367772c50cfd20746640d45b651ea646e1440392218d9b71dca8923323a6"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "time_created",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "incident_date",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "employee_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "physical_injury",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "property_damage",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "bar_participant",
+        "sqlType": 6
+      },
+      {
+        "type": "Parameter",
+        "identifier": "incident_name",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "incident_location",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "incident_description",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "row_id",
+        "sqlType": 2
+      },
+      {
+        "type": "Parameter",
+        "identifier": "participant_id",
+        "sqlType": 2
+      }
+    ]
   }
 }

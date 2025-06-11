@@ -16,9 +16,9 @@
     "enabled": true,
     "cacheAmount": 1,
     "cacheEnabled": false,
-    "database": "RITIOps",
+    "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "701fa37e51583e85c31951b1b424369ed6d19940e08bfee74b29ee5d5854434a",
+    "lastModificationSignature": "f7a40e85e7415bc909e0558250b4e5ea0bb37b3e6d9ecb1dd9a78bda865c4455",
     "permissions": [
       {
         "zone": "",
@@ -26,8 +26,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:18:02Z"
     },
     "syntaxProvider": "class com.adbs.syntax.OracleSyntaxProvider",
     "parameters": [

@@ -1,16 +1,90 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": false,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "UpdateQuery",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "5f24ccebf9ea6cbf5549607813c021452e23bccdf31dc1aaf2801069559bdbb1",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:45:27Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T14:12:49Z"
     },
-    "lastModificationSignature": "871fca570bb00700d860f143aebb7c90ba1cdc265e380d5c9093576559fe8800"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "phone",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "email",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "addr",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "city",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "state",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "zip",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "website",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "businessDesc",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "qualifiers",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "status",
+        "sqlType": 7
+      },
+      {
+        "type": "Parameter",
+        "identifier": "orgName",
+        "sqlType": 7
+      }
+    ]
   }
 }

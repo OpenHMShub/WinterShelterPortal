@@ -1,16 +1,50 @@
 {
   "scope": "DG",
-  "version": 1,
+  "version": 2,
   "restricted": false,
   "overridable": true,
   "files": [
-    "data.bin"
+    "query.sql"
   ],
   "attributes": {
+    "useMaxReturnSize": true,
+    "autoBatchEnabled": false,
+    "fallbackValue": "",
+    "maxReturnSize": 100,
+    "cacheUnit": "SEC",
+    "type": "Query",
+    "enabled": true,
+    "cacheAmount": 1,
+    "cacheEnabled": false,
+    "database": "",
+    "fallbackEnabled": false,
+    "lastModificationSignature": "f1e20b51a18f1b87b8a51cf4ba68a1335474c3a59246f4805861b6b60b2e717a",
+    "permissions": [
+      {
+        "zone": "",
+        "role": ""
+      }
+    ],
     "lastModification": {
-      "actor": "lane",
-      "timestamp": "2022-08-13T02:47:07Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:47:14Z"
     },
-    "lastModificationSignature": "652196b405ff8ec9bc0956e7f13ce51d484a6ca4ea0cb42b32019089cba9ac06"
+    "parameters": [
+      {
+        "type": "Parameter",
+        "identifier": "RoomID",
+        "sqlType": 3
+      },
+      {
+        "type": "Parameter",
+        "identifier": "DateStart",
+        "sqlType": 8
+      },
+      {
+        "type": "Parameter",
+        "identifier": "DateEnd",
+        "sqlType": 8
+      }
+    ]
   }
 }

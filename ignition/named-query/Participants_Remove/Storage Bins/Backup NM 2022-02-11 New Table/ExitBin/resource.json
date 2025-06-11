@@ -1,5 +1,6 @@
 {
   "scope": "DG",
+  "documentation": "Updates an existing Bin by assigning an exit action to it.",
   "version": 2,
   "restricted": false,
   "overridable": true,
@@ -19,7 +20,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "232e093a4fb1d46ef123036d728ebca05de1c42f824b56674dd5918db004a9ea",
+    "lastModificationSignature": "791a0425607437316f19a3c26301c72d9c47be3b299c6b07fb9bea1a45ed1b4f",
     "permissions": [
       {
         "zone": "",
@@ -27,8 +28,8 @@
       }
     ],
     "lastModification": {
-      "actor": "external",
-      "timestamp": "2025-05-19T13:08:10Z"
+      "actor": "admin",
+      "timestamp": "2025-06-06T13:54:34Z"
     },
     "parameters": [
       {
