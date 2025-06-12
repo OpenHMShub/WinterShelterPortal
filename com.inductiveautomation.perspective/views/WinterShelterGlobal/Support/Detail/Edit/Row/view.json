@@ -1,6 +1,6 @@
 {
   "custom": {
-    "locationName": "Calvary Chapel Long Hollow",
+    "locationName": "",
     "ticketType": ""
   },
   "events": {
@@ -17,7 +17,7 @@
   },
   "params": {
     "Row_Data": {
-      "RITINotes": "",
+      "HMSNotes": "",
       "Status": "",
       "completed": null,
       "congregationNotes": "text",
@@ -44,7 +44,7 @@
       "type": ""
     },
     "locationId": 160,
-    "locationName": "Calvary Chapel Long Hollow",
+    "locationName": "",
     "type": ""
   },
   "propConfig": {
@@ -531,7 +531,7 @@
                 "binding": {
                   "config": {
                     "bidirectional": true,
-                    "path": "view.params.Row_Data.RITINotes"
+                    "path": "view.params.Row_Data.HMSNotes"
                   },
                   "type": "property"
                 }

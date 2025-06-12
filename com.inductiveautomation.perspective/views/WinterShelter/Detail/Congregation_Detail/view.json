@@ -92,9 +92,10 @@
             "binding": {
               "config": {
                 "parameters": {
-                  "ID": "{view.params.CongregationID}"
+                  "locationId": "{view.params.locationId}",
+                  "seasonId": "{view.params.tab_id}"
                 },
-                "queryPath": "WinterShelter/Details/Congregation_ID"
+                "queryPath": "WinterShelterGlobal/Registration/PreviewRegistration"
               },
               "type": "query"
             }
