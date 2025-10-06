@@ -18,7 +18,7 @@
     "cacheEnabled": false,
     "database": "",
     "fallbackEnabled": false,
-    "lastModificationSignature": "f7a40e85e7415bc909e0558250b4e5ea0bb37b3e6d9ecb1dd9a78bda865c4455",
+    "lastModificationSignature": "02921e0fc19506af67ea5e8d3dd17f282ce7aeef7bd124358054fbe4266d471e",
     "permissions": [
       {
         "zone": "",
@@ -26,8 +26,8 @@
       }
     ],
     "lastModification": {
-      "actor": "admin",
-      "timestamp": "2025-06-06T14:18:02Z"
+      "actor": "external",
+      "timestamp": "2025-08-20T08:24:51Z"
     },
     "syntaxProvider": "class com.adbs.syntax.OracleSyntaxProvider",
     "parameters": [
